@@ -14,17 +14,21 @@
 <br>
 <input type="text" name="last" placeholder="Larstname">
 <br>
-<input type="text" name="gender" placeholder="Gender">
+<select name="user_type">
+  <option value="f">Kvinde</option>
+  <option value="m">Mand</option>
+  <option value="o">Andet</option>
+</select>
 <br>
 <input type="text" name="address" placeholder="Address">
 <br>
 <input type="password" name="postal" placeholder="Postal">
 <br>
-<input type="password" name="dof" placeholder="Date of birth">
+<input type="date" name="dob" placeholder="Date of birth">
 <br>
-<input type="password" name="phone" placeholder="Phone">
+<input type="number" name="phone" placeholder="Phone">
 <br>
-<input type="password" name="email" placeholder="Email">
+<input type="email" name="email" placeholder="Email">
 <br>
 <input type="password" name="pwd" placeholder="Password">
 <br>
