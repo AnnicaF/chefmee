@@ -9,7 +9,13 @@
 </head>
 <body>
 
-<form action="signup.inc.php" method="POST">
+<!--
+<pre><?php
+var_export($_GET);
+?></pre>
+-->
+
+<form action="signup.inc.php" method="post">
 <input type="text" name="first" placeholder="Firstname">
 <br>
 <input type="text" name="last" placeholder="Larstname">
@@ -22,7 +28,7 @@
 <br>
 <input type="text" name="address" placeholder="Address">
 <br>
-<input type="password" name="postal" placeholder="Postal">
+<input type="number" name="postal" placeholder="Postal">
 <br>
 <input type="date" name="dob" placeholder="Date of birth">
 <br>
@@ -30,7 +36,7 @@
 <br>
 <input type="email" name="email" placeholder="Email">
 <br>
-<input type="password" name="pwd" placeholder="Password">
+<input type="password" name="psw" placeholder="Password">
 <br>
 <button type="submit" name="submit">Sign up</button>
 </form>
