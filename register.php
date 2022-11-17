@@ -10,7 +10,6 @@
 <body>
 
 <form action="signup.inc.php" method="POST">
-
 <input type="text" name="first" placeholder="Firstname">
 <br>
 <input type="text" name="last" placeholder="Larstname">
@@ -24,6 +23,5 @@
 <button type="submit" name="submit">Sign up</button>
 </form>
     
-
 </body>
 </html>

@@ -7,4 +7,5 @@ CREATE TABLE users (
     user_pwd varchar(256) not null
 );
 
-INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('Ole', 'Hansen', 'ole@hansen.dk', 'admin', '1234');
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) 
+VALUES ('Ole', 'Hansen', 'ole@hansen.dk', 'OleH', '1234');
