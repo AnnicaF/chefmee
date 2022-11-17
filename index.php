@@ -13,6 +13,7 @@
   <li><a href="">MENUER</a></li>
   <li><a href="">KOKKE</a></li>
   <li><a href="">OM OS</a></li>
+  <li><a href="">OM OS</a></li>
 </ul>
     </nav>
 </body>
