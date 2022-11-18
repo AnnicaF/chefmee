@@ -1,1 +1,3 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@use '_colors.scss' as clr;
+@use '_header.scss' as head;
+/*# sourceMappingURL=style.css.map */
