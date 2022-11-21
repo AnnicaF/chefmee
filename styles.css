@@ -57,12 +57,6 @@ header{
 
 /* LOGIND FUNKTION */
 
-form{
-    margin-left: 25%;
-    margin-right: 25%;
-    background-color: red;
-}
-
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -121,4 +115,4 @@ form{
   .opret { grid-area: opret; }
   
   .opretprofil { grid-area: opretprofil; }
-  
+ 
