@@ -55,13 +55,7 @@ header{
 }
 
 
-/* LOGIND FUNKTION */
-
-form{
-    margin-left: 25%;
-    margin-right: 25%;
-    background-color: red;
-}
+/* LOGIND FUNKTION GRID*/
 
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -118,8 +112,42 @@ form{
   
   .vilkår { grid-area: vilkår; }
   
-  .opret { grid-area: opret; }
-  
+  .opret { 
+      grid-area: opret; 
+  }    
+
   .opretprofil { grid-area: opretprofil; }
+
+
+ /* STYLING AF OPRET PROFIL */
+
+.container{
+    height: 500px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+    
+}
+.opretprofil{
+    text-align: center;
+    margin-top: 25px;
+}
+
+ .opret button {
+    background-color: #ea5a4a;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+    height: 30px;
+    border-style: none;
+    color: white;
+ }
+
+
   
     

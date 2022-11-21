@@ -15,57 +15,37 @@ var_export($_GET);
 ?></pre>
 -->
 
-<form action="signup.inc.php" method="post">
-<input type="text" name="first" placeholder="Firstname">
-<br>
-<input type="text" name="last" placeholder="Larstname">
-<br>
-<select name="user_type">
+<form action="signup.inc.php" method="post"> 
+<div class="container">
+
+<div class="opretprofil">OPRET PROFIL</div>
+  <div class="google"></div>
+  <div class="facebook"></div>
+
+<div class="personoplysninger">Person oplysninger</div>
+  <div class="fornavn"><input type="text" name="first" placeholder="Firstname"></div>
+  <div class="efternavn"><input type="text" name="last" placeholder="Larstname"></div>
+  <div class="adresse"><input type="text" name="address" placeholder="Address"></div>
+  <div class="etage"><input type="text" name="floor" placeholder="Floor"></div>
+  <div class="postnummer"><input type="number" name="postal" placeholder="Postal"></div>
+  <div class="by"><input type="text" name="city" placeholder="City"></div>
+  <div class="køn"><select name="user_type">
   <option value="f">Kvinde</option>
   <option value="m">Mand</option>
   <option value="o">Andet</option>
-</select>
-<br>
-<input type="text" name="address" placeholder="Address">
-<br>
-<input type="number" name="postal" placeholder="Postal">
-<br>
-<input type="date" name="dob" placeholder="Date of birth">
-<br>
-<input type="number" name="phone" placeholder="Phone">
-<br>
-<input type="email" name="email" placeholder="Email">
-<br>
-<input type="password" name="psw" placeholder="Password">
-<br>
-<button type="submit" name="submit">Sign up</button>
-</form>
-  
-<div class="container">
-  <div class="google"></div>
-  <div class="facebook"></div>
-  <div class="personoplysninger"></div>
-  <div class="fornavn"></div>
-  <div class="efternavn"></div>
-  <div class="adresse"></div>
-  <div class="etage"></div>
-  <div class="postnummer"></div>
-  <div class="by"></div>
-  <div class="køn"></div>
-  <div class="år"></div>
-  <div class="fødselsdag"></div>
-  <div class="mobilnummer"></div>
-  <div class="logind-oplysninger"></div>
-  <div class="email"></div>
-  <div class="kodeord"></div>
-  <div class="gentagkode"></div>
-  <div class="nyhedsbrev"></div>
-  <div class="vilkår"></div>
-  <div class="opret"></div>
-  <div class="opretprofil"></div>
-</div>
+</select></div>
+  <div class="år"><input type="text" name="year" placeholder="Year"></div>
+  <div class="fødselsdag"><input type="date" name="dob" placeholder="Date of birth"></div>
+  <div class="mobilnummer"><input type="number" name="phone" placeholder="Phone"></div>
+  <div class="logind-oplysninger">logind oplysninger</div>
+  <div class="email"><input type="email" name="email" placeholder="Email"></div>
+  <div class="kodeord"><input type="password" name="psw" placeholder="Password"></div>
+  <div class="gentagkode"><input type="re-password" name="psw" placeholder="Repeat Password"></div>
+  <div class="nyhedsbrev"><link rel="" href="">Nyhedsbrev</div>
+  <div class="vilkår"><link rel=""  href="">Vilkår</div>
+  <div class="opret"><button type="submit" name="submit">Sign up</button></div>
 
+</div>
+</form>
 </body>
 </html>
-
-
