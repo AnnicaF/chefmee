@@ -64,20 +64,20 @@ form{
 }
 
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
-      "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
-      ". google google . . . . . . ."
-      ". facebook facebook . . . . . . ."
-      "personoplysninger personoplysninger personoplysninger . . . logind-oplysninger logind-oplysninger logind-oplysninger ."
-      "fornavn fornavn efternavn efternavn . . email email email email"
-      "adresse adresse adresse adresse . . kodeord kodeord gentagkode gentagkode"
-      "etage postnummer by by . . . nyhedsbrev nyhedsbrev ."
-      "køn år fødselsdag fødselsdag . . . vilkår vilkår ."
-      "mobilnummer mobilnummer mobilnummer mobilnummer . . . opret opret .";
+      "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
+      ". google google . . . . . ."
+      ". facebook facebook . . . . . ."
+      "personoplysninger personoplysninger personoplysninger . . logind-oplysninger logind-oplysninger logind-oplysninger ."
+      "fornavn fornavn efternavn efternavn . email email email email"
+      "adresse adresse adresse adresse . kodeord kodeord gentagkode gentagkode"
+      "etage postnummer by by . . nyhedsbrev nyhedsbrev ."
+      "køn år fødselsdag fødselsdag . . vilkår vilkår ."
+      "mobilnummer mobilnummer mobilnummer mobilnummer . . opret opret .";
   }
   
   .google { grid-area: google; }
@@ -121,4 +121,4 @@ form{
   .opret { grid-area: opret; }
   
   .opretprofil { grid-area: opretprofil; }
-  
+    
