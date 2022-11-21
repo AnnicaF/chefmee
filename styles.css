@@ -62,3 +62,63 @@ form{
     margin-right: 25%;
     background-color: red;
 }
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
+      ". google google . . . . . . ."
+      ". facebook facebook . . . . . . ."
+      "personoplysninger personoplysninger personoplysninger . . . logind-oplysninger logind-oplysninger logind-oplysninger ."
+      "fornavn fornavn efternavn efternavn . . email email email email"
+      "adresse adresse adresse adresse . . kodeord kodeord gentagkode gentagkode"
+      "etage postnummer by by . . . nyhedsbrev nyhedsbrev ."
+      "køn år fødselsdag fødselsdag . . . vilkår vilkår ."
+      "mobilnummer mobilnummer mobilnummer mobilnummer . . . opret opret .";
+  }
+  
+  .google { grid-area: google; }
+  
+  .facebook { grid-area: facebook; }
+  
+  .personoplysninger { grid-area: personoplysninger; }
+  
+  .fornavn { grid-area: fornavn; }
+  
+  .efternavn { grid-area: efternavn; }
+  
+  .adresse { grid-area: adresse; }
+  
+  .etage { grid-area: etage; }
+  
+  .postnummer { grid-area: postnummer; }
+  
+  .by { grid-area: by; }
+  
+  .køn { grid-area: køn; }
+  
+  .år { grid-area: år; }
+  
+  .fødselsdag { grid-area: fødselsdag; }
+  
+  .mobilnummer { grid-area: mobilnummer; }
+  
+  .logind-oplysninger { grid-area: logind-oplysninger; }
+  
+  .email { grid-area: email; }
+  
+  .kodeord { grid-area: kodeord; }
+  
+  .gentagkode { grid-area: gentagkode; }
+  
+  .nyhedsbrev { grid-area: nyhedsbrev; }
+  
+  .vilkår { grid-area: vilkår; }
+  
+  .opret { grid-area: opret; }
+  
+  .opretprofil { grid-area: opretprofil; }
+  
