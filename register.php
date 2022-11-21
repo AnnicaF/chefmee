@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
     <title>Register</title>
 </head>
 <body>
@@ -40,6 +40,32 @@ var_export($_GET);
 <br>
 <button type="submit" name="submit">Sign up</button>
 </form>
-    
+  
+<div class="container">
+  <div class="google"></div>
+  <div class="facebook"></div>
+  <div class="personoplysninger"></div>
+  <div class="fornavn"></div>
+  <div class="efternavn"></div>
+  <div class="adresse"></div>
+  <div class="etage"></div>
+  <div class="postnummer"></div>
+  <div class="by"></div>
+  <div class="køn"></div>
+  <div class="år"></div>
+  <div class="fødselsdag"></div>
+  <div class="mobilnummer"></div>
+  <div class="logind-oplysninger"></div>
+  <div class="email"></div>
+  <div class="kodeord"></div>
+  <div class="gentagkode"></div>
+  <div class="nyhedsbrev"></div>
+  <div class="vilkår"></div>
+  <div class="opret"></div>
+  <div class="opretprofil"></div>
+</div>
+
 </body>
 </html>
+
+

@@ -53,3 +53,12 @@ header{
     text-align: center;
     color:aliceblue;
 }
+
+
+/* LOGIND FUNKTION */
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: red;
+}
