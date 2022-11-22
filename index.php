@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madoplevelser i egne omgivelser</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="modal.js" defer></script>
+
 </head>
 <body>
 <header>
@@ -17,9 +19,9 @@
   <li><a href="">KOKKE</a></li>
   <li><a href="">OM OS</a></li>
 
-  <a href="register.php" class=login_btn>
-    <p class="login_p">Login</p><img class="login_icon" src="assets/icon_user.svg" alt="">
-</a>
+  <div class="btn">
+      <div class="kontakt-call-to-action-2"><button class="knap-gul" id="button" type="button" name="button">Login</button></div>
+</div>
     </ul>
     </nav>
     <h1 class="hero_caption">
@@ -32,6 +34,31 @@
     </header>
    <main>
     </main>
+
+<div class="bg-modal">
+<div class="modal-content">
+<div id="form">
+  <div class="close">+</div>
+  <form onsubmit="event.preventDefault(); validateForm()">
+<h1>Login</h1>
+<label for="name">Email</label>
+<input type="text" id="fornavn">
+<small class="error"></small>
+
+<label for="efternavn">Kode</label>
+<input type="text" id="efternavn">
+<small class="error"></small>
+
+<div class="center">
+  <input  id="btn1" type="submit" value="Login">
+
+</div>
+  </form>
+
+</div>
+</div>
+</div>
+
 
 </body>
 </html>
