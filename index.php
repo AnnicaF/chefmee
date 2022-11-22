@@ -44,18 +44,12 @@
   <div class="close">+</div>
   <form onsubmit="event.preventDefault(); validateForm()">
 <h1>Login</h1>
-<label for="name">Email</label>
-<input type="text" id="fornavn">
+<input type="email" name="email" id="email" placeholder="Indtast din email">
 <small class="error"></small>
-
-<label for="efternavn">Kode</label>
-<input type="text" id="efternavn">
+<input type="password" name="password" id="kode" placeholder="Indtast din kode">
 <small class="error"></small>
-
-<div class="center">
-  <input  id="btn1" type="submit" value="Login">
-
-</div>
+<input type="submit" name="submit" value="login" class="form-btn">
+<p>Har du ikke en profil? <a href="register.php">Opret profil</a></p>
   </form>
 
 </div>

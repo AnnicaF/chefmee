@@ -1,6 +1,5 @@
-const fornavnInput = document.querySelector("#fornavn");
-const efternavnInput = document.querySelector("#efternavn");
 const email = document.querySelector("#email");
+const kodeInput = document.querySelector("#kode");
 const success = document.querySelector("#success");
 const errorNodes = document.querySelectorAll(".error");
 
@@ -10,15 +9,9 @@ function validateForm(){
 clearMessages();
 let errorFlag = false;
 
-if(fornavnInput.value.length < 1){
-  errorNodes[0].innerText = "Fornavn skal udfyldes";
+if(kodeInput.value.length < 1){
+  errorNodes[0].innerText = "Forkert kode";
   fornavnInput.classList.add("error-border");
-  errorFlag = true;
-}
-
-if(efternavnInput.value.length < 1){
-  errorNodes[1].innerText = "Efternavn skal udfyldes";
-  efternavnInput.classList.add("error-border");
   errorFlag = true;
 }
 
