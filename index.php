@@ -17,8 +17,9 @@
   <li><a href="">KOKKE</a></li>
   <li><a href="">OM OS</a></li>
 
+  <a href="register.php" class=login_btn>
     <p class="login_p">Login</p><img class="login_icon" src="assets/icon_user.svg" alt="">
-    
+</a>
     </ul>
     </nav>
     <h1 class="hero_caption">
