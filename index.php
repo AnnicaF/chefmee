@@ -34,6 +34,38 @@
     </header>
    <main>
     </main>
+    <div class="kontakt-knapper">
+      <div class="kontakt-call-to-action-2"><button class="knap-gul" id="button" type="button" name="button">Nyhedsbrev</button></div>
+    </div>
+    <div class="bg-modal">
+<div class="modal-content">
+<div id="form">
+  <div class="close">+</div>
+  <form onsubmit="event.preventDefault(); validateForm()">
+<h1>Nyhedsbrev</h1>
+<h2>Tilmeld dig nyhedsbrevet så du ikke går glip af vores AWESOME events, viden og nyheder!</h2>
+<label for="name">Fornavn:</label>
+<input type="text" id="fornavn" placeholder="Dit fornavn">
+<small class="error"></small>
+
+<label for="efternavn">Efternavn:</label>
+<input type="text" id="efternavn" placeholder="Dit efternavn">
+<small class="error"></small>
+
+<label for="email">Email:</label>
+<input id="email" placeholder="Din email">
+<small class="error"></small>
+
+<div class="center">
+  <input  id="btn1" type="submit" value="Tilmeld">
+  <p id="success"></p>
+
+</div>
+  </form>
+
+</div>
+</div>
+</div>
 
 <div class="bg-modal">
 <div class="modal-content">
