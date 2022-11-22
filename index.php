@@ -15,6 +15,15 @@ if(isset($_POST['submit'])){
     if(mysqli_num_rows($result) > 0){
         
         $error[] = 'Brugeren findes allerede!';
+
+    }else{
+        if($pass != $cpass){
+            $error[] = 'password not matched';
+        }else{
+            $insert = "INSERT INTO user_form(email, password) VALUES('$email, $pass')";
+            mysqli_query($conn, $insert);
+            header('location:test.php');
+        }
     }
 
 };

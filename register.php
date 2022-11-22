@@ -37,8 +37,7 @@
               <option value="o">Andet</option>
             </select>
           </div>
-
-          <div class="år"><input type="text" name="year" placeholder="skal jeg slettes?"></div>
+          
           <div class="fødselsdag"><input type="date" name="dob" placeholder="Date of birth"></div>
           <div class="mobilnummer"><input type="number" name="phone" placeholder="Telefonnummer"></div>
           <div class="logind-oplysninger">logind oplysninger</div>
