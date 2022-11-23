@@ -48,10 +48,10 @@
 
   <form action="" method="post" onsubmit="event.preventDefault(); validateForm()" class="form_container">
 <h1>Login</h1>
-<input type="email" name="email" id="email" placeholder="Indtast din email">
-<input type="password" name="password" id="kode" placeholder="Indtast din kode">
-<input type="password" name="cpassword" id="cdkode" placeholder="bekræft din kode">
-<input type="submit" name="submit" value="login" class="form-btn">
+<input class="modal_input" type="email" name="email" id="email" placeholder="Indtast din email">
+<input class="modal_input" type="password" name="password" id="kode" placeholder="Indtast din kode">
+<input class="modal_input" type="password" name="cpassword" id="cdkode" placeholder="bekræft din kode">
+<input class="modal_input" type="submit" name="submit" value="login" class="form-btn">
 <p>Har du ikke en profil? <a href="register.php">Opret profil</a></p>
   </form>
 
