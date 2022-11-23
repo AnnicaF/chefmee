@@ -1,3 +1,45 @@
+<?php
+
+@include 'dbh.inc.php';
+
+//if(isset($_POST['submit'])){
+
+    $first = mysqli_real_escape_string($conn, $_POST['first']);
+    $last = mysqli_real_escape_string($conn, $_POST['last']);
+    $gender = mysqli_real_escape_string($conn, $_POST['gender']);
+    $address = mysqli_real_escape_string($conn, $_POST['address']);
+    $postal = mysqli_real_escape_string($conn, $_POST['postal']);
+    $dob = mysqli_real_escape_string($conn, $_POST['dob']);
+    $phone = mysqli_real_escape_string($conn, $_POST['phone']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $psw = md5($_POST['psw']);
+    $cpsw = md5($_POST['cpsw']);
+
+    $select = " SELECT * FROM users WHERE email = '$email' && psw = '$psw' ";
+
+    //echo $select;
+    
+     $result = mysqli_query($conn, $select);
+
+    if(mysqli_num_rows($result) > 0){
+        
+       $error[] = 'Brugeren findes allerede!';
+
+     }else{
+         if($psw != $cpsw){
+             $error[] = 'kodeord stemmer ikke over ens';
+         }else{
+             $insert = "INSERT INTO users (user_first, user_last, user_gender, user_address, user_postal, user_dob, user_phone, user_email, user_psw) 
+             VALUES ('$first', '$last', '$gender', '$address', '$postal', '$dob', '$phone', '$email', '$psw');";
+            //  mysqli_query($conn, $insert);
+            //  header('location:login_form.php');
+            echo $insert;
+         }
+     }
+
+//};
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +57,45 @@
       ?></pre>
       -->
 
+<form action="register.php" method="post">
+<?php
+//     if(isset($error)){
+//         foreach($error as $error){
+//         echo '<span class="error-msg">'.$error.'</span>';
+//     };
+// };
+
+?>
+<input type="text" name="first" placeholder="Fornavn">
+<br>
+<input type="text" name="last" placeholder="Efternavn">
+<br>
+<select name="user_type"> 
+  <option value="f">Kvinde</option>
+  <option value="m">Mand</option>
+  <option value="o">Andet</option>
+</select>
+<br>
+<input type="text" name="address" placeholder="Adresse">
+<br>
+<input type="number" name="postal" placeholder="Postnummer">
+<br>
+<input type="date" name="dob" placeholder="Fødselsdato">
+<br>
+<input type="number" name="phone" placeholder="Mobil">
+<br>
+<input type="email" name="email" placeholder="Email">
+<br>
+<input type="password" name="psw" placeholder="kodeord">
+<br>
+<input type="password" name="cpsw" placeholder="Gentag kodeord">
+<br>
+<button type="submit" name="submit">Sign up</button>
+<p>Har du allerede en profil? <a href="login_form.php"></a></p>
+</form>
+
+<!-- 
+
       <form action="signup.inc.php" method="post"> 
         <div class="registre_container">
 
@@ -26,9 +107,9 @@
           <div class="fornavn"><input type="text" name="first" placeholder="Fornavn"></div>
           <div class="efternavn"><input type="text" name="last" placeholder="Efternavn"></div>
           <div class="adresse"><input type="text" name="address" placeholder="Adresse"></div>
-          <div class="etage"><input type="text" name="floor" placeholder="Etage"></div>
+        
           <div class="postnummer"><input type="number" name="postal" placeholder="Postnummer"></div>
-          <div class="by"><input type="text" name="city" placeholder="By"></div>
+    
         
           <div class="køn">
             <select name="user_type">
@@ -37,18 +118,17 @@
               <option value="o">Andet</option>
             </select>
           </div>
-          
+
           <div class="fødselsdag"><input type="date" name="dob" placeholder="Date of birth"></div>
           <div class="mobilnummer"><input type="number" name="phone" placeholder="Telefonnummer"></div>
           <div class="logind-oplysninger">logind oplysninger</div>
           <div class="email"><input type="email" name="email" placeholder="Email"></div>
           <div class="kodeord"><input type="password" name="psw" placeholder="Kodeord"></div>
-          <div class="gentagkode"><input type="re-password" name="psw" placeholder="Gentag kodeord"></div>
-          <div class="nyhedsbrev"><link rel="" href="">Nyhedsbrev</div>
-          <div class="vilkår"><link rel=""  href="">Vilkår</div>
+    
+  
           <div class="opret"><button type="submit" name="submit">OPRET</button></div>
 
         </div>
-    </form>
+    </form> -->
   </body>
 </html>
