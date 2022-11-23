@@ -324,7 +324,6 @@ header{
   }
   }
 
-
   
 /*Modal login*/
 .bg-modal{
@@ -499,3 +498,14 @@ header{
   }
   }
     
+
+/*login*/ 
+.form_container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
