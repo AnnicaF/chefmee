@@ -43,7 +43,7 @@
 
 <div class="bg-modal">
 <div class="modal-content">
-<div id="form">
+<div id="login_form">
   <div class="close">+</div>
 
   <form action="" method="post" onsubmit="event.preventDefault(); validateForm()" class="form_container">
