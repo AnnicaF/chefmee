@@ -34,8 +34,11 @@
             //  mysqli_query($conn, $insert);
             //  header('location:login_form.php');
             echo $insert;
+            if ($conn->connect_error) {die("Connection failed: " . $conn->connect_error);} echo "Connected successfully";
+    
          }
      }
+     
 
 //};
 
