@@ -57,7 +57,7 @@ header{
 
 /* LOGIND FUNKTION GRID*/
 
-.registre_container {  display: grid;
+.registre_container{  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
