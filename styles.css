@@ -500,7 +500,7 @@ header{
     
 
 /*login*/ 
-.form_container form .error-msg{
+.form_container #login_form .error-msg{
     margin:10px 0;
     display: block;
     background: blue;
