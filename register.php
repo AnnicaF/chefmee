@@ -68,7 +68,7 @@ if(isset($_POST['first'])){
       ?></pre>
       -->
 
-      <form action="signup.inc.php" method="post"> 
+      <form action="register.php" method="post"> 
         
 
           <div class="opretprofil">OPRET PROFIL</div>
