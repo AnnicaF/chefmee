@@ -392,7 +392,7 @@ header{
     color:black;
   }
   
-  input, textarea{
+  .modal_input, textarea{
     width:300px;
     padding: 10px;
     box-sizing: border-box;
@@ -407,7 +407,7 @@ header{
     text-align: center;
   }
   
-  input[type="submit"]{
+  .modal_input[type="submit"]{
     text-transform: uppercase;
     color: #666565;
     border: solid 1px #666565;
@@ -419,7 +419,7 @@ header{
     padding-right: 40px;
     margin-top: 50px;
   }
-  input[type="submit"]:hover{
+  .modal_input[type="submit"]:hover{
     color: #ffffff;
     background-color: #666565;
     transition: .3s;
