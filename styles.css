@@ -509,3 +509,53 @@ header{
     font-size: 20px;
 
 }
+
+/* User Profil */
+
+.profil_container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "profil_menu profil_menu profil_title profil_title profil_title profil_title profil_title profil_title profil_logud"
+    "profil_menu profil_menu . . . profil_title_2 . . ."
+    "profil_menu profil_menu . . . profil_billede . . ."
+    "profil_menu profil_menu . . . profil_retbillede . . ."
+    "profil_menu profil_menu . . profil_oplysninger profil_oplysninger profil_oplysninger . ."
+    "profil_menu profil_menu . . profil_navn profil_navn profil_navn . ."
+    "profil_menu profil_menu . . profil_adresse profil_adresse profil_adresse . ."
+    "profil_menu profil_menu . . profil_telefon profil_telefon profil_telefon . ."
+    "profil_menu profil_menu . . profil_mail profil_mail profil_mail . ."
+    "profil_menu profil_menu . . . profil_opdater . . .";
+}
+
+.profil_menu { grid-area: profil_menu;
+  background-color: #ea5a4a;
+}
+
+.profil_title { grid-area: profil_title;
+  background-color: #ea224a; }
+
+.profil_logud { grid-area: profil_logud; 
+  background-color: #893143;
+}
+
+.profil_title_2 { grid-area: profil_title_2; }
+
+.profil_billede { grid-area: profil_billede; }
+
+.profil_retbillede { grid-area: profil_retbillede; }
+
+.profil_oplysninger { grid-area: profil_oplysninger; }
+
+.profil_navn { grid-area: profil_navn; }
+
+.profil_adresse { grid-area: profil_adresse; }
+
+.profil_telefon { grid-area: profil_telefon; }
+
+.profil_mail { grid-area: profil_mail; }
+
+.profil_opdater { grid-area: profil_opdater; }
+
