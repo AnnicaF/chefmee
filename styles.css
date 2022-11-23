@@ -162,6 +162,11 @@ header{
   display: none;
 }
 
+input{
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+}
+
 /* SLUT - STYLING AF OPRET PROFIL */
 
 /* 
