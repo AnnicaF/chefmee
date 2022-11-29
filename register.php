@@ -34,9 +34,9 @@ if(isset($_POST['first'])){
          }else{
              $insert = "INSERT INTO users (user_first, user_last, user_gender, user_address, user_postal, user_dob, user_phone, user_email, user_psw) 
              VALUES ('$first', '$last', '$gender', '$address', '$postal', '$dob', '$phone', '$email', '$psw');";
-             //mysqli_query($conn, $insert);
-             //header('location:login_form.php');
-            echo $insert;
+            mysqli_query($conn, $insert);
+            header('location:login_form.php');
+            ///echo $insert;
             //Det her er blot en test og de to linjer over til udkommenteres//
           
     
@@ -70,7 +70,7 @@ if(isset($_POST['first'])){
 
       <form action="register.php" method="post"> 
         
-       
+      
           <input type="text" name="first" placeholder="Fornavn">
           <input type="text" name="last" placeholder="Efternavn">
           <input type="text" name="address" placeholder="Adresse">
