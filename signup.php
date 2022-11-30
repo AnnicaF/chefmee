@@ -4,30 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opret</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
  
-    <div class="form-container">
+    <div class="container">
         <div class="row">
-            <div class="col form-div">
+            <div class="col-md-4 offset-md-4 form-div">
             <form action="signup.php" method="post">
-                <h3 class="text center">Opret profil</h3>
+                <h3 class="text-center">Opret profil</h3>
 
-                <!-- <div class="alert alert-danger">
-                    <li>Brugernavn påkræves</li>
-                </div> -->
+                
+                <?php if(count($errors) > 0): ?>
+                    <div class="alert alert-danger">
+                     <?php foreach($errors as $error): ?>
+                            <li> <?php echo $error; ?></li>
+                    <?php endforeach; ?>
+                     </div> 
+
+                <?php endif; ?>
                 
                 <div class="form-group">
                 <label for="username">Brugernavn</label>
-                <input type="text" name="username"  value="<?php echo '$username'; ?>"class="form-control form-control-lg" placeholder="Indtast dit brugernavn">
+                <input type="text" name="username"  value="<?php echo $username; ?>"class="form-control form-control-lg" placeholder="Indtast dit brugernavn">
                 </div>
 
                 <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email"  value="<?php echo '$email'; ?> class="form-control form-control-lg" placeholder="Indtast din email">
+                <input type="email" name="email"  value="<?php echo $email; ?> "class="form-control form-control-lg" placeholder="Indtast din email">
                 </div>
 
                 <div class="form-group">
@@ -40,6 +47,7 @@
                 <input type="password" name="passwordConf" class="form-control form-control-lg" placeholder="Gentag din kode">
                 </div>
 
+                
                 <div class="form-group">
                 <button type="submit" name="signup-btn" class="btn btn-primary btn-block btn-lg">Opret</button>
                 </div>
