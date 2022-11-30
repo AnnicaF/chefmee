@@ -1,5 +1,7 @@
 <?php
+
 session_start();
+
 
 require 'dbh.inc.php';
 
@@ -8,7 +10,7 @@ $username = "";
 $email = "";
 
 //hvis der bliver klikket på opret knap
-if(isset($_POST['singup-btn'])){
+if(isset($_POST['signup-btn'])){
    
   $username = $_POST['username'];
   $email = $_POST['email'];
@@ -33,32 +35,30 @@ if(isset($_POST['singup-btn'])){
             }
 
             if($password !== $passwordConf){
-                $error['password'] = 'De to kodeord stemmer ikke over ens';
+                $errors['password'] = 'De to kodeord stemmer ikke over ens';
             }
+    // vi skal tjekke i databasen om der er to der har ens email        
+    $emailQuery = "SELECT * FROM user_test where email='$email' LIMIT 1";
+    $result = $conn->query($emailQuery);
 
-    $emailQuery = "SELECT * FROM user_test where email=? LIMIT 1";
-    $stmt = $conn->prepare($emailQuery);
-    $stmt->bind_param('s', $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $userCount = $result->num_rows;
-    $stmt->close();
+    if($conn->error != '') {
+        echo $conn->error;
+    }
 
-    if($userCount > 0){
-        $error['email'] = "emalien findes allerde";
+    if($result->num_rows == 1){
+        $errors['email'] = "Emailen findes allerde";
     }
 
     if(count($errors) === 0){
     $password = password_hash($password, PASSWORD_DEFAULT);
     $token = bin2hex(random_bytes(50));
-    $verified = false;
+    $verified = 0;
 
-    $sql = "INSERT INTO user_test (username, email, verified, token, password) VALUES (?, ?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('ssbss', $username, $email, $verified, $token, $password);
-
+    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`) VALUES ('$username', '$email', '$verified', '$token', '$password')";
+    $conn->query($sql);
+    $conn->error;
     
-    if($stmt->execute()){
+    if($conn->insert_id){
 
         // bruger login
         $user_id = $conn->insert_id;

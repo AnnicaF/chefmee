@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,9 +16,6 @@
             <form action="login.php" method="post">
                 <h3 class="text center">Login</h3>
 
-                <!-- <div class="alert alert-danger">
-                    <li>Brugernavn påkræves</li>
-                </div> -->
                 
                 <div class="form-group">
                 <label for="username">Brugernavn eller email</label>
