@@ -6,6 +6,8 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Brugerprofil</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,14 +17,18 @@ session_start();
         <div class="row">
             <div class="col-md-4 offset-md-4 form-div login"> 
 
+            <?php if(isset($_SESSION['message'])): ?>
             <div class="alert <?php echo $_SESSION['alert-class']; ?>">
-            <?php echo $_SESSION['message']; ?>
+            <?php 
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+            unset($_SESSION['alert-class']);
+            ?>
             </div>
+            <?php endif; ?>
 
-            <div class="alert alert-success">
-                Du er nu logget ind!
+           
 
-            </div>
             <h3>Velkommen <?php echo $_SESSION['username']; ?> </h3>
 
             <a href="#" class="logout">Logud</a>

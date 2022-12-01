@@ -1,3 +1,5 @@
+<?php require_once 'controllers/authController.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +18,19 @@
             <form action="login.php" method="post">
                 <h3 class="text center">Login</h3>
 
+                <?php if(count($errors) > 0): ?>
+                    <div class="alert alert-danger">
+                     <?php foreach($errors as $error): ?>
+                            <li> <?php echo $error; ?></li>
+                    <?php endforeach; ?>
+                     </div> 
+
+                <?php endif; ?>
+
                 
                 <div class="form-group">
-                <label for="username">Brugernavn eller email</label>
-                <input type="text" name="username" class="form-control form-control-lg" placeholder="Indtast dit brugernavn">
+                <label for="email">Email</label>
+                <input type="email" name="email" value="<?php echo $email; ?> "class="form-control form-control-lg" placeholder="Indtast din email">
                 </div>
 
 

@@ -79,3 +79,51 @@ if(isset($_POST['signup-btn'])){
     }
 
 }
+
+// This brugeren klikker på login 
+
+if(isset($_POST['login-btn'])){
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+ 
+  
+               // validering 
+             if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                  $errors['email'] = "Email ikke godkendt";
+              }
+  
+              if(empty($email)){
+                  $errors['email'] = "Email påkræves";
+              }
+  
+              if(empty($password)){
+                  $errors['password'] = "Kode påkræves";
+              }
+
+              if(count($errors) === 0){
+                    $sql = "SELECT * FROM user_test WHERE email='$email' LIMIT 1";
+                    $result = $conn->query($sql);
+                    $user = $result->fetch_assoc(); 
+
+                        if (password_verify($password, $user['password'])){
+                            // login success
+                            $_SESSION['id'] = $user['id'];
+                            $_SESSION['email'] = $user['email'];
+                            $_SESSION['verified'] = $user['verified'];
+                        
+                            //besked i nyt vindue
+                            $_SESSION['message'] = "Du er logget ind!";
+                            $_SESSION['alert-class'] = "alert-succes";
+                            header('location: profile.php');
+                            exit();
+
+                        }else {
+                            $errors['login_fail'] = "Forkert";
+                        } 
+
+               }
+
+
+
+}    
