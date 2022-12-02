@@ -70,7 +70,7 @@ header{
       "fornavn fornavn efternavn efternavn . email email email email"
       "adresse adresse adresse adresse . kodeord kodeord gentagkode gentagkode"
       "etage postnummer by by . . nyhedsbrev nyhedsbrev ."
-      "køn år fødselsdag fødselsdag . . vilkår vilkår ."
+      "køn fødselsdag fødselsdag . . vilkår vilkår ."
       "mobilnummer mobilnummer mobilnummer mobilnummer . . opret opret .";
   }
   
@@ -93,8 +93,6 @@ header{
   .by { grid-area: by; }
   
   .køn { grid-area: køn; }
-  
-  .år { grid-area: år; }
   
   .fødselsdag { grid-area: fødselsdag; }
   

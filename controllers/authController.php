@@ -15,7 +15,13 @@ if(isset($_POST['signup-btn'])){
   $username = $_POST['username'];
   $email = $_POST['email'];
   $password = $_POST['password'];
-  $passwordConf = $_POST['passwordConf'];  
+  $passwordConf = $_POST['passwordConf']; 
+  $firstName = $_POST['firstName']; 
+  $lastName = $_POST['lastName']; 
+  $address = $_POST['address']; 
+  $postal= $_POST['postal']; 
+  $phone = $_POST['phone']; 
+
 
              // validering 
             if(empty($username)){
@@ -37,6 +43,22 @@ if(isset($_POST['signup-btn'])){
             if($password !== $passwordConf){
                 $errors['password'] = 'De to kodeord stemmer ikke over ens';
             }
+            if(empty($firstName)){
+                $errors['firstName'] = "Fornavn påkræves";
+            }
+            if(empty($lastName)){
+                $errors['lastName'] = "Efternavn påkræves";
+            }
+            if(empty($address)){
+                $errors['address'] = "Adresse påkræves";
+            }
+            if(empty($postal)){
+                $errors['postal'] = "Postnummer påkræves";
+            }
+            if(empty($phone)){
+                $errors['phone'] = "Mobilnummer påkræves";
+            }
+
     // vi skal tjekke i databasen om der er to der har ens email        
     $emailQuery = "SELECT * FROM user_test where email='$email' LIMIT 1";
     $result = $conn->query($emailQuery);
@@ -54,7 +76,7 @@ if(isset($_POST['signup-btn'])){
     $token = bin2hex(random_bytes(50));
     $verified = 0;
 
-    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`) VALUES ('$username', '$email', '$verified', '$token', '$password')";
+    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone')";
     $conn->query($sql);
     $conn->error;
     
@@ -66,6 +88,7 @@ if(isset($_POST['signup-btn'])){
         $_SESSION['username'] = $username;
         $_SESSION['email'] = $email;
         $_SESSION['verified'] = $verified;
+    
     
         //besked i nyt vindue
         $_SESSION['message'] = "Du er logget ind!";
