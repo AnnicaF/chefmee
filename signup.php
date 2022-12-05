@@ -12,7 +12,8 @@
     
 
     <body>
-        <form action="signup.php" method="post" >
+        
+        <form action="signup.php" method="post">
 
             <div class="signup_container">
                 
