@@ -1,92 +1,155 @@
-<?php require_once 'controllers/authController.php'; ?>
+<html lang="da">
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opret</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
- <div id="registre_container">
-    <div id="opretprofil">
-    <h3>Opret profil</h3>
-    </div>
-   
-            <div id="logind-oplysninger">
-            <form action="signup.php" method="post">
-        
-                <?php if(count($errors) > 0): ?>
-                    <div class="alert alert-danger">
-                     <?php foreach($errors as $error): ?>
-                            <li> <?php echo $error; ?></li>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Opret pofil</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+        <?php require_once 'controllers/authController.php'; ?>
+
+            <?php if(count($errors) > 0): ?>
+                <div class="alert alert-danger">
+                    <?php foreach($errors as $error): ?>
+                        <li> <?php echo $error; ?></li>
                     <?php endforeach; ?>
-                     </div> 
+                </div> 
+        <?php endif; ?>
 
-                <?php endif; ?>
+    <body>
+        <form action="signup.php" method="post" >
+
+            <div class="signup_container">
                 
-                <div class="form-group">
-                <label for="username">Brugernavn</label>
-                <input type="text" name="username"  value="<?php echo $username; ?>"class="form-control form-control-lg" placeholder="Indtast dit brugernavn">
-                </div>
-
-                <div id="email">
-                <label for="email">Email</label>
-                <input type="email" name="email"  value="<?php echo $email; ?>" placeholder="Indtast din email">
-                </div>
-
-                <div id="kodeord">
-                <label for="password">Kode</label>
-                <input type="password" name="password" placeholder="Indtast din kode">
-                </div>
-
-                <div id="gentagkode">
-                <label for="passwordConf">Gentag kode</label>
-                <input type="password" name="passwordConf"  placeholder="Gentag din kode">
-                </div>
-
-            </div>
-            <div id="personoplysninger">
-
-                <div id="fornavn">
-                <label for="firstName">Fornavn</label>
-                <input type="text" name="firstName"
-                placeholder="Fornavn">
-                </div>
-
-                <div id="efternavn">
-                <label for="lastName">Efternavn</label>
-                <input type="text" name="lastName" placeholder="Efternavn">
-                </div>
-
-                <div id="adresse">
-                <label for="address">Adresse</label>
-                <input type="text" name="address"
-                placeholder="Din address">
-                </div>
-
-                <div id="postnummer">
-                <label for="postal">Postnummer</label>
-                <input type="number" name="postal"  placeholder="Dit postnummer">
-                </div>
-
-                <div id="mobilnummer">
-                <label for="phone">Mobilnummer</label>
-                <input type="number" name="phone"  placeholder="Dit nummer">
-                </div>
-
-            </div>
                 
-                <div id="opret">
-                <button type="submit" name="signup-btn">Opret</button>
-                </div>
-                    <p>Har du profil? <a href="login.php">Login nu</a></p>
-            </form>
+                    <p class="opretprofil">Opret profil</p>
+                
 
-        </div> 
-    </div>
+                
+        
+                <div class="google"><button>GOOGLE</button></div>
+                <div class="facebook"><button>FACEBOOK</button></div>
+                
+                <div class="person-oplysninger">Person oplysninger</div>
 
-</div> 
+                    <div class="fornavn">
+                        <label for="firstName">
+                            <input  type="text" name="first" placeholder="Fornavn"> 
+                        </label>
+                    </div>
+                
+                
+                    <div class="efternavn">
+                        <label for="lastName">
+                            <input type="text" name="lastName" placeholder="Efternavn">
+                        </label>
+                    </div>
+                
+
+                    <div class="etage">
+                        <label for="">
+                            <input type="text" name="floor" placeholder="Etage">
+                        </label>
+                    </div>
+                
+            
+                    <div class="adresse">
+                        <label for="address">
+                            <input type="text" name="address" placeholder="Adresse">
+                        </label>
+                    </div>
+                
+
+                    <div class="postnummer">
+                        <label for="postal">
+                            <input type="number" name="postal" placeholder="Postnummer">
+                        </label>
+                    </div>
+              
+
+                    <div class="by">
+                        <label for="city">
+                            <input type="text" name="city" placeholder="By">
+                        </label>
+                    </div>
+             
+        
+               
+                    <select class="kon" name="user_type">
+                        <option value="f">Kvinde</option>
+                        <option value="m">Mand</option>
+                        <option value="o">Andet</option>
+                    </select>
+               
+
+                    <div class="fodselsdag">
+                        <label for="">
+                            <input  type="date" name=""  placeholder="Vælg din fødelsdag">
+                        </label>
+                    </div>
+                
+               
+                    <div class="mobilnummer">
+                        <label for="phone">
+                            <input type="number" name="phone"  placeholder="Dit nummer">
+                        </label>
+                    </div>
+              
+
+                    <div class="logind-oplysninger">Logind oplysninger</div>
+                
+                    <div class="form-group">
+                        <label for="username">
+                            <input type="text" name="username"  value="<?php echo $username; ?>"class="form-control form-control-lg" placeholder="Indtast dit brugernavn">
+                        </label>
+                    </div>
+               
+
+                    <div class="email">
+                        <label for="email">
+                            <input type="email" name="email"  value="<?php echo $email; ?>" placeholder="Indtast din email">
+                        </label>
+                    </div>
+                
+                    <div class="kodeord">
+                        <label for="password">
+                            <input type="password" name="password" placeholder="Indtast din kode">
+                        </label>
+                    </div>
+                
+                    <div class="gentagkode">
+                        <label for="passwordConf">
+                            <input type="password" name="passwordConf"  placeholder="Gentag din kode">
+                        </label>
+                    </div>
+            
+            
+                    <div class="vilkar">
+                        <link rel=""  href="">
+                            <input type="checkbox" checked="checked">Vilkår
+                            <label class="container">
+                                <span class="checkmark"></span>
+                            </label>
+                    </div>
+                    
+                    <div class="nyhedsbrev">
+                        <link rel=""  href="">
+                        <input  type="checkbox" checked="checked">Nyhedsbrev
+                        <label class="container">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                        
+                    <button class="opret" type="submit" name="signup-btn">Opret</button>     
+                     
+            </div>
+                    <p class="har-profil">Har du en profil? <a href="login.php">Log på her</a></p>
+        </form>
+    </body>  
 </html>
+
+

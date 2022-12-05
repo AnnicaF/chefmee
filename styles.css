@@ -1,3 +1,113 @@
+/* LOGIND FUNKTION GRID*/
+
+.signup_container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.9fr 1.9fr 1.4fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
+    ". google google . . . . . ."
+    ". facebook facebook . . . . . ."
+    "person-oplysninger person-oplysninger person-oplysninger . . logind-oplysninger logind-oplysninger logind-oplysninger ."
+    "fornavn fornavn efternavn efternavn . form-group form-group email email"
+    "adresse adresse adresse adresse . kodeord kodeord gentagkode gentagkode"
+    "etage postnummer by by . . nyhedsbrev nyhedsbrev ."
+    "kon kon fodselsdag fodselsdag . . vilkar vilkar ."
+    "mobilnummer mobilnummer mobilnummer mobilnummer . . opret opret .";
+}
+
+.google { grid-area: google; }
+
+.facebook { grid-area: facebook; }
+
+.fornavn { grid-area: fornavn; }
+
+.efternavn { grid-area: efternavn; }
+
+.adresse { grid-area: adresse; }
+
+.etage { grid-area: etage; }
+
+.postnummer { grid-area: postnummer; }
+
+.by { grid-area: by; }
+
+.mobilnummer { grid-area: mobilnummer; }
+
+.logind-oplysninger { grid-area: logind-oplysninger; }
+
+.kodeord { grid-area: kodeord; }
+
+.gentagkode { grid-area: gentagkode; }
+
+.nyhedsbrev { grid-area: nyhedsbrev; }
+
+.opret { grid-area: opret; }
+
+.opretprofil { grid-area: opretprofil; }
+
+.email { grid-area: email; }
+
+.kon { grid-area: kon; }
+
+.person-oplysninger { grid-area: person-oplysninger; }
+
+.form-group { grid-area: form-group; }
+
+.vilkar { grid-area: vilkar; }
+
+.fodselsdag { grid-area: fodselsdag; }
+
+/* SLUT - LOGIND FUNKTION GRID*/
+
+
+ /* START - STYLING AF OPRET PROFIL */
+
+.signup_container{
+    height: 500px;
+    width: 1100px;
+    margin-left: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+    
+}
+
+.opretprofil{
+  text-align: center;
+  margin-top: 25px;
+}
+
+.opret {
+  background-color: #ea5a4a;
+  width: 100%;
+  text-align: center;
+  border-radius: 50px;
+  height: 30px;
+  border-style: none;
+  color: white;
+}
+
+input{
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+}
+
+.har-profil{
+  text-align: center;
+
+}
+/* SLUT - STYLING AF OPRET PROFIL */
+
+
+
+
+
 ul{
     list-style-type: none;
     display: block;
@@ -54,118 +164,6 @@ header{
     color:aliceblue;
 }
 
-
-/* LOGIND FUNKTION GRID*/
-
-.registre_container{  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 8px 8px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
-      ". google google . . . . . ."
-      ". facebook facebook . . . . . ."
-      "personoplysninger personoplysninger personoplysninger . . logind-oplysninger logind-oplysninger logind-oplysninger ."
-      "fornavn fornavn efternavn efternavn . email email email email"
-      "adresse adresse adresse adresse . kodeord kodeord gentagkode gentagkode"
-      "etage postnummer by by . . nyhedsbrev nyhedsbrev ."
-      "køn fødselsdag fødselsdag . . vilkår vilkår ."
-      "mobilnummer mobilnummer mobilnummer mobilnummer . . opret opret .";
-  }
-  
-  .google { grid-area: google; }
-  
-  .facebook { grid-area: facebook; }
-  
-  .personoplysninger { grid-area: personoplysninger; }
-  
-  .fornavn { grid-area: fornavn; }
-  
-  .efternavn { grid-area: efternavn; }
-  
-  .adresse { grid-area: adresse; }
-  
-  .etage { grid-area: etage; }
-  
-  .postnummer { grid-area: postnummer; }
-  
-  .by { grid-area: by; }
-  
-  .køn { grid-area: køn; }
-  
-  .fødselsdag { grid-area: fødselsdag; }
-  
-  .mobilnummer { grid-area: mobilnummer; }
-  
-  .logind-oplysninger { grid-area: logind-oplysninger; }
-  
-  .email { grid-area: email; }
-  
-  .kodeord { grid-area: kodeord; }
-  
-  .gentagkode { grid-area: gentagkode; }
-  
-  .nyhedsbrev { grid-area: nyhedsbrev; }
-  
-  .vilkår { grid-area: vilkår; }
-  
-  .opret { 
-      grid-area: opret; 
-  }    
-
-  .opretprofil { grid-area: opretprofil; }
-
-/* SLUT - LOGIND FUNKTION GRID*/
-
- /* START - STYLING AF OPRET PROFIL */
-
-.registre_container{
-    height: 500px;
-    width: 1100px;
-    margin-left: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
-    
-}
-
-.opretprofil{
-  text-align: center;
-  margin-top: 25px;
-}
-
-.opret {
-  background-color: #ea5a4a;
-  width: 100%;
-  text-align: center;
-  border-radius: 50px;
-  height: 30px;
-  border-style: none;
-  color: white;
-}
-
-.bg-modal{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-input{
-  border-radius: 8px;
-  border: 1px solid lightgrey;
-}
-
-/* SLUT - STYLING AF OPRET PROFIL */
 
 /*
   
