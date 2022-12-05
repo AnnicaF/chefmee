@@ -10,7 +10,7 @@ const router = createRouter({
 		},
 		{
 			path: '/about',
-			component: () => import('chefmee/sidebarvue/src/views/About.vue')
+			component: () => import('../views/About.vue')
 		},
 	],
 })
