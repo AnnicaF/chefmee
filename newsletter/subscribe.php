@@ -14,8 +14,10 @@ $query = "SELECT email FROM $table where email='$email'";
 $result = $dbc->query($query);
 
     if($result->num_rows > 0){
-        echo 'Denne email er allerede brugt. '
+        echo 'Denne email er allerede brugt. ';
     }
+
+        else{
 
 
 
@@ -27,6 +29,6 @@ mysqli_query($dbc, $query)
 
     echo 'Du har nu tilmeldt dig vores nyhedsbrev, tak.';
 
+        }
 
-
-?>
+mysqli_close($dbc);
