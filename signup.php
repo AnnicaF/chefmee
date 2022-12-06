@@ -57,14 +57,14 @@
                 <?php endif; ?>
 
                     <div class="fornavn">
-                        <label for="firstName">
-                            <input  type="text" name="firstName" placeholder="Fornavn"> 
+                        <label class="input_fornavn" for="firstName">
+                            <input type="text" name="firstName" placeholder="Fornavn"> 
                         </label>
                     </div>
                 
                 
                     <div class="efternavn">
-                        <label for="lastName">
+                        <label class="input_efternavn" for="lastName">
                             <input type="text" name="lastName" placeholder="Efternavn">
                         </label>
                     </div>
@@ -78,7 +78,7 @@
                 
             
                     <div class="adresse">
-                        <label for="address">
+                        <label class="input_adresse" for="address">
                             <input type="text" name="address" placeholder="Adresse">
                         </label>
                     </div>
@@ -108,14 +108,14 @@
 
                     <div class="fodselsdag">
                         <label for="">
-                            <input  type="date" name=""  placeholder="Vælg din fødelsdag">
+                            <input  type="date" name=""  placeholder="Vælg fødelsdag">
                         </label>
                     </div>
                 
                
                     <div class="mobilnummer">
-                        <label for="phone">
-                            <input type="number" name="phone"  placeholder="Dit nummer">
+                        <label class="input_mobilnummer" for="phone">
+                            <input type="number" name="phone"  placeholder="Telefonnummer">
                         </label>
                     </div>
               
@@ -123,8 +123,8 @@
                     <div class="logind-oplysninger">Logind oplysninger</div>
                 
                     <div class="form-group">
-                        <label for="username">
-                            <input type="text" name="username"  value="<?php echo $username; ?>"class="form-control form-control-lg" placeholder="Indtast dit brugernavn">
+                        <label class="input_brugernavn" for="username">
+                            <input type="text" name="username"  value="<?php echo $username; ?>"class="form-control form-control-lg" placeholder="Indtast brugernavn">
                         </label>
                     </div>
                
@@ -136,14 +136,14 @@
                     </div>
                 
                     <div class="kodeord">
-                        <label for="password">
-                            <input type="password" name="password" placeholder="Indtast din kode">
+                        <label class="input_kode" for="password">
+                            <input type="password" name="password" placeholder="Opret kodeord">
                         </label>
                     </div>
                 
                     <div class="gentagkode">
-                        <label for="passwordConf">
-                            <input type="password" name="passwordConf"  placeholder="Gentag din kode">
+                        <label class="input_gentagkode" for="passwordConf">
+                            <input type="password" name="passwordConf"  placeholder="Gentag kodeord">
                         </label>
                     </div>
             
