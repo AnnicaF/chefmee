@@ -39,20 +39,15 @@
             <a href="newsletter/index.php">Tilmeld nyhedsbrev</a>
             </h3>
            
-        </header>
-<<<<<<< Updated upstream
-        
-        </div>
-
-=======
+       
   
-        <main class="test">
+        <div class="test">
             <article class="trustpilot">
                 <section>
-                        <div class="one">Vores kunder siger</div>
+                        <div class="one"> <strong>Vores kunder siger:</strong></div>
                         <div class="two">
                             <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk" style="color: #00b67a;">
-                                Fremragende			</a>
+                               <strong>Fremragende</strong> </a>
                         </div>
 
                         <div class="trustpilot">
@@ -83,12 +78,12 @@
                                 </g>
                                 </svg>
                             </div>
-        </main>
+</div>
+</header>
 
             <div class="kontakt-knapper">
                  <div class="kontakt-call-to-action-2"><button class="knap-gul" id="button" type="button" name="button">Nyhedsbrev</button></div>
             </div>
->>>>>>> Stashed changes
 
         <!-- <div class="bg-modal">
             <div class="modal-content">
