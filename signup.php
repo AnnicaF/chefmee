@@ -37,10 +37,10 @@
 
                 
                 <div> <a href="#" id="google" class="google btn">
-          <i class="fa fa-google fa-fw"></i> Login with Google
+          <i class="fa fa-google fa-fw"></i> Log ind med Google
         </a> </div>
                 <a href="#" id="fb_btn" class="fb btn">
-          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+          <i class="fa fa-facebook fa-fw"></i> Log ind med Facebook
         </a>
                 
                 <div class="person-oplysninger">Person oplysninger</div>
