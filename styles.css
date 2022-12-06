@@ -156,6 +156,16 @@ header{
     text-align: center;
     color:aliceblue;
 } 
+
+#fb_btn {
+  background-color: #3B5998;
+  color: white;
+}
+#google{
+  background-color: white;
+  color: #222222;
+  border: solid 1px #222;
+}
 /* SLUT - STYLING AF FORSIDE */
 
 

@@ -15,6 +15,7 @@
         <header>
             <nav class="nav_bar">
                 <ul>
+                    
                     <li><a href="">MENUER</a></li>
                     <li><a href="">KOKKE</a></li>
                     <li><a href="">OM OS</a>hej</li>
@@ -35,8 +36,12 @@
                     <p class="opretprofil">Opret profil</p>
 
                 
-                <div class="google"><button>GOOGLE</button></div>
-                <div class="facebook"><button>FACEBOOK</button></div>
+                <div> <a href="#" id="google" class="google btn">
+          <i class="fa fa-google fa-fw"></i> Login with Google
+        </a> </div>
+                <a href="#" id="fb_btn" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
                 
                 <div class="person-oplysninger">Person oplysninger</div>
 
