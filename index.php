@@ -32,16 +32,16 @@
             
             <h3 class="hero_caption-2">
                 Tillad tid til værtskab
+            <br>
+            <br>
+            <br>
+            <a href="newsletter/index.php">Tilmeld nyhedsbrev</a>
             </h3>
+           
         </header>
   
-        <main>
+        
 
-        </main>
-
-            <div class="kontakt-knapper">
-                 <div class="kontakt-call-to-action-2"><button class="knap-gul" id="button" type="button" name="button">Nyhedsbrev</button></div>
-            </div>
 
         <!-- <div class="bg-modal">
             <div class="modal-content">

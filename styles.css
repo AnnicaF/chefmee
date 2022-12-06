@@ -165,10 +165,20 @@ nav ul li a{
     height: 500px;
 }
 
-.hero_caption, .hero_caption-2{
+.hero_caption, .hero_caption-2 {
     text-align: center;
     color:aliceblue;
 } 
+
+.hero_caption-2 a{
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  border: solid 0.5px aliceblue;
+  border-radius: 5px;
+  padding: 5px;
+  background-color:aliceblue
+}
 
 #facebook {
   background-color: #3B5998;
@@ -192,6 +202,11 @@ nav ul li a{
 
 input{
 width: 100%;
+}
+
+
+.nyhedsbrev{
+  text-align: center;
 }
 /* SLUT - STYLING AF FORSIDE */
 
