@@ -61,8 +61,7 @@
 /* SLUT - LOGIND FUNKTION GRID*/
 
 
- /* START - STYLING AF OPRET PROFIL */
-
+/* START - STYLING AF OPRET PROFIL */
 .signup_container{
     height: 500px;
     width: 1100px;
@@ -102,9 +101,7 @@ input{
 /* SLUT - STYLING AF OPRET PROFIL */
 
 
-
 /* START - STYLING AF FORSIDE */
-
 ul{
     list-style-type: none;
     display: block;
@@ -159,19 +156,14 @@ header{
     text-align: center;
     color:aliceblue;
 } 
-.logind
-
 /* SLUT - STYLING AF FORSIDE */
+
 
 /* START - LOGIND FUNKTIONE */ 
 .register{
   display: block;
 }
 /* SLUT - LOGING FUNKTION */ 
-
-
-/*
-  
 
   .modal-content{
     width: 500px;
@@ -332,7 +324,7 @@ header{
     position: fixed;
     padding: 30px;
   }
-  }
+}
 
   
 /*Modal login*/
