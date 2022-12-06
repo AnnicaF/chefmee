@@ -198,6 +198,7 @@ width: 100%;
 /* nyhedsbrev style*/
 
 .nyhedsbrev_container{
+  color:aliceblue;
   background-color: #13717A;
   text-align: center;
   height: 500px;
@@ -239,8 +240,9 @@ width: 100%;
 
 }
 
-.nyhedsbrev_input{
+.nyhedsbrev_input input{
   height: 20px;
+  width: 100px;
 }
 
 .nyhedsbrev_btn{

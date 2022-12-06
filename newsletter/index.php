@@ -14,15 +14,18 @@
 
 <form action="subscribe.php">
     <label for="first_name"> 
-        <input class="nyhedsbrev_input" type="text" name="first_name">Fornavn
+        <p>Fornavn</p>
+        <input class="nyhedsbrev_input" type="text" name="first_name">
 </label><br>
 
     <label for="last_name">
-    <input class="nyhedsbrev_input" type="text" name="first_name">Efternavn
+    <p>Efternavn</p>
+    <input class="nyhedsbrev_input" type="text" name="first_name">
 </label><br>
 
-    <label for="email"> 
-        <input class="nyhedsbrev_input" type="text" name="email">Email 
+    <label for="email">
+    <p>Email</p> 
+        <input class="nyhedsbrev_input" type="text" name="email"> 
     </label><br>
 
     <input class="nyhedsbrev_btn" type="submit" name="submit" value="Tilmeld">
