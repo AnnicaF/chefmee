@@ -16,7 +16,7 @@
         <header>
             <nav class="nav_bar-box">
                 <ul>
-                    
+                    <img class="logo" src="assets/chefmelogo.png" alt="logo">
                     <li><a href="">MENUER</a></li>
                     <li><a href="">KOKKE</a></li>
                     <li><a href="">OM OS</a></li>
