@@ -180,6 +180,17 @@ nav ul li a{
   background-color:aliceblue
 }
 
+.nyhedsbrev_afmeld a{
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  border: solid 0.5px aliceblue;
+  border-radius: 5px;
+  padding: 5px;
+  background-color:aliceblue;
+  float: right;
+}
+
 #facebook {
   background-color: #3B5998;
   color: white;

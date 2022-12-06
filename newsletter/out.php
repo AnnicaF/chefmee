@@ -2,6 +2,6 @@
 
 <form action="unsubscribe.php" method="POST">
     <label for="email">Email: <input type="text" name="email"></label> <br>
-    <button for="submit" value="Frameld">Fremeld</button>
+    <button for="submit" value="Frameld">Frameld</button>
 
 </form>
