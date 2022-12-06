@@ -1,8 +1,8 @@
 /* START - LOGIND FUNKTION GRID*/
 .signup_container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 8px 8px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
     "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
@@ -98,6 +98,18 @@ input{
 .har-profil{
   text-align: center;
 }
+
+.kon{
+  width: 50%;
+  height: 50%;
+}
+
+.etage{
+  width: 50%;
+  height: 50%;
+}
+
+
 /* SLUT - STYLING AF OPRET PROFIL */
 
 
@@ -147,7 +159,7 @@ nav ul li a{
     margin-left: 50px;
 }
 
-header{
+.header_index{
     background-image: url(assets/bg_img.jpg);
     height: 500px;
 }
@@ -325,6 +337,12 @@ header{
     padding: 30px;
   }
 }
+
+/* START - HEADER SIGNUP */
+.nav_bar-box{
+  background-color: #666565;
+}
+/* SLUT - HEADER SIGNUP */ 
 
   
 /*Modal login*/
