@@ -19,7 +19,7 @@
 
 .google { grid-area: google; }
 
-#facebook { grid-area: facebook; }
+.facebook { grid-area: facebook; }
 
 .fornavn { grid-area: fornavn; }
 

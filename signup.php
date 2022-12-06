@@ -37,10 +37,10 @@
                     <p class="opretprofil">Opret profil</p>
 
                 
-            <div> <a href="#" id="google" class="google btn">
+            <div class="google"> <a href="#" id="google" class="google btn">
           <i class="fab fa-google fa-fw"></i> Log ind med Google
         </a> </div>
-               <div> <a href="#" id="facebook" class="fb btn">
+               <div class="facebook"> <a href="#" id="facebook" class="fb btn">
           <i class="fab fa-facebook fa-fw"></i> Log ind med Facebook
         </a></div>
                 
