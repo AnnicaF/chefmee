@@ -10,9 +10,8 @@
     </head>
     
     <body>
-        <header>
+        <header class="header_index">
             <nav class="nav_bar">
-
                 <ul>
                     <img class="logo" src="assets/chefmelogo.png" alt="logo">
                     <li><a href="">MENUER</a></li>

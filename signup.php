@@ -13,12 +13,12 @@
 
     <body>
         <header>
-            <nav class="nav_bar">
+            <nav class="nav_bar-box">
                 <ul>
                     
                     <li><a href="">MENUER</a></li>
                     <li><a href="">KOKKE</a></li>
-                    <li><a href="">OM OS</a>hej</li>
+                    <li><a href="">OM OS</a></li>
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
