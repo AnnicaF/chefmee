@@ -35,8 +35,8 @@ session_start();
 
             <?php if(!$_SESSION['verified']): ?>
             <div class="alert alert-warning">
-                Du skal godkende din profil.
-                Vi har sendt et link på din email som du skal godkende
+                For at aktivere profil
+                skal du klikke på link sendt på din email
                 <strong> <?php echo $_SESSION['email']; ?></strong>
             </div>
             <?php endif; ?>
