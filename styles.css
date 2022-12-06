@@ -221,6 +221,15 @@ width: 100%;
 }
 /* SLUT - STYLING AF FORSIDE */
 
+main {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+}
+
+.trustpilot{
+  width: 30%;
+}
 /* START - HEADER SIGNUP */
 .nav_bar-box{
   background-color: #cacaca;
