@@ -20,7 +20,9 @@
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Logind</button>
+                            
+                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
+                            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
                         </div>
                     </div>
                 </ul>
