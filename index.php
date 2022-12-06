@@ -39,8 +39,7 @@
             </h3>
            
         </header>
-        <div class="nyhedsbrev_afmeld">
-        <a href="newsletter/out.php">Afmeld nyhedsbrev</a>
+        
         </div>
 
 
@@ -61,5 +60,11 @@
                 </div>
             </div>
         </div> -->
+
+        <footer>
+        <div class="nyhedsbrev_afmeld">
+        <a href="newsletter/out.php">Afmeld nyhedsbrev</a>
+
+        </footer>
     </body>
 </html>
