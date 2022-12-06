@@ -36,12 +36,12 @@
                     <p class="opretprofil">Opret profil</p>
 
                 
-                <div> <a href="#" id="google" class="google btn">
+            <div> <a href="#" id="google" class="google btn">
           <i class="fa fa-google fa-fw"></i> Log ind med Google
         </a> </div>
-                <a href="#" id="fb_btn" class="fb btn">
+               <div> <a href="#" id="facebook" class="fb btn">
           <i class="fa fa-facebook fa-fw"></i> Log ind med Facebook
-        </a>
+        </a></div>
                 
                 <div class="person-oplysninger">Person oplysninger</div>
 

@@ -19,7 +19,7 @@
 
 .google { grid-area: google; }
 
-.facebook { grid-area: facebook; }
+#facebook { grid-area: facebook; }
 
 .fornavn { grid-area: fornavn; }
 
@@ -172,7 +172,7 @@ nav ul li a{
     color:aliceblue;
 } 
 
-#fb_btn {
+#facebook {
   background-color: #3B5998;
   color: white;
   border-radius: 50px;
