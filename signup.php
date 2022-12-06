@@ -108,7 +108,7 @@
 
                     <div class="fodselsdag">
                         <label for="">
-                            <input  type="date" name=""  placeholder="Vælg din fødelsdag">
+                            <input  type="date" name="dob"  placeholder="Vælg din fødelsdag">
                         </label>
                     </div>
                 
