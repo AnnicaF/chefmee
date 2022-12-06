@@ -111,10 +111,6 @@ input{
   width: 50%;
   height: 50%;
 }
-
-
-
-
 /* SLUT - STYLING AF OPRET PROFIL */
 
 
@@ -152,7 +148,7 @@ nav ul li a{
 }
 
 .logo{
-    width: 7%;
+    width: 80px;
 }
 
 .login_icon{

@@ -13,7 +13,7 @@
         <header class="header_index">
             <nav class="nav_bar">
                 <ul>
-                    <img class="logo" src="assets/chefmelogo.png" alt="logo">
+                    <a href="index.php"><img class="logo" src="assets/chefmelogo.png" alt="logo"></a>                    <li><a href="">MENUER</a></li>
                     <li><a href="">MENUER</a></li>
                     <li><a href="">KOKKE</a></li>
                     <li><a href="">OM OS</a></li>
