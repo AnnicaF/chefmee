@@ -79,6 +79,8 @@
 .opretprofil{
   text-align: center;
   margin-top: 25px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .opret {
@@ -176,18 +178,24 @@ nav ul li a{
   background-color: #3B5998;
   color: white;
   border-radius: 50px;
-  width: 200px;
-  height: 37px;
-  font-size: 14px;
+  width: 180px;
+  height: 33px;
+  font-size: 11px;
+  align-content: center;
 }
 #google{
   background-color: white;
   color: #222222;
   border: solid 1px rgb(97, 96, 96);
   border-radius: 50px;
-  width: 200px;
-  height: 37px;
-  font-size: 14px;
+  width: 180px;
+  height: 33px;
+  font-size: 11px;
+  align-content: center;
+}
+
+input{
+width: 100%;
 }
 /* SLUT - STYLING AF FORSIDE */
 
