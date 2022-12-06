@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <header class="header_hero">
+        <header>
             <nav class="nav_bar">
 
                 <ul>
@@ -21,7 +21,7 @@
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
+                            <button class="knap-gul" id="button" type="button" name="button">Logind</button>
                         </div>
                     </div>
                 </ul>
