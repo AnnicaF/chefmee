@@ -198,11 +198,11 @@ width: 100%;
 /* nyhedsbrev style*/
 
 .nyhedsbrev_container{
-  background-color: #222;
+  background-color: #13717A;
   text-align: center;
   height: 500px;
     width: 1150px;
-    margin-left: 50px;
+    margin-left: 130px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -233,7 +233,34 @@ width: 100%;
   background-color:aliceblue;
   float: right;
 }
+
+.newsletter__title{
+  color:aliceblue;
+
+}
+
+.nyhedsbrev_input{
+  height: 20px;
+}
+
+.nyhedsbrev_btn{
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  width:100px;
+  height: 30px;
+  background: aliceblue;
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  
+
+}
 /* SLUT - STYLING AF FORSIDE */
+
 
 .test {
   display: block;
