@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <header>
+        <header class="header_hero">
             <nav class="nav_bar">
 
                 <ul>

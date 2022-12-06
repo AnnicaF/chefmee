@@ -150,7 +150,7 @@ nav ul li a{
     margin-left: 50px;
 }
 
-header{
+.header_hero{
     background-image: url(assets/bg_img.jpg);
     height: 500px;
 }
@@ -170,7 +170,7 @@ header{
 /* SLUT - LOGING FUNKTION */ 
 
 
-/*
+
   
 
   .modal-content{
@@ -336,7 +336,7 @@ header{
 
   
 /*Modal login*/
-/* .bg-modal{
+ .bg-modal{
     height: 100%;
     width: 100%;
     position: absolute;
