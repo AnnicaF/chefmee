@@ -12,7 +12,22 @@
     
 
     <body>
-        
+        <header>
+            <nav class="nav_bar">
+                <ul>
+                    <li><a href="">MENUER</a></li>
+                    <li><a href="">KOKKE</a></li>
+                    <li><a href="">OM OS</a></li>
+
+                    <div class="btn">
+                        <div class="kontakt-call-to-action-2">
+                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>    
+
         <form action="signup.php" method="post">
 
             <div class="signup_container">
