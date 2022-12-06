@@ -43,7 +43,7 @@
                  <div class="kontakt-call-to-action-2"><button class="knap-gul" id="button" type="button" name="button">Nyhedsbrev</button></div>
             </div>
 
-        <div class="bg-modal">
+        <!-- <div class="bg-modal">
             <div class="modal-content">
                 <div id="login_form">
                     <div class="close">+</div>
@@ -59,6 +59,6 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
