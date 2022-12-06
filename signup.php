@@ -18,7 +18,7 @@
                 <img class="logo" src="assets/chefmelogo.png" alt="logo">
                     <li><a href="">MENUER</a></li>
                     <li><a href="">KOKKE</a></li>
-                    <li><a href="">OM OS</a></li>
+                    <li><a href="">OM OS</a>hej</li>
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
