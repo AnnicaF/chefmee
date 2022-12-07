@@ -84,9 +84,7 @@
 </div>
 </header>
 
-            <div class="kontakt-knapper">
-                 <div class="kontakt-call-to-action-2"><button class="knap-gul" id="button" type="button" name="button">Nyhedsbrev</button></div>
-            </div>
+    
 
         <footer>
         <div class="nyhedsbrev_afmeld">
