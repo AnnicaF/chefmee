@@ -39,7 +39,7 @@
 <p><strong>Tema: </strong>Japansk</p>
 <p><strong>Kok:</strong> Anders Jensen </p>
 <br>
-<p><strong>Total:</strong> 1.500,00kr</p>
+<p><strong>Total:</strong> 1.537,00kr</p>
 <br>
 <p><strong>Bemærkninger:</strong> 1 person er allergisk for glutten.</p>
 </div>
@@ -57,7 +57,7 @@
         <p><strong>Tema:</strong> Dansk</p>
         <p><strong>Kok:</strong> Jim Karlo </p>
         <br>
-        <p><strong>Total:</strong> 6.075,00kr</p>
+        <p><strong>Total:</strong> 6.375,00kr</p>
         <br>
         <p><strong>Bemærkninger:</strong> Vi ønsker risalamande til dessert.</p>
     </div>
