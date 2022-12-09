@@ -98,7 +98,7 @@
              
         
                
-                    <select class="kon" name="user_type">
+                    <select class="kon" name="gender">
                         <option value="f">Kvinde</option>
                         <option value="m">Mand</option>
                         <option value="o">Andet</option>
