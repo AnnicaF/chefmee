@@ -2,7 +2,6 @@
 
 session_start();
 
-
 require 'dbh.inc.php';
 
 $errors = array();
@@ -20,7 +19,8 @@ if(isset($_POST['signup-btn'])){
   $lastName = $_POST['lastName']; 
   $address = $_POST['address']; 
   $postal= $_POST['postal']; 
-  $phone = $_POST['phone']; 
+  $phone = $_POST['phone'];
+  $gender = $_POST['gender'];  
 
 
              // validering 
@@ -58,6 +58,9 @@ if(isset($_POST['signup-btn'])){
             if(empty($phone)){
                 $errors['phone'] = "Mobilnummer påkræves";
             }
+            if(empty($gender)){
+                $errors['gender'] = "Køn påkræves";
+            }
 
     // vi skal tjekke i databasen om der er to der har ens email        
     $emailQuery = "SELECT * FROM user_test where email='$email' LIMIT 1";
@@ -76,7 +79,7 @@ if(isset($_POST['signup-btn'])){
     $token = bin2hex(random_bytes(50));
     $verified = 0;
 
-    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone')";
+    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`, `gender`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone', '$gender')";
     $conn->query($sql);
     $conn->error;
     
@@ -103,7 +106,7 @@ if(isset($_POST['signup-btn'])){
 
 }
 
-// This brugeren klikker på login 
+// Hvis brugeren klikker på login 
 
 if(isset($_POST['login-btn'])){
 
