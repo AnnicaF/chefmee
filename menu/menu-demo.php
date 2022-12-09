@@ -21,22 +21,7 @@ session_start();
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dynamisk Menu</title>
-        <link rel="stylesheet" href="chefmee/styles.css">
-
-        <style>
-            #dmenu{
-            display: flex;
-            width: 100%;
-            background-color: black;
-            }
-            #dmenu a{
-            box-sizing: border-box;
-            width:100%;
-            padding: 10px;
-            color: white !important;
-            text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="../styles.css">
     </head>
 
     <body>
