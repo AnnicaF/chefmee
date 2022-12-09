@@ -391,7 +391,9 @@ width: 200px;
 
 .profil_title_2 { grid-area: profil_title_2; }
 
-.profil_billede { grid-area: profil_billede; }
+.profil_billede { grid-area: profil_billede;
+
+}
 
 .profil_retbillede { grid-area: profil_retbillede; }
 
@@ -408,6 +410,12 @@ width: 200px;
 .profil_opdater { grid-area: profil_opdater; } 
 /* SLUT -  USERPROFIL */ 
 
+
+
+.profil_billede img{
+  width: 100px;
+  height: 100px;
+}
 
 /* START - BOOKINGS */ 
 .bookings_container{
@@ -446,11 +454,12 @@ width: 200px;
   background-color: black;
 
   justify-content: flex-end;
+  flex-direction: row;
   position: relative;
   margin-bottom: 1rem;
   top: 0;
   }
-  
+
   #dmenu a{
   box-sizing: border-box;
   width:100%;
