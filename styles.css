@@ -438,3 +438,19 @@ width: 200px;
 
 }
 /* SLUT - BOOKINGS */ 
+
+/* START style PHP menu bar*/
+#dmenu{
+  display: flex;
+  width: 100%;
+  background-color: black;
+  }
+  #dmenu a{
+  box-sizing: border-box;
+  width:100%;
+  padding: 10px;
+  color: white !important;
+  text-align: center;
+  }
+
+  /* SLUT PHP menubar*/
