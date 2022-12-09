@@ -1,3 +1,19 @@
+<?php
+
+$dbServername = "localhost";
+$dbUsername = "root";
+$dbPassword = "root";
+$dbName = "user_db";
+
+$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
+
+if($conn -> connect_error){
+    die('Database error:' .$conn -> connect_error);
+}
+?>
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="da">
     <head>
@@ -48,21 +64,80 @@
       </div>                   
   </div>
 
-  <div class="profil_title_2">title2</div>
+  <div class="profil_title_2">
+    <h2>Din profil</h2>
+  </div>
 
   <div class="profil_billede">billede</div>
 
   <div class="profil_retbillede">ret billede</div>
 
-  <div class="profil_oplysninger">profil oplysninger</div>
+  <div class="profil_oplysninger">
+    <h3>Profil oplysninger</h3>
 
-  <div class="profil_navn">Navn</div>
 
-  <div class="profil_adresse">Adresse</div>
+  </div>
 
-  <div class="profil_telefon">2023393</div>
+  <div class="profil_navn">
+  <?php
 
-  <div class="profil_mail">djjd@laskd.com</div>
+    $sql = "SELECT * FROM user_test WHERE id = 57;";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    if($resultCheck > 0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo $row['username'] . "<br>";
+        }
+    }
+?>
+  </div>
+
+  <div class="profil_adresse">
+  <?php
+
+        $sql = "SELECT * FROM user_test WHERE id = 57";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+
+        if($resultCheck > 0){
+            while($row = mysqli_fetch_assoc($result)){
+                echo $row['address'] . "<br>";
+            }
+        }
+  ?>
+  </div>
+
+  <div class="profil_telefon">
+  <?php
+
+        $sql = "SELECT * FROM user_test WHERE id = 57;";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+
+        if($resultCheck > 0){
+            while($row = mysqli_fetch_assoc($result)){
+                echo $row['phone'] . "<br>";
+            }
+        }
+    ?>
+  </div>
+
+  <div class="profil_mail">
+  <?php
+
+        $sql = "SELECT * FROM user_test WHERE id = 57";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+
+        if($resultCheck > 0){
+            while($row = mysqli_fetch_assoc($result)){
+                echo $row['email'] . "<br>";
+            }
+        }
+    ?>
+
+  </div>
 
   <div class="profil_opdater"><Button class="button_opdater">Opdater</Button></div>
 </div>
