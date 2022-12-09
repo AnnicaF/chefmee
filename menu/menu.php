@@ -1,10 +1,10 @@
 <?php
 // CONNECT TO DATABASE
 $dbHost = "localhost";
-$dbName = "menu";
+$dbName = "user_db";
 $dbChar = "utf8";
 $dbUser = "root";
-$dbPass = "";
+$dbPass = "root";
 try {
     $pdo = new PDO(
         "mysql:host=$dbHost;dbname=$dbName;charset=$dbChar",
