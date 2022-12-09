@@ -1,4 +1,4 @@
-<?php require_once 'controllers/authController.php'; ?>
+<?php require_once 'dbh.inc.php'; ?>
 
 <html lang="en">
 <head>
@@ -11,8 +11,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-    <div class="container">
+<?php
+
+$sql = "SELECT * FROM user_test WHERE id = 1;";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+
+if($resultCheck > 0){
+    while($row = mysqli_fetch_assoc($result)){
+        echo $row['username'] . "<br>";
+
+    }
+}
+
+?>
+
+
+<div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form-div login"> 
 
