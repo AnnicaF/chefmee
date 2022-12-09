@@ -33,7 +33,7 @@
         <h3> <strong> Dine kommende begivenheder </strong></h3>
 <p>Dato: 3. Januar 2023 </p>
 <p>Tidspunkt: kl. 18:00 </p>
-<p>Andledning: Fødesdag</p>
+<p>Andledning: Fødselsdag</p>
 <p>Antal kuverter: 6pax </p>
 <p>Tema: Japansk</p>
 <p>Kok: Anders Jensen </p>
@@ -57,7 +57,7 @@
         <br>
         <p>Total: 6.075,00kr</p>
         <br>
-        <p>Bemærkninger: ønsker risalamende til desert.</p>
+        <p>Bemærkninger: ønsker risalamande til dessert.</p>
     </div>
  </div>
 
