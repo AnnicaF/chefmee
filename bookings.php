@@ -31,16 +31,17 @@
 <div class="bookings_container">
     <div class="kommende_container">
         <h3> <strong> Dine kommende begivenheder </strong></h3>
-<p>Dato: 3. Januar 2023 </p>
-<p>Tidspunkt: kl. 18:00 </p>
-<p>Andledning: Fødselsdag</p>
-<p>Antal kuverter: 6pax </p>
-<p>Tema: Japansk</p>
-<p>Kok: Anders Jensen </p>
+        <br>
+<p><strong>Dato:</strong>3. Januar 2023 </p>
+<p><strong>Tidspunkt:</strong> Kl. 18:00 </p>
+<p><strong>Andledning:</strong> Fødselsdag</p>
+<p><strong>Antal kuverter: </strong>6pax </p>
+<p><strong>Tema: </strong>Japansk</p>
+<p><strong>Kok:</strong> Anders Jensen </p>
 <br>
-<p>Total: 1.500,00kr</p>
+<p><strong>Total:</strong> 1.500,00kr</p>
 <br>
-<p>Bemærkninger: 1 person er allergisk for glutten.</p>
+<p><strong>Bemærkninger:</strong> 1 person er allergisk for glutten.</p>
 </div>
        
         
@@ -48,16 +49,17 @@
         
 <div class="tidligere_container">
        <h3> <strong> Dine tidligere begivenheder </strong></h3>
-        <p>Dato: 9. December 2022</p>
-        <p>Tidspunkt: kl. 20:00 </p>
-        <p>Andledning: Julefrokost</p>
-        <p>Antal kuverter: 9pax </p>
-        <p>Tema: Dansk</p>
-        <p>Kok: Anders Jensen </p>
+       <br>
+        <p><strong>Dato:</strong> 9. December 2022</p>
+        <p><strong>Tidspunkt:</strong> Kl. 20:00 </p>
+        <p><strong>Andledning:</strong> Julefrokost</p>
+        <p><strong>Antal kuverter:</strong> 9pax </p>
+        <p><strong>Tema:</strong> Dansk</p>
+        <p><strong>Kok:</strong> Jim Karlo </p>
         <br>
-        <p>Total: 6.075,00kr</p>
+        <p><strong>Total:</strong> 6.075,00kr</p>
         <br>
-        <p>Bemærkninger: ønsker risalamande til dessert.</p>
+        <p><strong>Bemærkninger:</strong> Vi ønsker risalamande til dessert.</p>
     </div>
  </div>
 
