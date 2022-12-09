@@ -1,6 +1,5 @@
-<?php
-session_start();
-?>
+<?php require_once 'controllers/authController.php'; ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,23 +26,28 @@ session_start();
             </div>
             <?php endif; ?>
 
-           
-
             <h3>Velkommen <?php echo $_SESSION['username']; ?> </h3>
+
+            <?php 
+
+            $sql = "SELECT firstName, lastName, email FROM user_test";
+            $result = $conn->query($sql);
+
+           if ($result->num_rows > 0) {
+             // output data of each row
+          while($row = $result->fetch_assoc()) {
+            echo "<br> Fornavn: ". $row["firstName"]. " - Efternavn: ". $row["lastName"]. " " . $row["email"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?>
 
             <a href="#" class="logout">Logud</a>
 
-            <?php if(!$_SESSION['verified']): ?>
-            <div class="alert alert-warning">
-                For at aktivere profil
-                skal du klikke på link sendt på din email
-                <strong> <?php echo $_SESSION['email']; ?></strong>
-            </div>
-            <?php endif; ?>
-
-            <?php if($_SESSION['verified']): ?>
-            <button class="btn btn-block btn-lg btn-primary">Du er godkendt!</button>
-            <?php endif; ?>
+            
             </div>
          </div>
     </div>
