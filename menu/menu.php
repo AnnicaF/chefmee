@@ -4,7 +4,7 @@ $dbHost = "localhost";
 $dbName = "menu";
 $dbChar = "utf8";
 $dbUser = "root";
-$dbPass = "root";
+$dbPass = "";
 try {
     $pdo = new PDO(
         "mysql:host=$dbHost;dbname=$dbName;charset=$dbChar",
