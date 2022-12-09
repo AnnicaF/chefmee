@@ -54,9 +54,9 @@ session_start();
     <h2>Din profil</h2>
   </div>
 
-  <div class="profil_billede">billede</div>
+  <div class="profil_billede"><img src="../assets/userprofile.svg" alt="Profilbillede"></div>
 
-  <div class="profil_retbillede">ret billede</div>
+  <div class="profil_retbillede"><button>Ret billede</button></div>
 
   <div class="profil_oplysninger">
     <h3>Profil oplysninger</h3>
