@@ -460,3 +460,48 @@ width: 200px;
   }
 
   /* SLUT PHP menubar*/
+
+
+  /*  START profil */
+
+  .profil_navn{
+    font-size: 18px;
+    border-width: 1px;
+    height: 24px;
+    width: 150px;
+    border-style: solid;
+    border-color: #222;
+    padding: 3px;
+  }
+  .profil_adresse{
+    font-size: 18px;
+    border-width: 1px;
+    height: 24px;
+    width: 150px;
+    border-style: solid;
+    border-color: #222;
+    padding: 3px;
+  }
+  .profil_mail{
+    font-size: 18px;
+    border-width: 1px;
+    height: 24px;
+    width: 150px;
+    border-style: solid;
+    border-color: #222;
+    padding: 3px;
+  }
+  .profil_telefon{
+    font-size: 18px;
+    border-width: 1px;
+    height: 24px;
+    width: 150px;
+    border-style: solid;
+    border-color: #222;
+    padding: 3px;
+  }
+
+  
+
+
+  /* SLUT profil*/
