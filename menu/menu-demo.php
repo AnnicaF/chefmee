@@ -1,5 +1,5 @@
 <?php
-
+// tilkobler databasen som hedder user_db
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "root";
@@ -25,6 +25,7 @@ session_start();
     </head>
 
     <body>
+    
         <nav id="dmenu"><?php
         //GET MENU ITEMS
         require "./menu.php";
