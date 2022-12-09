@@ -444,7 +444,13 @@ width: 200px;
   display: flex;
   width: 100%;
   background-color: black;
+
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 1rem;
+  top: 0;
   }
+  
   #dmenu a{
   box-sizing: border-box;
   width:100%;
