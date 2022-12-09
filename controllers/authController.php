@@ -23,7 +23,6 @@ if(isset($_POST['signup-btn'])){
   $gender = $_POST['gender'];  
 
 
-
              // validering 
             if(empty($username)){
                 $errors['username'] = "Brugernavn påkræves";
