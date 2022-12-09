@@ -1,5 +1,7 @@
 <?php require_once 'dbh.inc.php'; ?>
-
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,11 +29,9 @@ if($resultCheck > 0){
 ?>
 
 
-<div class="container">
-        <div class="row">
-            <div class="col-md-4 offset-md-4 form-div login"> 
 
-            <?php if(isset($_SESSION['message'])): ?>
+
+            <!-- <?php if(isset($_SESSION['message'])): ?>
             <div class="alert <?php echo $_SESSION['alert-class']; ?>">
             <?php 
             echo $_SESSION['message'];
@@ -41,31 +41,9 @@ if($resultCheck > 0){
             </div>
             <?php endif; ?>
 
-            <h3>Velkommen <?php echo $_SESSION['username']; ?> </h3>
-
-            <?php 
-
-            $sql = "SELECT firstName, lastName, email FROM user_test";
-            $result = $conn->query($sql);
-
-           if ($result->num_rows > 0) {
-             // output data of each row
-          while($row = $result->fetch_assoc()) {
-            echo "<br> Fornavn: ". $row["firstName"]. " - Efternavn: ". $row["lastName"]. " " . $row["email"] . "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
-$conn->close();
-?>
+            <h3>Velkommen <?php echo $_SESSION['username']; ?> </h3> -->
 
             <a href="#" class="logout">Logud</a>
-
-            
-            </div>
-         </div>
-    </div>
 
     
 </body>
