@@ -109,6 +109,7 @@
         <p><strong>Bemærkninger:</strong> Vi ønsker risalamande til dessert.</p>
     </div>
  </div>
+ <footer id="footer">
  <div class="footer_container">
     <div class="chefme_adresse">
                     <p class="title"><strong>Adresse</strong></p>

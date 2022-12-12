@@ -310,6 +310,7 @@ nav ul li a{
     margin-bottom: 10%;
     margin-right: 10%;
 }
+
 .login_txt-icon{
   display: flex;
   justify-content: flex-end;
@@ -385,10 +386,10 @@ margin-top: 5%;
   text-align: center;
   color: #222;
   text-decoration: none;
-  border: solid 0.5px aliceblue;
+  border: solid 0.5px var(--clr--background);
   border-radius: 5px;
   padding: 5px;
-  background-color:aliceblue
+  background-color:var(--clr--background);
 }
 
 
@@ -639,7 +640,7 @@ width: 130%;
 
 
 .profil_billede img{
-  width: 100px;
+  width: 80%;
   height: 100px;
 }
 
