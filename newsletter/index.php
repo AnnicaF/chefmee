@@ -32,20 +32,19 @@
 
             <form action="subscribe.php">
                 <label for="first_name"> 
-                    <p>Fornavn</p>
-                    <input class="nyhedsbrev_input" type="text" name="first_name">
+                    <br>
+                    <input class="nyhedsbrev_input" type="text" placeholder="Fornavn" name="first_name"> <br>
                 </label>
                 <br>
 
                 <label for="last_name">
-                    <p>Efternavn</p>
-                    <input class="nyhedsbrev_input" type="text" name="first_name">
+                    
+                    <input class="nyhedsbrev_input" type="text" placeholder="Efternavn" name="last_name"> <br>
                 </label>
                 <br>
 
-                <label for="email">
-                    <p>Email</p> 
-                    <input class="nyhedsbrev_input" type="text" name="email"> 
+                <label for="email"> 
+                    <input class="nyhedsbrev_input" type="text" placeholder="Email" name="email"> <br>
                 </label><br><br>
 
                 <input class="nyhedsbrev_btn" type="submit" name="submit" value="Tilmeld">
