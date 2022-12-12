@@ -30,6 +30,15 @@
         </header>    
 
         <form action="signup.php" method="post">
+        <?php require_once 'controllers/authController.php'; ?>
+
+            <?php if(count($errors) > 0): ?>
+            <div class="alert alert-danger">
+            <?php foreach($errors as $error): ?>
+            <li> <?php echo $error; ?></li>
+            <?php endforeach; ?>
+            </div> 
+            <?php endif; ?>
 
             <div class="signup_container">
                 
@@ -44,17 +53,6 @@
         </a></div>
                 
                 <div class="person-oplysninger">Person oplysninger</div>
-
-                <?php require_once 'controllers/authController.php'; ?>
-
-                <?php if(count($errors) > 0): ?>
-                <div class="alert alert-danger">
-                <?php foreach($errors as $error): ?>
-                <li> <?php echo $error; ?></li>
-                <?php endforeach; ?>
-                </div> 
-                <?php endif; ?>
-
                     <div class="fornavn">
                         <label class="input_fornavn" for="firstName">
                             <input type="text" name="firstName" placeholder="Fornavn"> 
