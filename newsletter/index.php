@@ -18,8 +18,9 @@
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
-                        </div>
+                            <a href="login.php" class="buttonlogin">Login</a>
+                           
+                         </div>
                     </div>
                 </ul>
             </nav>
