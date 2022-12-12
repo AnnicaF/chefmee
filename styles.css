@@ -1,5 +1,90 @@
 /* START - LOGIND FUNKTION GRID*/
-.signup_container {  
+
+/*Mobil grid*/
+.signup_container {
+      
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . opretprofil ."
+    ". . google ."
+    ". . facebook ."
+    ". person-oplysninger . ."
+    ". . fornavn ."
+    ". . efternavn ."
+    ". . etage ."
+    ". . adresse ."
+    ". . postnummer ."
+    ". . by ."
+    ". . kon ."
+    ". . fodselsdag ."
+    ". . mobilnummer ."
+    ". logind-oplysninger . ."
+    ". . input_brugernavn ."
+    ". . email ."
+    ". . kodeord ."
+    ". . gentagkode ."
+    ". . vilkar ."
+    ". . nyhedsbrev ."
+    ". . opret ."
+    ". . . ."
+    ". . har-profil ."
+    ". . . .";
+}
+
+.opretprofil { grid-area: opretprofil; }
+
+.google { grid-area: google; }
+
+.facebook { grid-area: facebook; }
+
+.person-oplysninger { grid-area: person-oplysninger; }
+
+.fornavn { grid-area: fornavn; }
+
+.efternavn { grid-area: efternavn; }
+
+.etage { grid-area: etage; }
+
+.adresse  { grid-area: adresse;  }
+
+.postnummer { grid-area: postnummer; }
+
+.by { grid-area: by; }
+
+.kon { grid-area: kon; }
+
+.fodselsdag { grid-area: fodselsdag; }
+
+.mobilnummer { grid-area: mobilnummer; }
+
+.logind-oplysninger { grid-area: logind-oplysninger; }
+
+.input_brugernavn { grid-area: input_brugernavn; }
+
+.email { grid-area: email; }
+
+.kodeord { grid-area: kodeord; }
+
+.gentagkode { grid-area: gentagkode; }
+
+.vilkar { grid-area: vilkar; }
+
+.nyhedsbrev { grid-area: nyhedsbrev; }
+
+.opret { grid-area: opret;  }
+
+.har-profil { grid-area: har-profil; }
+
+/* Mobil grid slut*/
+
+@media screen and (min-width: 600px){
+.signup_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -64,9 +149,9 @@
 
 /* START - STYLING AF OPRET PROFIL */
 .signup_container{
-    height: 500px;
-    width: 1150px;
-    margin-left: 50px;
+    max-width: 90%;
+    max-height: 80%;
+    margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -75,6 +160,9 @@
     -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
     -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
 }
+
+
+
 
 .opretprofil{
   text-align: center;
@@ -94,9 +182,10 @@
 }
 
 .input{
+  width: 100%;
   border-radius: 4px;
   border: 1px solid lightgrey;
-  
+
 }
 
 .input_efternavn input{
@@ -143,7 +232,7 @@
   height: 50%;
 }
 /* SLUT - STYLING AF OPRET PROFIL */
-
+}
 
 /* START - STYLING AF FORSIDE */
 ul{
@@ -153,7 +242,7 @@ ul{
 
 li{
     list-style-type: none;
-    
+
 }
 a{
     text-decoration: none;
@@ -200,7 +289,7 @@ nav ul li a{
 .hero_caption, .hero_caption-2 {
     text-align: center;
     color:aliceblue;
-} 
+}
 
 .buttonlogin{
   font: bold 11px Arial;
@@ -216,7 +305,7 @@ nav ul li a{
   border-radius: 3px;
   height: 13px;
   margin-right: 30px;
-  margin-top: 30px;   
+  margin-top: 30px;
 }
 
 
@@ -287,7 +376,7 @@ width: 200px;
   font-weight: 600;
   text-align: center;
   border-radius: 5px;
-  
+
 
 }
 
@@ -337,17 +426,17 @@ width: 200px;
   background-color: #cacaca;
   font-size: 15px;
 }
-/* SLUT - HEADER SIGNUP */ 
+/* SLUT - HEADER SIGNUP */
 
 
-/* START - LOGIND FUNKTIONE */ 
+/* START - LOGIND FUNKTIONE */
 .register{
   display: block;
 }
-/* SLUT - LOGING FUNKTION 
+/* SLUT - LOGING FUNKTION
 
 
-/* START - LOGIND */ 
+/* START - LOGIND */
 .form_container #login_form .error-msg{
     margin:10px 0;
     display: block;
@@ -356,7 +445,7 @@ width: 200px;
     border-radius: 5px;
     font-size: 20px;
 }
-/* SLUT - LOGIND */ 
+/* SLUT - LOGIND */
 
 /* START - USER PROFIL*/
 
@@ -385,7 +474,7 @@ width: 200px;
 .profil_title { grid-area: profil_title;
   background-color: #ea224a; }
 
-.profil_logud { grid-area: profil_logud; 
+.profil_logud { grid-area: profil_logud;
   background-color: #893143;
 }
 
@@ -407,8 +496,8 @@ width: 200px;
 
 .profil_mail { grid-area: profil_mail; }
 
-.profil_opdater { grid-area: profil_opdater; } 
-/* SLUT -  USERPROFIL */ 
+.profil_opdater { grid-area: profil_opdater; }
+/* SLUT -  USERPROFIL */
 
 
 
@@ -417,10 +506,10 @@ width: 200px;
   height: 100px;
 }
 
-/* START - BOOKINGS */ 
+/* START - BOOKINGS */
 .bookings_container{
   margin-top: 7%;
-  display: flex;  
+  display: flex;
 }
 
 .kommende_container{
@@ -445,7 +534,7 @@ width: 200px;
   -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
 
 }
-/* SLUT - BOOKINGS */ 
+/* SLUT - BOOKINGS */
 
 /* START style PHP menu bar*/
 #dmenu{
@@ -510,10 +599,17 @@ width: 200px;
     padding: 3px;
   }
 
-  
+
 
 
   /* SLUT profil*/
+
+
+  
+    
+
+
+  
 /* START - SIDEBAR */ 
 
 *{
