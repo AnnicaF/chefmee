@@ -59,7 +59,7 @@
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="../index.php">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                                 <span class="links_name">Logud</span>
                             </a>
