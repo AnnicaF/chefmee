@@ -51,11 +51,15 @@
                 <input class="nyhedsbrev_btn" type="submit" name="submit" value="Tilmeld">
             </form>
             
-        </div>
             <br>
             <br>
-        <div class="nyhedsbrev_afmeld">
-        <a href="newsletter/out.php">Afmeld nyhedsbrev</a>
+
+            </div>
+            
+            <div class="nyhedsbrev_afmeld">
+                <a href="newsletter/out.php">Afmeld nyhedsbrev</a>
+            </div>
+        
     </body>
 </html>
 

@@ -27,7 +27,7 @@
 
     <body class="out_body">
         <div class="nyhedsbrev_afmeld-out">
-            <h3>Indsæt venligst den email du vil afmelde</h3>
+            <h3>Indsæt email for at afmelde</h3>
             <br>
             <form action="unsubscribe.php" method="POST">
                 <label for="email">Email: <input type="text" name="email"></label> <br>
