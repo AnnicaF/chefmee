@@ -39,20 +39,23 @@
             <br>
             <br>
             <br>
-            
-            <a href="newsletter/index.php">Tilmeld nyhedsbrev</a>
+            <div class="nyhedsbrev_index-btn">
+                <a href="newsletter/index.php"> <button class="nyhedsbrev_index-btn"> Tilmeld nyhedsbrev </button></a>
+            </div>
             </h3>
            
+            
        
   
-        <div class="test">
+        <div class="trustpilot_stjerner">
             <article class="trustpilot">
                 <section>
-                        <div class="one"> <strong>Vores kunder siger:</strong></div>
-                        <div class="two">
+                    <div class="trustpilot_txt">
+                        <div class="one"> Vores kunder siger 
                             <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk" style="color: #00b67a;">
                                <strong>Fremragende</strong> </a>
                         </div>
+                    </div>
 
                         <div class="trustpilot">
                         <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk">

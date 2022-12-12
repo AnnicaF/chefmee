@@ -382,6 +382,24 @@ width: 200px;
   background-color:aliceblue
 }
 
+.nyhedsbrev_index-btn{
+  display: flex;
+  justify-items: center;
+  height: 20px;
+  width: 170px;
+}
+
+.nyhedsbrev_index-btn button{
+color: var(--clr--background);
+background-color: var(--clr--logo);
+border-radius: 8px;
+border: none;
+text-decoration: none;
+display: inline-block;
+text-align: center;
+font-weight: var(--fw-reg);
+}
+
 .nyhedsbrev_afmeld a{
   text-align: center;
   color: #222;
@@ -419,15 +437,20 @@ width: 200px;
 
 }
 
+/*START - TRUSTPILOT*/
 
-.test {
+.trustpilot_txt{
+  margin-bottom: 2%;
+}
+
+.trustpilot_stjerner {
   display: block;
   width: 100%;
   height: 100% !important;
   display: flex;
   align-items: center;
   margin-left: 38%;
-  margin-top: -2.6%;
+  margin-top: 9%;
 }
 
 .trustpilot{
@@ -443,8 +466,8 @@ width: 200px;
 /* START - NYHEDSBREV STYLE */
 
 .nyhedsbrev_container{
-  color:aliceblue;
-  background-color: #13717A;
+  color:var(--clr--background);
+  background-color: var(--clr--logo);
   text-align: center;
   height: 500px;
     width: 1150px;
@@ -462,7 +485,7 @@ width: 200px;
 
 /* START - HEADER SIGNUP */
 .nav_bar-box{
-  background-color: #cacaca;
+  background-color: var(--clr--footer);
   font-size: 15px;
 }
 /* SLUT - HEADER SIGNUP */
@@ -480,7 +503,7 @@ width: 200px;
     margin:10px 0;
     display: block;
     background: blue;
-    color: white;
+    color: var(--clr--background);
     border-radius: 5px;
     font-size: 20px;
 }
@@ -576,7 +599,7 @@ width: 200px;
 /* SLUT - BOOKINGS */
 
 /* START style PHP menu bar*/
-#dmenu{
+/* #dmenu{
   display: flex;
   width: 100%;
   background-color: black;
@@ -594,13 +617,11 @@ width: 200px;
   padding: 10px;
   color: white !important;
   text-align: center;
-  }
-
+  } */
   /* SLUT PHP menubar*/
 
 
   /*  START profil */
-
   .profil_navn{
     font-size: 18px;
     border-width: 1px;
@@ -637,20 +658,10 @@ width: 200px;
     border-color: #222;
     padding: 3px;
   }
-
-
-
-
   /* SLUT profil*/
 
 
-  
-    
-
-
-  
   /* START - SIDEBAR */ 
-
   *{
     margin: 0;
     padding: 0;
@@ -858,13 +869,13 @@ width: 200px;
   .sidebar li .tooltip{
     display: none;
   }
-  /* SLUT - SIDEBAR */ 
+    /* SLUT - SIDEBAR */ 
 
-/* SLUT - PROFILINFO */ 
+
+  /* SLUT - PROFILINFO */ 
   #profil_info{
     color: var(--clr--c2a);
     justify-content: center;
-    
   }
    /* SLUT - PROFILINFO */ 
 
