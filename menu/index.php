@@ -173,7 +173,7 @@ session_start();
         </div>
         </div> 
 
-        <footer id="footer">
+        <footer class="footer">
             <div class="profil_footer">
                 <div class="footer_container">
                     <div class="chefme_adresse">
@@ -191,8 +191,8 @@ session_start();
 
                     <div class="chefme_some" style="display:flex;margin:0 10px;">
                         <p class="title"><strong>SoMe</strong></p>
-                        <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
-                        <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
+                        <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="../assets/facebook.svg" style="width:24px;"></a>
+                        <a href="https://www.instagram.com/chefme/" target="_blank"><img src="../assets/instagram.svg" style="width:24px;"></a>
                     </div> 
                 </div>
             </div>

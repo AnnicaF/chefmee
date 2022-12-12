@@ -633,6 +633,23 @@ width: 130%;
 .profil_container{
   text-align: center;
   background-color: var(--clr--logo);
+  height: 650px;
+  margin-top: 0px;
+
+}
+
+.button_opdater{
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  width: 40%;
+  font-size: var(--fs-nav);
+  font-weight: var(--ff-primary);
+  border-radius: 8px;
+  border-style: none;
+  background-color: var(--clr--c2a);
+  color: var(--clr--background);
+  margin-top: 5%;
 }
 
 /* .profil_container {  display: grid;
@@ -1026,12 +1043,20 @@ width: 130%;
 
 .chefme_some { grid-area: chefme_some; }
 
+.footer{
+  background-color: var(--clr--footer);
+  margin-bottom: 0%;
+  padding: 5%;
+  text-decoration: none;
+}
+
 #footer{
   background-color: var(--clr--footer);
   margin-bottom: 0%;
   padding: 5%;
   margin-top: 20%;
   text-decoration: none;
+}
 }
 
 /* SLUT - FOOTER */
