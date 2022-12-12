@@ -46,7 +46,7 @@
                  function myFunction() {
                     window.location.href="/chefmee/newsletter/index.php";
                     }
-    </script>
+                </script>
             </div>
             </h3>
            
