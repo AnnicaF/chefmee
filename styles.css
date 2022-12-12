@@ -326,6 +326,12 @@ nav ul li a{
 .hero_caption, .hero_caption-2 {
     text-align: center;
     color: var(--clr--background);
+  
+
+}
+
+.hero_caption-2 {
+  font-weight: 300;
 }
 
 .buttonlogin{
@@ -462,7 +468,7 @@ height: 30px;
   height: 10%;
   background-color: var(--clr--logo);
   color: var(--clr--background);
-  font-size: var(--fw-reg)
+  font-size: var(--fw-reg);
   font-weight: 300;
   text-align: center;
   border-radius: 8px;
@@ -526,8 +532,13 @@ height: 30px;
 
 /* START - HEADER SIGNUP */
 .nav_bar-box{
-  background-color: lightgrey;
+  background-color: var(--clr--background);
+  
   font-size: var(--fs-nav);
+}
+
+.nav_bar-box a {
+  color:var(--clr--txt);
 }
 /* SLUT - HEADER SIGNUP */
 

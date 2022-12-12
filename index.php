@@ -34,7 +34,7 @@
                 BOOK EN PRIVATE KOK
             </h1>
             
-            <h3 class="hero_caption-2">
+            <h3 class="hero_caption-2"><br>
                 Tillad tid til værtskab
             <br>
             <br>
