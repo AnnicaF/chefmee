@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="/chefmee/styles.css">
         <title>Tilmed nyhedsbrev</title>
     </head>
-    
-    <body>  
 
         <header>
             <nav class="nav_bar-box">
@@ -25,8 +23,9 @@
                     </div>
                 </ul>
             </nav>
-        </header>    
+        </header>   
         
+    <body>  
         <div class="nyhedsbrev_container">
             <h1 class="newsletter__title">Tilmeld dig vores nyhedsbrev</h1>
 
