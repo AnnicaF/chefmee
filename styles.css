@@ -383,14 +383,9 @@ width: 200px;
   background-color:aliceblue
 }
 
-.nyhedsbrev_index-btn{
-  display: flex;
-  justify-items: center;
-  height: 20px;
-  width: 170px;
-}
 
-.nyhedsbrev_index-btn button{
+
+.nyhedsbrev_index-btn input{
 color: var(--clr--background);
 background-color: var(--clr--logo);
 border-radius: 8px;
@@ -399,6 +394,8 @@ text-decoration: none;
 display: inline-block;
 text-align: center;
 font-weight: var(--fw-reg);
+width: 170px;
+height: 30px;
 }
 
 .nyhedsbrev_afmeld a{
