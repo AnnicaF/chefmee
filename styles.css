@@ -243,6 +243,7 @@
 
 .input_brugernavn input{
   height: 30px;
+  border: #222 solid 1px;
 } 
 
 .input_kode input{
