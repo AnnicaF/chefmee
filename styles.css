@@ -841,7 +841,14 @@ width: 200px;
   .sidebar li .tooltip{
     display: none;
   }
-  }
-
-
   /* SLUT - SIDEBAR */ 
+
+/* SLUT - PROFILINFO */ 
+  .profil_info{
+    color: var(--clr--c2a);
+    
+  }
+   /* SLUT - PROFILINFO */ 
+
+}
+ 

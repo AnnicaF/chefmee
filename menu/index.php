@@ -81,73 +81,70 @@ session_start();
                     </ul>
                 </div>
             </div> 
-         </main>
+        </main>
 
-         <body>
+    <body>
+        <div class="profil_info">
+            <div class="profil_navn">
+                <?php
+                    
+                    $sql = "SELECT * FROM user_test WHERE id = 57;";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
 
-         <div class="profil_navn">
-  <?php
+                    if($resultCheck > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            echo $row['username']. "<br>";
+                        }
+                    }
+                ?>
+            </div>
 
-    $sql = "SELECT * FROM user_test WHERE id = 57;";
-    $result = mysqli_query($conn, $sql);
-    $resultCheck = mysqli_num_rows($result);
+            <div class="profil_adresse">
+                <?php
 
-    if($resultCheck > 0){
-        while($row = mysqli_fetch_assoc($result)){
-            echo $row['username']. "<br>";
-        }
-    }
-?>
-  </div>
+                    $sql = "SELECT * FROM user_test WHERE id = 57";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
 
-  <div class="profil_adresse">
-  <?php
+                    if($resultCheck > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            echo $row['address'] . "<br>";
+                        }
+                    }
+                ?>
+            </div>
 
-        $sql = "SELECT * FROM user_test WHERE id = 57";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
 
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['address'] . "<br>";
-            }
-        }
-  ?>
-  </div>
+            <div class="profil_telefon">
+                <?php
 
-  <div class="profil_telefon">
-  <?php
+                    $sql = "SELECT * FROM user_test WHERE id = 57;";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
 
-        $sql = "SELECT * FROM user_test WHERE id = 57;";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
+                    if($resultCheck > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            echo $row['phone'] . "<br>";
+                        }
+                    }
+                ?>
+            </div>
 
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['phone'] . "<br>";
-            }
-        }
-    ?>
-  </div>
+            <div class="profil_mail">
+                <?php
 
-  <div class="profil_mail">
-  <?php
+                    $sql = "SELECT * FROM user_test WHERE id = 57";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
 
-        $sql = "SELECT * FROM user_test WHERE id = 57";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['email'] . "<br>";
-            }
-        }
-    ?>
-
-  </div>
-
-  <div class="profil_opdater"><Button class="button_opdater">Opdater</Button></div>
-</div>
-
+                    if($resultCheck > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            echo $row['email'] . "<br>";
+                        }
+                    }
+                ?>
+            <div class="profil_opdater"><Button class="button_opdater">Opdater</Button></div>
+        </div>
     </body>    
 </html>
