@@ -46,7 +46,7 @@
     ". . fodselsdag ."
     ". . mobilnummer ."
     ". logind-oplysninger . ."
-    ". . input_brugernavn ."
+    ". . form-group ."
     ". . email ."
     ". . kodeord ."
     ". . gentagkode ."
@@ -54,7 +54,7 @@
     ". . nyhedsbrev ."
     ". . opret ."
     ". . . ."
-    ". . har-profil ."
+    ". .  har-profil ."
     ". . . .";
 }
 
@@ -86,7 +86,8 @@
 
 .logind-oplysninger { grid-area: logind-oplysninger; }
 
-.input_brugernavn { grid-area: input_brugernavn; }
+.form-group { grid-area: form-group; }
+
 
 .email { grid-area: email; }
 
@@ -229,7 +230,7 @@
 
 .input_brugernavn input{
   height: 30px;
-}
+} 
 
 .input_kode input{
   width: 192px;
