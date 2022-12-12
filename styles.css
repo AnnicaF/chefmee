@@ -494,11 +494,11 @@ height: 30px;
   display: flex;
   align-items: center;
   margin-left: 38%;
-  margin-top: 9%;
+  margin-top: 3%;
 }
 
 .trustpilot{
-  width: 50%;
+  width: 43%;
 }
 
 .kontakt-call-to-action-2{
@@ -537,7 +537,6 @@ height: 30px;
 /* START - HEADER SIGNUP */
 .nav_bar-box{
   background-color: var(--clr--background);
-  
   font-size: var(--fs-nav);
 }
 
