@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +46,7 @@
                  function myFunction() {
                     window.location.href="/chefmee/newsletter/index.php";
                     }
-    </script>
+                </script>
             </div>
             </h3>
            
