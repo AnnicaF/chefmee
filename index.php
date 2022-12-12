@@ -23,7 +23,7 @@
                    
                         <div class="kontakt-call-to-action-2">
                             <a href="login.php" class="buttonlogin">Login</a>
-                            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
+                            <div class="login_txt-icon">LOGIND<img class="login_icon"src="assets/icon_user.svg" alt="logind icon"></div>
                          </div>
                 
                 </ul>
