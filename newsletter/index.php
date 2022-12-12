@@ -18,7 +18,7 @@
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
-                            <a href="login.php" class="buttonlogin">Login</a>
+                            <a href="login.php" class="buttonlogin">LOGIN</a>
                            
                          </div>
                     </div>

@@ -21,9 +21,9 @@
                     <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
                     <div class="btn">
-                        <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
-                        </div>
+                    <div class="kontakt-call-to-action-2">
+                            <a href="login.php" class="buttonlogin">LOGIN</a>
+                            
                     </div>
                 </ul>
             </nav>
