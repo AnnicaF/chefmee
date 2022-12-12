@@ -23,8 +23,9 @@
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
                         <div class="kontakt-call-to-action-2">
-                            <a href="login.php" class="buttonlogin">LOGIN</a>
-                            
+                            <a href="login.php" class="buttonlogin">OPRET BRUGER</a>
+                            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon"></div>
+
                         </div>
                     </div>
                 </ul>
@@ -68,5 +69,29 @@
         </div>
     </div>
     
+    <div class="footer_container">
+    <div class="chefme_adresse">
+                    <p class="title"><strong>Adresse</strong></p>
+                    <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
+                    <p class="sub-title">ChefMe®</p>
+    </div>
+
+    <div class="chefme_kontakt">
+                        <p class="title"><strong>Kontakt</strong></p>
+                        <p class="sub-title">Tlf:
+                        <a href="tel:+45 1234 5678"></a><a href="tel:004593404010">93 40 40 10</a></p>
+                        <p class="sub-title spaced">Email: support@chefme.dk</p>
+                            
+    </div>
+
+    <div class="chefme_some" style="display:flex;margin:0 10px;">
+                    <p class="title"><strong>SoMe</strong></p>
+                    <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
+                    <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
+
+    </div> 
+</div>
+</footer>	
 </body>
+
 </html>

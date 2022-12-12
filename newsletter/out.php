@@ -30,7 +30,7 @@
             <h3>Indsæt email for at afmelde</h3>
             <br>
             <form action="unsubscribe.php" method="POST">
-                <label for="email">Email: <input type="text" name="email"></label> <br>
+                <label for="email"><input type="text" name="email" placeholder="Email"></label> <br>
                 <br>
                 <button class="nyhedsbrev_btn-afmeld" for="submit" value="Frameld">Afmeld</button>
             </form>

@@ -11,7 +11,8 @@
   --clr--c2a:    #ea5a4a;
   --clr--footer: #f4ece1; 
   --clr--logo:   #008489;
-  --clr--btn:    #1e4041;  
+  --clr--btn:    #1e4041; 
+  --clr--menu:  #f0ecec;
 
   --fs-h1:   34px;
   --fs-h2:   20px;
@@ -412,6 +413,7 @@ height: 30px;
   margin-top: 1%;
 }
 
+
 .nyhedsbrev_afmeld a{
   color: var(--clr--c2a);
   text-decoration: none;
@@ -424,6 +426,7 @@ height: 30px;
 }
 
 .nyhedsbrev_afmeld-out{
+  display: block;
   background-color: var(--clr--background);
   margin-left: 25%;
   margin-top: 5%;
@@ -536,7 +539,7 @@ height: 30px;
 
 /* START - HEADER SIGNUP */
 .nav_bar-box{
-  background-color: var(--clr--background);
+  background-color: var(--clr--menu);
   font-size: var(--fs-nav);
 }
 
@@ -956,3 +959,30 @@ width: 130%;
 .alert{
   text-align: center;
 }
+
+/* START - FOOTER */
+.footer_container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 3%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "chefme_adresse chefme_kontakt chefme_some";
+}
+
+.chefme_adresse { grid-area: chefme_adresse; }
+
+.chefme_kontakt { grid-area: chefme_kontakt; }
+
+.chefme_some { grid-area: chefme_some; }
+
+#footer{
+  background-color: var(--clr--footer);
+  margin-bottom: 0%;
+  padding: 5%;
+  margin-top: 20%;
+  text-decoration: none;
+}
+
+/* SLUT - FOOTER */
