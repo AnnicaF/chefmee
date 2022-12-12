@@ -43,7 +43,7 @@
 
                     <ul class="nav-list">
                         <li>
-                            <a href="">
+                            <a href="index.php">
                                 <i class="fa-solid fa-user"></i>
                                 <span class="links_name">Oplysninger</span>
                             </a>
