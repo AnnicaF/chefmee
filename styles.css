@@ -547,6 +547,11 @@ height: 30px;
 .nav_bar-box a {
   color:var(--clr--txt);
 }
+
+.profil-icon{
+width: 80%;
+margin-top: 30%;
+}
 /* SLUT - HEADER SIGNUP */
 
 
@@ -586,8 +591,51 @@ width: 130%;
 /* SLUT - LOGIND */
 
 /* START - USER PROFIL*/
-
 .profil_container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "profil_menu profil_menu profil_menu profil_menu"
+    "profil_sidebar profil_titel profil_titel profil_titel"
+    "profil_sidebar . profil_billede ."
+    "profil_sidebar profil_navn profil_efternavn profil_efternavn"
+    "profil_sidebar profil_adresse profil_adresse ."
+    "profil_sidebar profil_tlfnr profil_email ."
+    "profil_sidebar . opdater ."
+    "profil_sidebar . . ."
+    "profil_footer profil_footer profil_footer profil_footer";
+}
+
+.profil_sidebar { grid-area: profil_sidebar; }
+
+.profil_menu { grid-area: profil_menu; }
+
+.profil_billede { grid-area: profil_billede; }
+
+.profil_titel { grid-area: profil_titel; }
+
+.profil_navn { grid-area: profil_navn; }
+
+.profil_efternavn { grid-area: profil_efternavn; }
+
+.profil_adresse { grid-area: profil_adresse; }
+
+.profil_tlfnr { grid-area: profil_tlfnr; }
+
+.profil_email { grid-area: profil_email; }
+
+.opdater { grid-area: opdater; }
+
+.profil_footer { grid-area: profil_footer; }
+
+.profil_container{
+  text-align: center;
+  background-color: var(--clr--logo);
+}
+
+/* .profil_container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -634,7 +682,7 @@ width: 130%;
 
 .profil_mail { grid-area: profil_mail; }
 
-.profil_opdater { grid-area: profil_opdater; }
+.profil_opdater { grid-area: profil_opdater; } */
 /* SLUT -  USERPROFIL */
 
 

@@ -18,16 +18,19 @@ session_start();
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <title>Brugerprofil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles.css">
-  <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
-  <script src="navbar.js" defer></script>
-</head>
+    <head>
+    <meta charset="utf-8">
+    <title>Brugerprofil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
+    <script src="navbar.js" defer></script>
+    </head>
 
-        <header>
+
+
+    <header>
+        <div class="profil_menu">
             <nav class="nav_bar-box">
                 <ul>
                     <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
@@ -37,16 +40,21 @@ session_start();
 
                     <div class="btn">
                         <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
+                            <button class="knap-gul" id="button" type="button" name="button">Logud</button>
+                            <img class="profil-icon"src="../assets/icon_user.svg" alt="logind icon"></div>
                         </div>
                     </div>
                 </ul>
             </nav>
-        </header>  
+        </div>
+    </header>  
+    <div class="profil_container">
+    <div class="profil_billede"><img src="../assets/icon_user.svg" alt="profilbillede"></div>
+    <div class="profil_titel">VELKOMMEN</div>
 
-        <main>
+    <main>
+        <div class="profil_sidebar">
             <div class="sg">
-
                 <div class="sidebar">
                     <div class="logo-details">
                         <i class="fa-solid fa-bars"></i>
@@ -80,13 +88,27 @@ session_start();
                         </li>
                     </ul>
                 </div>
-            </div> 
-        </main>
+            </div>
+        </div> 
+    </main>
 
     <body>
-        <div class="profil_info">
-            <div class="profil_navn">
-                <?php
+        <div class="profil_navn">
+            <?php   
+                $sql = "SELECT * FROM user_test WHERE id = 57;";
+                $result = mysqli_query($conn, $sql);
+                $resultCheck = mysqli_num_rows($result);
+
+                    if($resultCheck > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            echo $row['username']. "<br>";
+                        }
+                    }
+            ?>
+        </div>
+
+        <div class="profil_efternavn">
+            <?php
                     
                     $sql = "SELECT * FROM user_test WHERE id = 57;";
                     $result = mysqli_query($conn, $sql);
@@ -94,13 +116,14 @@ session_start();
 
                     if($resultCheck > 0){
                         while($row = mysqli_fetch_assoc($result)){
-                            echo $row['username']. "<br>";
+                            echo $row['lastname']. "<br>";
                         }
                     }
                 ?>
-            </div>
+        </div>
 
-            <div class="profil_adresse">
+
+        <div class="profil_adresse">
                 <?php
 
                     $sql = "SELECT * FROM user_test WHERE id = 57";
@@ -113,10 +136,10 @@ session_start();
                         }
                     }
                 ?>
-            </div>
+        </div>
 
 
-            <div class="profil_telefon">
+        <div class="profil_tlfnr">
                 <?php
 
                     $sql = "SELECT * FROM user_test WHERE id = 57;";
@@ -129,9 +152,9 @@ session_start();
                         }
                     }
                 ?>
-            </div>
+        </div>
 
-            <div class="profil_mail">
+        <div class="profil_email">
                 <?php
 
                     $sql = "SELECT * FROM user_test WHERE id = 57";
@@ -144,31 +167,35 @@ session_start();
                         }
                     }
                 ?>
-            <div class="profil_opdater"><Button class="button_opdater">Opdater</Button></div>
+            <div class="opdater">
+                <Button class="button_opdater">Rediger</Button>
+            </div>
         </div>
-        <div class="footer_container">
-    <div class="chefme_adresse">
-                    <p class="title"><strong>Adresse</strong></p>
-                    <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
-                    <p class="sub-title">ChefMe®</p>
-    </div>
+        </div> 
 
-    <div class="chefme_kontakt">
-                        <p class="title"><strong>Kontakt</strong></p>
-                        <p class="sub-title">Tlf:
-                        <a href="tel:+45 1234 5678"></a><a href="tel:004593404010">93 40 40 10</a></p>
-                        <p class="sub-title spaced">Email: support@chefme.dk</p>
-                            
-    </div>
+        <footer id="footer">
+            <div class="profil_footer">
+                <div class="footer_container">
+                    <div class="chefme_adresse">
+                        <p class="title"><strong>Adresse</strong></p>
+                        <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
+                        <p class="sub-title">ChefMe®</p>
+                    </div>
 
-    <div class="chefme_some" style="display:flex;margin:0 10px;">
-                    <p class="title"><strong>SoMe</strong></p>
-                    <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
-                    <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
+                    <div class="chefme_kontakt">
+                            <p class="title"><strong>Kontakt</strong></p>
+                            <p class="sub-title">Tlf:
+                            <a href="tel:+45 1234 5678"></a><a href="tel:004593404010">93 40 40 10</a></p>
+                            <p class="sub-title spaced">Email: support@chefme.dk</p>    
+                    </div>
 
-    </div> 
-</div>
-</footer>	
-
-    </body>    
+                    <div class="chefme_some" style="display:flex;margin:0 10px;">
+                        <p class="title"><strong>SoMe</strong></p>
+                        <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
+                        <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
+                    </div> 
+                </div>
+            </div>
+        </footer>	
+    </body>   
 </html>
