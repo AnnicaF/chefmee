@@ -1,33 +1,20 @@
-<?php
-// tilkobler databasen som hedder user_db
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "root";
-$dbName = "user_db";
-
-$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
-
-if($conn -> connect_error){
-    die('Database error:' .$conn -> connect_error);
-}
-?>
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
-<html lang="da" dir="ltr">
-
+<html lang="da">
 <head>
-  <meta charset="utf-8">
-  <title>Logoer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles.css">
-  <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
-  <script src="navbar.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestillinger</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
+    <script src="navbar.js" defer></script>
+
 </head>
 
-        <header>
+
+
+
+<header>
             <nav class="nav_bar-box">
                 <ul>
                     <a href="./index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
@@ -83,71 +70,45 @@ session_start();
             </div> 
          </main>
 
-         <body>
 
-         <div class="profil_navn">
-  <?php
+        
+<body>
 
-    $sql = "SELECT * FROM user_test WHERE id = 57;";
-    $result = mysqli_query($conn, $sql);
-    $resultCheck = mysqli_num_rows($result);
 
-    if($resultCheck > 0){
-        while($row = mysqli_fetch_assoc($result)){
-            echo $row['username']. "<br>";
-        }
-    }
-?>
-  </div>
-
-  <div class="profil_adresse">
-  <?php
-
-        $sql = "SELECT * FROM user_test WHERE id = 57";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['address'] . "<br>";
-            }
-        }
-  ?>
-  </div>
-
-  <div class="profil_telefon">
-  <?php
-
-        $sql = "SELECT * FROM user_test WHERE id = 57;";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['phone'] . "<br>";
-            }
-        }
-    ?>
-  </div>
-
-  <div class="profil_mail">
-  <?php
-
-        $sql = "SELECT * FROM user_test WHERE id = 57";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['email'] . "<br>";
-            }
-        }
-    ?>
-
-  </div>
-
-  <div class="profil_opdater"><Button class="button_opdater">Opdater</Button></div>
+<div class="bookings_container">
+    <div class="kommende_container">
+        <h3> <strong> Dine kommende begivenheder </strong></h3>
+        <br>
+<p><strong>Dato:</strong>3. Januar 2023 </p>
+<p><strong>Tidspunkt:</strong> Kl. 18:00 </p>
+<p><strong>Andledning:</strong> Fødselsdag</p>
+<p><strong>Antal kuverter: </strong>6pax </p>
+<p><strong>Tema: </strong>Japansk</p>
+<p><strong>Kok:</strong> Anders Jensen </p>
+<br>
+<p><strong>Total:</strong> 1.537,00kr</p>
+<br>
+<p><strong>Bemærkninger:</strong> 1 person er allergisk for glutten.</p>
 </div>
+       
+        
+        
+        
+<div class="tidligere_container">
+       <h3> <strong> Dine tidligere begivenheder </strong></h3>
+       <br>
+        <p><strong>Dato:</strong> 9. December 2022</p>
+        <p><strong>Tidspunkt:</strong> Kl. 20:00 </p>
+        <p><strong>Andledning:</strong> Julefrokost</p>
+        <p><strong>Antal kuverter:</strong> 9pax </p>
+        <p><strong>Tema:</strong> Dansk</p>
+        <p><strong>Kok:</strong> Jim Karlo </p>
+        <br>
+        <p><strong>Total:</strong> 6.375,00kr</p>
+        <br>
+        <p><strong>Bemærkninger:</strong> Vi ønsker risalamande til dessert.</p>
+    </div>
+ </div>
 
-    </body>    
+</body>
 </html>
