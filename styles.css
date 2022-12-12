@@ -377,6 +377,9 @@ input{
 width: 200px;
 }
 
+.hero_caption{
+margin-top: 5%;
+}
 .hero_caption-2 a{
   text-align: center;
   color: #222;
@@ -398,6 +401,7 @@ text-decoration: none;
 display: inline-block;
 text-align: center;
 font-weight: var(--fw-reg);
+font-size: var(--fs-h2);
 width: 170px;
 height: 30px;
 }
