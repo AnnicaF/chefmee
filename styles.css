@@ -1,3 +1,24 @@
+
+:root{
+  --ff-primary: 'Roboto Slab';
+  --ff-secondary: 'Montserrat';
+
+  --fw-reg:  300;
+  --fx-bold: 900;
+
+  --clr--background: #ffffff;
+  --clr--txt:    #222222;
+  --clr--c2a:    #ea5a4a;
+  --clr--footer: #f4ece1; 
+  --clr--logo:   #008489;
+  --clr--btn:    #1e4041;  
+
+  --fs-h1:   34px;
+  --fs-h2:   20px;
+  --fs-nav:  20px;
+}
+
+
 /* START - LOGIND FUNKTION GRID*/
 
 /*Mobil grid*/
@@ -638,7 +659,7 @@ grid-template-columns: 1fr 8fr;
 position: relative;
 height: 100%;
 width: 78px;
-background: rgb(217, 247, 252);
+background: var(--clr--background) rgb(217, 247, 252);
 background: linear-gradient(0deg, rgba(107,146,153,0) 0%, rgb(174 184 181) 100%);
 padding: 6px 14px;
 z-index: 2;
@@ -658,7 +679,7 @@ opacity: 0;
 transition: all 0.5s ease;
 }
 .sidebar .logo-details .logo_name{
-color: #fff;
+color: var(--clr--background);
 font-size: 20px;
 font-weight: 600;
 opacity: 0;
@@ -684,7 +705,7 @@ transition: all 0.5s ease;
 text-align: right;
 }
 .sidebar i{
-color: #fff;
+color: var(--clr--background);
 height: 60px;
 min-width: 50px;
 font-size: 28px;
@@ -705,7 +726,7 @@ position: absolute;
 top: -20px;
 left: calc(100% + 15px);
 z-index: 3;
-background: #fff;
+background: var(--clr--background);
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 padding: 6px 12px;
 border-radius: 4px;
@@ -728,7 +749,7 @@ display: none;
 }
 .sidebar input{
 font-size: 15px;
-color: #FFF;
+color: var(--clr--background);
 font-weight: 400;
 outline: none;
 height: 50px;
@@ -737,7 +758,7 @@ width: 50px;
 border: none;
 border-radius: 12px;
 transition: all 0.5s ease;
-background: #1d1b31;
+background: var(--clr--txt);
 }
 .sidebar.open input{
 padding: 0 20px 0 50px;
