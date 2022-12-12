@@ -25,7 +25,7 @@
             </nav>
         </header>   
         
-    <body>  
+    <body class="nyhedsbrev_body">  
         <div class="nyhedsbrev_container">
             <h1 class="newsletter__title">Tilmeld dig vores nyhedsbrev</h1>
 
@@ -45,11 +45,16 @@
                 <label for="email">
                     <p>Email</p> 
                     <input class="nyhedsbrev_input" type="text" name="email"> 
-                </label><br>
+                </label><br><br>
 
                 <input class="nyhedsbrev_btn" type="submit" name="submit" value="Tilmeld">
             </form>
+            
         </div>
+            <br>
+            <br>
+        <div class="nyhedsbrev_afmeld">
+        <a href="newsletter/out.php">Afmeld nyhedsbrev</a>
     </body>
 </html>
 
