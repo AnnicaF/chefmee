@@ -94,8 +94,9 @@
                 </div>
             </header>
 
+            <footer id="footer">
 
-            <div class="footer_container">
+<div class="footer_container">
     <div class="chefme_adresse">
                     <p class="title"><strong>Adresse</strong></p>
                     <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
@@ -112,11 +113,13 @@
 
     <div class="chefme_some" style="display:flex;margin:0 10px;">
                     <p class="title"><strong>SoMe</strong></p>
+                    <br>
                     <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
                     <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
 
     </div> 
 </div>
 </footer>	
+
     </body>
 </html>
