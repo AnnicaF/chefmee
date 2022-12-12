@@ -17,7 +17,7 @@
 <header>
             <nav class="nav_bar-box">
                 <ul>
-                    <a href="./index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
+                    <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
                     <li><a href="https://chefme.dk/lej-en-kok">MENUER</a></li>
                     <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
                     <li><a href="https://chefme.dk/om-os">OM OS</a></li>
