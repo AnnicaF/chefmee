@@ -17,7 +17,8 @@ if(isset($_POST['signup-btn'])){
   $passwordConf = $_POST['passwordConf']; 
   $firstName = $_POST['firstName']; 
   $lastName = $_POST['lastName']; 
-  $address = $_POST['address']; 
+  $address = $_POST['address'];
+  $floor = $_POST['floor'];
   $postal= $_POST['postal']; 
   $phone = $_POST['phone'];
   $gender = $_POST['gender'];  
@@ -79,7 +80,7 @@ if(isset($_POST['signup-btn'])){
     $token = bin2hex(random_bytes(50));
     $verified = 0;
 
-    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`, `gender`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone', '$gender')";
+    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `floor`, `postal`, `phone`, `gender`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address',  '$floor', '$postal', '$phone', '$gender')";
     $conn->query($sql);
     $conn->error;
     
