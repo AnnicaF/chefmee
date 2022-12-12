@@ -95,8 +95,7 @@
 </header>
 
         <footer>
-        <div class="nyhedsbrev_afmeld">
-        <a href="newsletter/out.php">Afmeld nyhedsbrev</a>
+       
 
         </footer>
     </body>

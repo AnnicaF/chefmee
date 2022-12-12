@@ -397,13 +397,14 @@ height: 30px;
 
 .nyhedsbrev_afmeld a{
   text-align: center;
-  color: #222;
+  color: var(--clr--background);
   text-decoration: none;
   border: solid 0.5px aliceblue;
   border-radius: 5px;
   padding: 5px;
-  background-color:aliceblue;
-  float: right;
+  background-color:var(--clr--btn);
+  border-style: none;
+  
 }
 
 .nyhedsbrev_afmeld-out{
@@ -438,7 +439,7 @@ height: 30px;
 
 
 .newsletter__title{
-  color:aliceblue;
+  color: var(--clr--btn);
 
 }
 
@@ -491,8 +492,8 @@ height: 30px;
 
 /* START - NYHEDSBREV STYLE */
 .nyhedsbrev_container{
-  color:var(--clr--background);
-  background-color: var(--clr--logo);
+  background-color:var(--clr--background);
+  color: var(--clr--logo);
   text-align: center;
   height: 500px;
   width: 1150px;
@@ -504,6 +505,10 @@ height: 30px;
   box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+}
+
+.nyhedsbrev_body{
+  background-color: var(--clr--btn);
 }
 /* SLUT - NYHEDSBREV STYLE */
 
