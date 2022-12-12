@@ -307,9 +307,9 @@ nav ul li a{
 }
 
 .login_icon{
-    padding-top: 25px;
-    margin-right:50px;
-    height: 30px;
+    width: 50%;
+    margin-top: 8%;
+  
 }
 
 .login_p{
@@ -855,7 +855,15 @@ width: 200px;
   .sidebar li .tooltip{
     display: none;
   }
-  }
-
-
   /* SLUT - SIDEBAR */ 
+
+/* SLUT - PROFILINFO */ 
+  #profil_info{
+    color: var(--clr--c2a);
+    justify-content: center;
+    
+  }
+   /* SLUT - PROFILINFO */ 
+
+}
+ 
