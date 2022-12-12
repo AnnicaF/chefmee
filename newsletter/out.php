@@ -25,7 +25,7 @@
             </nav>
         </header>   
 
-    <body>
+    <body class="out_body">
         <div class="nyhedsbrev_afmeld-out">
             <h3>Indsæt venligst den email du vil afmelde</h3>
             <br>

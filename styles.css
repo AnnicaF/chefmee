@@ -410,6 +410,7 @@ height: 30px;
 }
 
 .nyhedsbrev_afmeld-out{
+  background-color: var(--clr--background);
   margin-left: 25%;
   margin-top: 5%;
   padding: 5%;
@@ -419,6 +420,11 @@ height: 30px;
   box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+}
+
+.out_body{
+  background-color: var(--clr--btn);
+
 }
 
 .nyhedsbrev_btn-afmeld{
@@ -506,8 +512,8 @@ height: 30px;
 
 /* START - HEADER SIGNUP */
 .nav_bar-box{
-  background-color: var(--clr--footer);
-  font-size: 15px;
+  background-color: lightgrey;
+  font-size: var(--fs-nav);
 }
 /* SLUT - HEADER SIGNUP */
 
