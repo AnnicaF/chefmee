@@ -40,7 +40,13 @@
             <br>
             <br>
             <div class="nyhedsbrev_index-btn">
-                <a href="newsletter/index.php"> <button class="nyhedsbrev_index-btn"> Tilmeld nyhedsbrev </button></a>
+            
+                <input class="nyhedsbrev_index-btn" value="Tilmed" type="submit" onClick="myFunction()"/>
+                <script>
+                 function myFunction() {
+                    window.location.href="/chefmee/newsletter/index.php";
+                    }
+    </script>
             </div>
             </h3>
            
