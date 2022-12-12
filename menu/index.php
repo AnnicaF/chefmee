@@ -20,7 +20,7 @@ session_start();
 
 <head>
   <meta charset="utf-8">
-  <title>Logoer</title>
+  <title>Brugerprofil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles.css">
   <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@ session_start();
         <header>
             <nav class="nav_bar-box">
                 <ul>
-                    <a href="./index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
+                    <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
                     <li><a href="https://chefme.dk/lej-en-kok">MENUER</a></li>
                     <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
                     <li><a href="https://chefme.dk/om-os">OM OS</a></li>
@@ -56,7 +56,7 @@ session_start();
 
                     <ul class="nav-list">
                         <li>
-                            <a href="">
+                            <a href="index.php">
                                 <i class="fa-solid fa-user"></i>
                                 <span class="links_name">Oplysninger</span>
                             </a>
@@ -72,7 +72,7 @@ session_start();
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="../index.php">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                                 <span class="links_name">Logud</span>
                             </a>
