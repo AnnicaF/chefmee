@@ -19,7 +19,7 @@
             <label for="check" class="checkbtn2">
                  <i class="fas fa-bars"></i>
             </label>
-            <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
+            <a href="../index.php"><img class="logo" src="./assets/chefmelogo.png" alt="logo"></a>                    
     
             <ul>
                 <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
@@ -27,7 +27,7 @@
                 <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
                 <li class="login-menu"><a href="../login.php">LOGIND</a></li>
-                <img class="login_icon"src="../assets/icons8-male-user-50.png" alt="logind icon">
+                <img class="login_icon"src="./assets/icons8-male-user-50.png" alt="logind icon">
             </ul>
         </nav>
     </header>  
