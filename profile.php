@@ -25,7 +25,6 @@ if($resultCheck > 0){
 
     }
 }
-
 ?>
 
 

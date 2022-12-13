@@ -27,8 +27,6 @@ session_start();
     <script src="navbar.js" defer></script>
     </head>
 
-
-
     <header>
         <nav class="nav_bar-box" id="burger_menu">
             <input type="checkbox" id="check">
@@ -50,7 +48,9 @@ session_start();
 
     <div class="profil_container">
     <div class="profil_billede"><img src="../assets/profile-svgrepo-com.svg" alt="profilbillede"></div>
-    <div class="profil_titel">VELKOMMEN</div>
+    <div class="profil_titel">
+    <h3>Velkommen <?php echo $_SESSION['username']; ?> </h3>
+    </div>
 
     <!-- <main class="profil_sidebar"> 
             <div class="sg">
