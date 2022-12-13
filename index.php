@@ -94,7 +94,10 @@
                             </div>
                 </div>
             </header>
-        
+           
+            <video id="video" controls="">
+				<source src="" type="video/mp4">
+			</video>
 
         <footer id="footer">
             <div class="profil_footer">
