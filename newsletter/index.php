@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
         <title>Tilmed nyhedsbrev</title>
@@ -13,7 +14,7 @@
 
         <nav class="nav_bar-box" id="burger_menu">
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
+            <label for="check" class="checkbtn2">
                  <i class="fas fa-bars"></i>
             </label>
             <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
