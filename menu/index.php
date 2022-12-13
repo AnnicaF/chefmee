@@ -32,7 +32,7 @@ session_start();
     <header>
         <nav class="nav_bar-box" id="burger_menu">
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
+            <label for="check" class="checkbtn2">
                 <i class="fas fa-bars"></i>
             </label>
             <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
