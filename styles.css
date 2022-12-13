@@ -297,7 +297,7 @@ nav{
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -686,6 +686,7 @@ height: 30px;
   color:var(--clr--txt);
 }
 
+
 .profil-icon{
 width: 80%;
 margin-top: 30%;
@@ -778,21 +779,21 @@ margin-top: 30%;
   margin-top: 0px;
 }
 
-.opdater{
-}
 
 .button_opdater{
-  display: flex;
-  justify-content: center;
+   display: flex;
+  justify-content: center; 
+  display: block;
   height: 30%;
-  width: 40%;
+  width: 30%;
   font-size: var(--fs-nav);
   font-weight: var(--ff-primary);
   border-radius: 8px;
   border-style: none;
-  background-color: var(--clr--c2a);
+  background-color:var(--clr--btn);
   color: var(--clr--background);
   margin-top: 25%;
+  margin-left: 33%;
 }
 
 .profil_billede img{

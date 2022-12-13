@@ -52,7 +52,7 @@ session_start();
     <div class="profil_billede"><img src="../assets/profile-svgrepo-com.svg" alt="profilbillede"></div>
     <div class="profil_titel">VELKOMMEN</div>
 
-    <main class="profil_sidebar"> 
+    <!-- <main class="profil_sidebar"> 
             <div class="sg">
                 <div class="sidebar">
                     <div class="logo-details">
@@ -87,7 +87,7 @@ session_start();
                     </ul> 
                 </div>
             </div>
-    </main>
+    </main> -->
 
     <body>
         <div class="profil_navn">
@@ -179,6 +179,7 @@ session_start();
                         }
                     }
                 ?>
+                </div>
             <div class="opdater">
                 <Button class="button_opdater">Rediger</Button>
             </div>
