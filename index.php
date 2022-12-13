@@ -44,7 +44,7 @@
                 <input class="nyhedsbrev_index-btn" value="Tilmed nyhedsbrev" type="submit" onClick="myFunction()"/>
                 <script>
                  function myFunction() {
-                    window.location.href="/chefmee/newsletter/index.php";
+                    window.location.href="./../chefmee/newsletter/index.php";
                     }
                 </script>
             </div>

@@ -59,7 +59,7 @@ session_start();
                         <i class="fa-solid fa-bars"></i>
                         <div class="logo_name">Profil</div>
                         <i class='bx bx-menu' id="btn"></i>
-                    </div> -->
+                    </div> 
 
                     <ul class="nav-list">
                         <li>

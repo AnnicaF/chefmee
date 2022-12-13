@@ -949,6 +949,7 @@ margin-top: 30%;
   background: linear-gradient(0deg, rgba(107,146,153,0) 0%, rgb(174 184 181) 100%);
   padding: 6px 14px;
   z-index: 2;
+  margin-top: 0%;
   transition: all 0.5s ease;
   }
 
