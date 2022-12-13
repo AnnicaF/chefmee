@@ -43,7 +43,7 @@ session_start();
                 <li><a href="./bookings.php">BOOKINGER</a></li>
 
                 <li class="login-menu"><a href="../index.php">LOGUD</a></li>
-                <img class="login_icon"src="../assets/icons8-male-user-50.png" alt="logind icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
             </ul>
         </nav>
     </header>  
