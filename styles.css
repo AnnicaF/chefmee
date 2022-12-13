@@ -740,23 +740,18 @@ margin-top: 30%;
     "profil_sidebar profil_titel profil_titel ."
     "profil_sidebar profil_billede profil_billede ."
     "profil_sidebar profil_navn profil_efternavn ."
-    "profil_sidebar profil_adresse profil_adresse ."
+    "profil_sidebar profil_adresse profil_postnummer ."
     "profil_sidebar profil_tlfnr profil_email ."
     "profil_sidebar opdater opdater ."
     "profil_sidebar . . ."
     "profil_footer profil_footer profil_footer profil_footer";
 }
 
-.profil_sidebar { grid-area: profil_sidebar;
-  background-color:  var(--clr--menu)
- }
-
+.profil_sidebar { grid-area: profil_sidebar; }
 
 .profil_menu { grid-area: profil_menu; }
 
 .profil_navn { grid-area: profil_navn; }
-
-.profil_adresse { grid-area: profil_adresse; }
 
 .profil_tlfnr { grid-area: profil_tlfnr; }
 
@@ -771,6 +766,10 @@ margin-top: 30%;
 .profil_email { grid-area: profil_email; }
 
 .opdater { grid-area: opdater; }
+
+.profil_postnummer { grid-area: profil_postnummer; }
+
+.profil_adresse { grid-area: profil_adresse; }
 
 
 .profil_container{
@@ -882,7 +881,7 @@ margin-top: 30%;
     font-size: 18px;
     border-width: 1px;
     height: 24px;
-    width: 400px;
+    width: 200px;
     border-style: solid;
     border-color: #222;
     padding: 3px;
