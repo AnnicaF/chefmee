@@ -93,7 +93,6 @@ session_start();
     </main>
 
     <body>
-        <div class="brugerprofil_container">
         <div class="profil_navn">
             <?php   
                 $sql = "SELECT * FROM user_test WHERE id = 57;";
@@ -173,7 +172,6 @@ session_start();
             </div>
         </div>
         </div> 
-        </div>
 
         <footer class="footer">
             <div class="profil_footer">
