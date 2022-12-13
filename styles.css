@@ -331,6 +331,15 @@ nav ul li a{
   cursor:pointer;
   display: none;
 }
+.checkbtn2{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor:pointer;
+  display: none;
+}
 #check{
   display: none;
 }
@@ -345,6 +354,10 @@ nav ul li a{
      display: block;
      z-index: 999;
   }
+  .checkbtn2{
+    display: block;
+    z-index: 999;
+ }
   .login-menu a{
     padding: 0;
   }
