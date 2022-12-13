@@ -19,9 +19,10 @@
   --clr--btn:    #1e4041; 
   --clr--menu:  #f0ecec;
 
-  --fs-h1:   34px;
-  --fs-h2:   20px;
-  --fs-nav:  16px;
+  --fs-h1:      34px;
+  --fs-h2:      20px;
+  --fs-nav:     16px;
+  --fs-footer:  12px;
 }
 
 
@@ -1119,12 +1120,6 @@ margin-top: 30%;
 
 .chefme_some { grid-area: chefme_some; }
 
-.footer{
-  background-color: var(--clr--footer);
-  margin-bottom: 0%;
-  padding: 5%;
-  text-decoration: none;
-}
 
 #footer{
   background-color: var(--clr--footer);
@@ -1134,9 +1129,16 @@ margin-top: 30%;
   text-decoration: none;
 }
 
+#footer a{
+  text-decoration: none;
+  color: var(--clr--txt);
+
+}
+
 @media (max-width:700px){
   #footer{
     margin-top: 35%;
+    font-size: var(--fs-footer);
   }
 }
 
