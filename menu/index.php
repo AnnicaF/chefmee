@@ -137,6 +137,21 @@ session_start();
                 ?>
         </div>
 
+        <div class="profil_postnummer">
+                <?php
+
+                    $sql = "SELECT * FROM user_test WHERE id = 57";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
+
+                    if($resultCheck > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            echo $row['postal'] . "<br>";
+                        }
+                    }
+                ?>
+        </div>
+
 
         <div class="profil_tlfnr">
                 <?php
