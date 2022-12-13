@@ -38,9 +38,9 @@ session_start();
             <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
             
             <ul >
-                <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
-                <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-                <li><a href="https://chefme.dk/om-os">OM OS</a></li>
+                <li><a href="./index.php">PROFIL</a></li>
+                <li><a href="./menu-demo.php">OPLYSNINGER</a></li>
+                <li><a href="./bookings.php">BOOKINGER</a></li>
 
                 <li class="login-menu"><a href="../index.php">LOGUD</a></li>
                 <img class="login_icon"src="../assets/icons8-male-user-50.png" alt="logind icon">
