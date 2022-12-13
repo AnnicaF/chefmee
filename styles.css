@@ -33,36 +33,29 @@
       
   display: grid;
   justify-content: start;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1em;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . . ."
-    ". . opretprofil ."
-    ". . google ."
-    ". . facebook ."
-    ". person-oplysninger . ."
-    ". . fornavn ."
-    ". . efternavn ."
-    ". . etage ."
-    ". . adresse ."
-    ". . postnummer ."
-    ". . by ."
-    ". . kon ."
-    ". . fodselsdag ."
-    ". . mobilnummer ."
-    ". logind-oplysninger . ."
-    ". . form-group ."
-    ". . email ."
-    ". . kodeord ."
-    ". . gentagkode ."
-    ". . vilkar ."
-    ". . nyhedsbrev ."
-    ". . opret ."
-    ". . . ."
-    ". .  har-profil ."
-    ". . . .";
+    ". ."
+    "opretprofil ."
+    "google ."
+    "facebook ."
+    "person-oplysninger ."
+    "fornavn efternavn"
+    "adresse by"
+    "postnummer mobilnummer"
+    "kon fodselsdag"
+    "logind-oplysninger ."
+    "brugernavn email"
+    "kodeord gentagkode"
+    "vilkar ."
+    "nyhedsbrev ."
+    "opret ."
+    ".  . "
+    "har-profil ."
+    ". .";
 }
 
 .opretprofil { grid-area: opretprofil; }
@@ -77,15 +70,15 @@
 
 .efternavn { grid-area: efternavn; }
 
-.etage { grid-area: etage; }
-
 .adresse  { grid-area: adresse;  }
 
 .postnummer { grid-area: postnummer; }
 
 .by { grid-area: by; }
 
-.kon { grid-area: kon; }
+.kon { grid-area: kon;
+  height: 30px;
+}
 
 .fodselsdag { grid-area: fodselsdag; }
 
@@ -93,8 +86,7 @@
 
 .logind-oplysninger { grid-area: logind-oplysninger; }
 
-.form-group { grid-area: form-group; }
-
+.brugernavn { grid-area: brugernavn; }
 
 .email { grid-area: email; }
 
@@ -125,23 +117,22 @@
 
 /* Mobil grid slut*/
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
 .signup_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
-    "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
-    ". google google . . . . . ."
-    ". facebook facebook . . . . . ."
-    "person-oplysninger person-oplysninger person-oplysninger . . logind-oplysninger logind-oplysninger logind-oplysninger ."
-    "fornavn fornavn efternavn efternavn . form-group form-group email email"
-    "adresse adresse adresse adresse . kodeord kodeord gentagkode gentagkode"
-    "etage postnummer by by . . nyhedsbrev nyhedsbrev ."
-    "kon kon fodselsdag fodselsdag . . vilkar vilkar ."
-    "mobilnummer mobilnummer mobilnummer mobilnummer . . opret opret .";
+    "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
+    "google facebook . . . . ."
+    "person-oplysninger person-oplysninger . logind-oplysninger logind-oplysninger . ."
+    "fornavn efternavn . brugernavn email email ."
+    "adresse adresse . kodeord gentagkode gentagkode ."
+    "postnummer by . nyhedsbrev nyhedsbrev . ."
+    "kon fodselsdag . vilkar vilkar . ."
+    "mobilnummer . . opret . . .";
 }
 
 .google { grid-area: google; }
@@ -180,7 +171,7 @@
 
 .person-oplysninger { grid-area: person-oplysninger; }
 
-.form-group { grid-area: form-group; }
+.brugernavn { grid-area: brugernavn; }
 
 .vilkar { grid-area: vilkar; }
 
@@ -191,10 +182,9 @@
 
 /* START - STYLING AF OPRET PROFIL */
 .signup_container{
-    margin-top: 2% auto;
+    margin-top: 2%;
     max-width: 90%;
-    max-height: 80%;
-    
+    max-height: 100%;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -203,10 +193,6 @@
     -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
     -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
 }
-
-
-
-
 .opretprofil{
   text-align: center;
   margin-top: 25px;
@@ -232,8 +218,7 @@
 }
 
 .input_efternavn input{
-  width: 400px;
-  margin-left: -200px;
+  width: 200px;
 }
 
 .input_fornavn input{
@@ -242,11 +227,14 @@
 }
 
 .input_adresse input{
-  width: 610px;
+  width: 400px;
 }
 
 .input_mobilnummer input{
-  width: 300px;
+  width: 200px;
+}
+.input_kon input{
+  width: 200px;
 }
 
 .input_brugernavn input{
@@ -255,7 +243,7 @@
 } 
 
 .input_kode input{
-  width: 192px;
+  width: 200px;
 }
 
 .input_gentagkode input{
@@ -264,19 +252,12 @@
 
 .har-profil{
   text-align: center;
+} 
 }
 
-.kon{
-  width: 50%;
-  height: 50%;
-}
 
-.etage{
-  width: 50%;
-  height: 50%;
-}
+
 /* SLUT - STYLING AF OPRET PROFIL */
-}
 
 /* START - STYLING AF FORSIDE */
 ul{
@@ -320,7 +301,7 @@ nav ul li a{
   font-size: 18px; 
 }
 .login-menu a{
-  padding-left:200px
+  padding-left:100px
 }
 
 .checkbtn{
@@ -466,8 +447,8 @@ nav ul li a{
 }
 
 .buttonlogin{
-  font: var(--ff-primary);
-  font-weight: var(--fs-nav);
+  font-family: var(--ff-primary);
+  font-style: var(--fs-nav);
   text-decoration: none;
   text-align: center;
   color: var(--clr--background);
@@ -687,8 +668,6 @@ height: 30px;
 }
 /* SLUT - NYHEDSBREV STYLE */
 
-
-
 /* START - HEADER SIGNUP */
 .nav_bar-box{
   background-color: var(--clr--menu);
@@ -860,29 +839,6 @@ margin-top: 30%;
 }
 /* SLUT - BOOKINGS */
 
-/* START style PHP menu bar*/
-/* #dmenu{
-  display: flex;
-  width: 100%;
-  background-color: black;
-
-  justify-content: flex-end;
-  flex-direction: row;
-  position: relative;
-  margin-bottom: 1rem;
-  top: 0;
-  }
-
-  #dmenu a{
-  box-sizing: border-box;
-  width:100%;
-  padding: 10px;
-  color: white !important;
-  text-align: center;
-  } */
-  /* SLUT PHP menubar*/
-
-
   /*  START - PROFIL */
   .profil_navn{
     font-size: 18px;
@@ -952,210 +908,7 @@ margin-top: 30%;
   /* SLUT profil*/
 
 
-  /* START - SIDEBAR */ 
- 
-  .title-h1{
-    font-size: 3rem;
-    padding: 2rem;
-  }
-
-  .sidebar{grid-area: a;}
-  .home-section-farver{grid-area: b;}
-
-  .sg{
-  display: grid;
-  grid-template-areas:
-  'a b';
-  grid-template-columns: 1fr 8fr;
-  }
-
-  .sidebar{
-  position: relative;
-  height: 255%;
-  width: 78px;
-  background: var(--clr--background) rgb(11, 44, 50);
-  background: linear-gradient(0deg, rgba(107,146,153,0) 0%, rgb(174 184 181) 100%);
-  padding: 6px 14px;
-  z-index: 2;
-  margin-top: 0%;
-  transition: all 0.5s ease;
-  }
-
-  .sidebar.open{
-  width: 250px;
-  }
-
-  .sidebar .logo-details{
-  height: 60px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  }
-
-  .sidebar .logo-details .icon{
-  opacity: 0;
-  transition: all 0.5s ease;
-  }
-
-  .sidebar .logo-details .logo_name{
-  color: var(--clr--background);
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0;
-  transition: all 0.5s ease;
-  }
-
-  .sidebar.open .logo-details .icon,
-  .sidebar.open .logo-details .logo_name{
-  opacity: 1;
-  }
-
-  .sidebar .logo-details #btn{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  font-size: 22px;
-  transition: all 0.4s ease;
-  font-size: 23px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  }
-
-  .sidebar.open .logo-details #btn{
-  text-align: right;
-  }
-
-  .sidebar i{
-  height: 60px;
-  min-width: 50px;
-  font-size: 28px;
-  text-align: center;
-  line-height: 60px;
-  }
-
-  .sidebar .nav-list{
-  margin-top: 20px;
-  height: 100%;
-  }
-
-  .sidebar li{
-  position: relative;
-  margin: 8px 0;
-  list-style: none;
-  }
-
-  .sidebar li .tooltip{
-  position: absolute;
-  top: -20px;
-  left: calc(100% + 15px);
-  z-index: 3;
-  background: var(--clr--background);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: 400;
-  opacity: 0;
-  white-space: nowrap;
-  pointer-events: none;
-  transition: 0s;
-  }
-
-  .sidebar li:hover .tooltip{
-  opacity: 1;
-  pointer-events: auto;
-  transition: all 0.4s ease;
-  top: 50%;
-  transform: translateY(-50%);
-  }
-
-  .sidebar.open li .tooltip{
-  display: none;
-  }
-
-  .sidebar input{
-  font-size: 15px;
-  color: var(--clr--background);
-  font-weight: 400;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  width: 50px;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-  background: var(--clr--txt);
-  }
-
-  .sidebar.open input{
-  padding: 0 20px 0 50px;
-  width: 100%;
-  }
-
-  .sidebar .bx-search{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 22px;
-  background: #1d1b31;
-  color: var(--clr--background);
-  }
-
-  .sidebar.open .bx-search:hover{
-  background: #1d1b31;
-  color: var(--clr--background);
-  }
-  .sidebar .bx-search:hover{
-  background: var(--clr--background);
-  color: var(--clr--txt); 
-  }
-  .sidebar li a{
-  display: flex;
-  height: 100%;
-  width: 100%;
-  border-radius: 12px;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.4s ease;
-  background: var(--clr--logo); 
-  }
-  .sidebar li a:hover{
-  background: var(--clr--background);
-  }
-  .sidebar li a .links_name{
-  color: var(--clr--background);
-  font-size: 15px;
-  font-weight: 400;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.4s;
-  }
-  .sidebar.open li a .links_name{
-  opacity: 1;
-  pointer-events: auto;
-  }
-  .sidebar li a:hover .links_name,
-  .sidebar li a:hover i{
-  transition: all 0.5s ease;
-  color: var(--clr--txt);
-  }
-  .sidebar li i{
-  height: 50px;
-  line-height: 50px;
-  font-size: 18px;
-  border-radius: 12px;
-  }
-
-  @media (max-width: 420px) {
-  .sidebar li .tooltip{
-    display: none;
-  }
-    /* SLUT - SIDEBAR */ 
-
+  
 
   /* START- PROFILINFO */ 
   #profil_info{
@@ -1164,7 +917,6 @@ margin-top: 30%;
   }
    /* SLUT - PROFILINFO */ 
 
-}
 /*START ERROR besked*/
  
 .alert{

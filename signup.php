@@ -9,8 +9,6 @@
         <title>Opret profil</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    
-     
 
     <body>
         
@@ -71,14 +69,6 @@
                             <input type="text" name="lastName" placeholder="Efternavn">
                         </label>
                     </div>
-                
-
-                    <div class="etage">
-                        <label for="">
-                            <input type="text" name="floor" placeholder="Etage">
-                        </label>
-                    </div>
-                
             
                     <div class="adresse">
                         <label class="input_adresse" for="address">
@@ -92,8 +82,7 @@
                             <input type="number" name="postal" placeholder="Postnummer">
                         </label>
                     </div>
-              
-
+        
                     <div class="by">
                         <label for="city">
                             <input type="text" name="city" placeholder="By">
@@ -125,9 +114,9 @@
 
                     <div class="logind-oplysninger">Logind oplysninger</div>
                 
-                    <div class="form-group">
+                    <div class="brugernavn">
                         <label class="input_brugernavn" for="username">
-                            <input type="text" name="username"  value="<?php echo $username; ?>"class="form-control form-control-lg" placeholder="Indtast brugernavn">
+                            <input type="text" name="username"  value="<?php echo $username; ?>" placeholder="Indtast brugernavn">
                         </label>
                     </div>
                

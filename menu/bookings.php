@@ -7,7 +7,6 @@
         <title>Bestillinger</title>
         <link rel="stylesheet" href="../styles.css">
         <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
-        <script src="navbar.js" defer></script>
 
     </head>
 
