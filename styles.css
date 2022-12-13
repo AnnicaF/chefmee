@@ -767,9 +767,9 @@ margin-top: 30%;
 
 .opdater { grid-area: opdater; }
 
-.profil_adresse { grid-area: profil_adresse; }
-
 .profil_postnummer { grid-area: profil_postnummer; }
+
+.profil_adresse { grid-area: profil_adresse; }
 
 
 .profil_container{
