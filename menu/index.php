@@ -28,28 +28,29 @@ session_start();
     </head>
 
     <header>
-        <nav class="nav_bar-box" id="burger_menu">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn2">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
-            
-            <ul >
-                <i class="fa-solid fa-user"></i>
-                <li><a href="./index.php">PROFIL</a></li>
-                
-                <i class="fa-solid fa-utensils"></i>
-                <li><a href="./bookings.php">BOOKINGER</a></li>
 
-                <i class="fa-solid fa-heart"></i>
-                <li><a href="./favoritter.php">FAVORITTER</a></li>
+<nav class="nav_bar-box" id="burger_menu">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
+    
+    <ul >
+        
+        <li><a href="./index.php"><i class="fa-solid fa-user"></i> PROFIL</a></li>
+        
+        
+        <li><a href="./bookings.php"><i class="fa-solid fa-utensils"></i> BOOKINGER</a></li>
 
-                <li class="login-menu"><a href="../index.php">LOGUD</a></li>
-                <i class="fa-solid fa-right-from-bracket"></i>
-            </ul>
-        </nav>
-    </header>  
+        
+        <li><a href="./favoritter.php"><i class="fa-solid fa-heart"></i> FAVORITTER</a></li>
+
+        <li class="login-menu"><a href="../index.php">LOGUD <i class="fa-solid fa-right-from-bracket"></i></a></li>
+        
+    </ul>
+</nav>
+</header>  
 
     <div class="profil_container">
     <div class="profil_billede"><img src="../assets/profile-svgrepo-com.svg" alt="profilbillede"></div>

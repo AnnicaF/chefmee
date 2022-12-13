@@ -21,17 +21,17 @@
             <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
             
             <ul >
-                <i class="fa-solid fa-user"></i>
-                <li><a href="./index.php">PROFIL</a></li>
                 
-                <i class="fa-solid fa-utensils"></i>
-                <li><a href="./bookings.php">BOOKINGER</a></li>
+                <li><a href="./index.php"><i class="fa-solid fa-user"></i> PROFIL</a></li>
+                
+                
+                <li><a href="./bookings.php"><i class="fa-solid fa-utensils"></i> BOOKINGER</a></li>
 
-                <i class="fa-solid fa-heart"></i>
-                <li><a href="./favoritter.php">FAVORITTER</a></li>
+                
+                <li><a href="./favoritter.php"><i class="fa-solid fa-heart"></i> FAVORITTER</a></li>
 
-                <li class="login-menu"><a href="../index.php">LOGUD</a></li>
-                <i class="fa-solid fa-right-from-bracket"></i>
+                <li class="login-menu"><a href="../index.php">LOGUD <i class="fa-solid fa-right-from-bracket"></i></a></li>
+                
             </ul>
         </nav>
     </header>  
