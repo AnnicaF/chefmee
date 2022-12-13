@@ -66,8 +66,6 @@
                         <div class="trustpilot">
                         <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk">
                             <div style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 18.326693227091635%;">
-                        
-                
                                 <svg viewBox="0 0 251 46" xmlns="http://www.w3.org/2000/svg" style="position: absolute; height: 100%; width: 100%; left: 0; top: 0;">
                                 <g class="tp-star">
                                 <path class="tp-star__canvas" fill="#000" d="M0 46.330002h46.375586V0H0z"></path>

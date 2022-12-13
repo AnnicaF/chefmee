@@ -11,23 +11,23 @@
 
     <header>
 
-<nav class="nav_bar-box" id="burger_menu">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
-    <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
+        <nav class="nav_bar-box" id="burger_menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                 <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
     
-    <ul >
-        <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
-        <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-        <li><a href="https://chefme.dk/om-os">OM OS</a></li>
+            <ul>
+                <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+                <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+                <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-        <li class="login-menu"><a href="../login.php">LOGIND</a></li>
-        <img class="login_icon"src="../assets/icon_user.svg" alt="logind icon">
-    </ul>
-</nav>
-</header>  
+                <li class="login-menu"><a href="../login.php">LOGIND</a></li>
+                <img class="login_icon"src="../assets/icon_user.svg" alt="logind icon">
+            </ul>
+        </nav>
+    </header>  
 
         
     <body class="nyhedsbrev_body">  
