@@ -22,7 +22,7 @@
   --fs-h1:      34px;
   --fs-h2:      20px;
   --fs-nav:     16px;
-  --fs-footer:  12px;
+  --fs-footer:  10px;
 }
 
 
@@ -734,7 +734,10 @@ margin-top: 30%;
     "profil_footer profil_footer profil_footer profil_footer";
 }
 
-.profil_sidebar { grid-area: profil_sidebar; }
+.profil_sidebar { grid-area: profil_sidebar;
+  background-color:  var(--clr--menu)
+ }
+
 
 .profil_menu { grid-area: profil_menu; }
 
@@ -759,7 +762,6 @@ margin-top: 30%;
 
 .profil_container{
   text-align: center;
-  background-color: var(--clr--logo);
   height: 650px;
   margin-top: 0px;
 }
@@ -853,16 +855,26 @@ margin-top: 30%;
     border-color: #222;
     padding: 3px;
   }
+
+  .profil_efternavn{
+    font-size: 18px;
+    border-width: 1px;
+    height: 24px;
+    width: 200px;
+    border-style: solid;
+    border-color: #222;
+    padding: 3px;
+  }
   .profil_adresse{
     font-size: 18px;
     border-width: 1px;
     height: 24px;
-    width: 200px;
+    width: 400px;
     border-style: solid;
     border-color: #222;
     padding: 3px;
   }
-  .profil_mail{
+  .profil_email{
     font-size: 18px;
     border-width: 1px;
     height: 24px;
@@ -871,7 +883,7 @@ margin-top: 30%;
     border-color: #222;
     padding: 3px;
   }
-  .profil_telefon{
+  .profil_tlfnr{
     font-size: 18px;
     border-width: 1px;
     height: 24px;
@@ -904,7 +916,7 @@ margin-top: 30%;
   position: relative;
   height: 100%;
   width: 78px;
-  background: var(--clr--background) rgb(217, 247, 252);
+  background: var(--clr--background) rgb(11, 44, 50);
   background: linear-gradient(0deg, rgba(107,146,153,0) 0%, rgb(174 184 181) 100%);
   padding: 6px 14px;
   z-index: 2;
@@ -958,7 +970,6 @@ margin-top: 30%;
   }
 
   .sidebar i{
-  color: var(--clr--background);
   height: 60px;
   min-width: 50px;
   font-size: 28px;
@@ -1139,6 +1150,9 @@ margin-top: 30%;
   #footer{
     margin-top: 35%;
     font-size: var(--fs-footer);
+  }
+  #footer img{
+  max-width: 15%;
   }
 }
 
