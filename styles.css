@@ -584,20 +584,26 @@ height: 30px;
 
 .newsletter__title{
   color: var(--clr--btn);
+  font-size: 28px;
 
 }
-
-.nyhedsbrev_input input{
-  height: 20px;
-  width: 100px;
+@media (max-width:612px){
+  input{
+    width:120px;
+  }
+  .newsletter__title{
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
 }
+
 
 .nyhedsbrev_btn{
   cursor: pointer;
   right: 20px;
   top: 20px;
-  width: 20%;
-  height: 10%;
+  width: 80px;
+  height: 30px;
   background-color: var(--clr--logo);
   color: var(--clr--background);
   font-size: var(--fw-reg);
