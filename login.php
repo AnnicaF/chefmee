@@ -5,34 +5,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="navbar.js" defer></script>
 </head>
-
-
-        <header>
-            <nav class="nav_bar-box">
-                <ul>
-                    <a href="./index.php"><img class="logo" src="./assets/chefmelogo.png" alt="logo"></a>                    
-                    <li><a href="https://chefme.dk/lej-en-kok">MENUER</a></li>
-                    <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-                    <li><a href="https://chefme.dk/om-os">OM OS</a></li>
-
-                    <div class="btn">
-                        <div class="kontakt-call-to-action-2">
-                        <div class="kontakt-call-to-action-2">
-                            <a href="login.php" class="buttonlogin">OPRET BRUGER</a>
-                            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon"></div>
-
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-        </header>    
 <body>
- 
+<header class="header_index">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.php"><img class="logo" src="assets/chefmelogo_white.png" alt="logo"></a>    
+        <ul>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">KOKKE</a></li>
+            <li><a href="#">OM OS</a></li>
+
+            <li class="login-menu"><a href="#">LOGIND</a></li>
+            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
+
+        </ul>
+    </nav>
+        <section id="form-login"> 
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form-div login">
@@ -51,23 +49,24 @@
                     
                     <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" value="<?php echo $email; ?> "class="form-control form-control-lg" placeholder="Indtast din email">
+                    <input type="email" name="email" value="<?php echo $email; ?> "class="form-control form-control-lg">
                     </div>
 
 
                     <div class="form-group">
                     <label for="password">Kode</label>
-                    <input type="password" name="password" class="form-control form-control-lg" placeholder="Indtast din kode">
+                    <input type="password" name="password" class="form-control form-control-lg">
                     </div>
 
                     <div class="form-group">
                     <button type="submit" name="login-btn" class="btn btn-primary btn-block btn-lg">Login</button>
                     </div>
-                        <p>Har du ikke en profil? <a href="signup.php">Opret nu</a></p>
+                        <p class="ingenprofil">Har du ikke en profil? <a class="genvej" href="signup.php">Opret nu</a></p>
                 </form>
            </div>
         </div>
     </div>
+    </section>
 
       <footer id="footer">
     <div class="footer_container">

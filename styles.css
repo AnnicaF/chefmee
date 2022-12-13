@@ -1,4 +1,9 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue";
+}
 :root{
   --ff-primary: 'Roboto Slab';
   --ff-secondary: 'Montserrat';
@@ -285,6 +290,100 @@ a{
     text-decoration: none;
 }
 
+
+/* START MENU */
+nav{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+label.logo img{
+  line-height: 80px;
+  padding: 0 100px;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px; 
+}
+.login-menu a{
+  padding-left:200px
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor:pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width:952px){
+  nav ul li a{
+      font-size: 16px;
+  }
+
+}
+@media (max-width:858px){
+  .checkbtn{
+     display: block;
+     z-index: 999;
+  }
+  .login-menu a{
+    padding: 0;
+  }
+  nav{
+    display: flex;
+    flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--clr--menu);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+      color: black;
+  }
+  .login_icon img{
+    background-color:  black;
+  }
+  #check:checked ~ ul {
+      left: 0;
+
+  }
+}
+/*SLUT MENU*/
+
+/* 
 nav ul{
     display: flex;
     flex-direction: row;
@@ -298,7 +397,7 @@ nav ul li a{
     display: flex;
     justify-content: center;
     color: var(--clr--background);
-}
+} */
 
 .logo{
     margin-top: 1%;
@@ -306,9 +405,8 @@ nav ul li a{
 }
 
 .login_icon{
-    width: 30%;
-    margin-bottom: 10%;
-    margin-right: 10%;
+    width: 30px;
+    color: black;
 }
 
 .login_txt-icon{
@@ -584,8 +682,9 @@ margin-top: 30%;
   -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
 }
 
-.container input{
-width: 130%;
+#form-login{
+  height: 500px;
+  width: 100%;
 }
 
 /* SLUT - LOGIND */
@@ -803,13 +902,7 @@ width: 130%;
 
 
   /* START - SIDEBAR */ 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Helvetica Neue";
-  }
-
+ 
   .title-h1{
     font-size: 3rem;
     padding: 2rem;
@@ -1013,7 +1106,7 @@ width: 130%;
     /* SLUT - SIDEBAR */ 
 
 
-  /* SLUT - PROFILINFO */ 
+  /* START- PROFILINFO */ 
   #profil_info{
     color: var(--clr--c2a);
     justify-content: center;
@@ -1021,10 +1114,12 @@ width: 130%;
    /* SLUT - PROFILINFO */ 
 
 }
+/*START ERROR besked*/
  
 .alert{
   text-align: center;
 }
+/*SLUT ERROR besked*/
 
 /* START - FOOTER */
 .footer_container {  
@@ -1057,6 +1152,31 @@ width: 130%;
   margin-top: 20%;
   text-decoration: none;
 }
-}
 
 /* SLUT - FOOTER */
+
+/*START LOGIN*/
+.btn-primary{
+  background-color: var(--clr--c2a);
+  border: none;
+}
+.btn-primary:hover{
+  background-color: var(--clr--c2a);
+}
+
+.genvej{
+  color: var(--clr--c2a);
+}
+.form-group input{
+  width: 100%;
+}
+.ingenprofil{
+  text-align: center;
+}
+.text {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+
+/*SLUT LOGIN */
