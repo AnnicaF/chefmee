@@ -741,7 +741,6 @@ margin-top: 30%;
   background-color: var(--clr--logo);
   height: 650px;
   margin-top: 0px;
-
 }
 
 .button_opdater{
@@ -755,7 +754,7 @@ margin-top: 30%;
   border-style: none;
   background-color: var(--clr--c2a);
   color: var(--clr--background);
-  margin-top: 5%;
+  margin-top: 25%;
 }
 
 .profil_billede img{
