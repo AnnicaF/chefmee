@@ -24,7 +24,7 @@
                 <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
                 <li class="login-menu"><a href="../login.php">LOGIND</a></li>
-                <img class="login_icon"src="../assets/icon_user.svg" alt="logind icon">
+                <img class="login_icon"src="../assets/icons8-male-user-50.png" alt="logind icon">
             </ul>
         </nav>
     </header>  
