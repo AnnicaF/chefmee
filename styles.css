@@ -293,7 +293,7 @@ a{
 
 
 /* START MENU */
-nav{
+#burger_menu nav{
   height: 80px;
   width: 100%;
   display: flex;
@@ -302,19 +302,19 @@ nav{
   padding-right: 10px;
 }
 
-label.logo img{
+#burger_menu label.logo img{
   line-height: 80px;
   padding: 0 100px;
 }
-nav ul{
+#burger_menu  nav ul{
   float: right;
 }
-nav ul li{
+#burger_menu nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 20px;
 }
-nav ul li a{
+#burger_menu nav ul li a{
   color: white;
   font-size: 18px; 
 }
@@ -348,14 +348,14 @@ nav ul li a{
   .login-menu a{
     padding: 0;
   }
-  nav{
+  #burger_menu nav{
     display: flex;
     flex-direction: row-reverse;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
   }
-  ul{
+  #burger_menu ul{
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -365,12 +365,12 @@ nav ul li a{
       text-align: center;
       transition: all .5s;
   }
-  nav ul li {
+  #burger_menu nav ul li {
       display: block;
       margin: 50px 0;
       line-height: 30px;
   }
-  nav ul li a{
+  #burger_menu nav ul li a{
       font-size: 20px;
       color: black;
   }
@@ -914,7 +914,7 @@ margin-top: 30%;
 
   .sidebar{
   position: relative;
-  height: 100%;
+  height: 255%;
   width: 78px;
   background: var(--clr--background) rgb(11, 44, 50);
   background: linear-gradient(0deg, rgba(107,146,153,0) 0%, rgb(174 184 181) 100%);

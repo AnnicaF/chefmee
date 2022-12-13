@@ -173,7 +173,7 @@ session_start();
         </div>
         </div> 
 
-        <footer class="footer">
+        <footer id="footer">
             <div class="profil_footer">
                 <div class="footer_container">
                     <div class="chefme_adresse">
