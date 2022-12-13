@@ -70,7 +70,7 @@ session_start();
                             </a>
                             <span class="tooltip">Oplysninger</span>
                         </li>
-        
+        profil.
                         <li>
                             <a href="bookings.php">
                                 <i class="fa-solid fa-utensils"></i>
