@@ -201,10 +201,11 @@ session_start();
                             <p class="sub-title spaced">Email: support@chefme.dk</p>    
                     </div>
 
-                    <div class="chefme_some" style="display:flex;margin:0 10px;">
-                        <p class="title"><strong>SoMe</strong></p>
-                        <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="../assets/facebook.svg" style="width:24px;"></a>
-                        <a href="https://www.instagram.com/chefme/" target="_blank"><img src="../assets/instagram.svg" style="width:24px;"></a>
+                    <div class="chefme_some">
+                        <p><strong>SoMe</strong></p>
+                        <br>
+                        <a href="https://www.facebook.com/chefmedk" target="_blank"><img src="../assets/facebook.svg"></a>
+                        <a href="https://www.instagram.com/chefme/" target="_blank"><img src="../assets/instagram.svg"></a>
                     </div> 
                 </div>
             </div>

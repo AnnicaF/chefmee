@@ -94,33 +94,32 @@
                             </div>
                 </div>
             </header>
-            <footer id="footer">
         
 
-<div class="footer_container">
-    <div class="chefme_adresse">
-                    <p class="title"><strong>Adresse</strong></p>
-                    <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
-                    <p class="sub-title">ChefMe®</p>
-    </div>
+        <footer id="footer">
+            <div class="profil_footer">
+                <div class="footer_container">
+                    <div class="chefme_adresse">
+                        <p class="title"><strong>Adresse</strong></p>
+                        <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
+                        <p class="sub-title">ChefMe®</p>
+                    </div>
 
-    <div class="chefme_kontakt">
-                        <p class="title"><strong>Kontakt</strong></p>
-                        <p class="sub-title">Tlf:
-                        <a href="tel:+45 1234 5678"></a><a href="tel:004593404010">93 40 40 10</a></p>
-                        <p class="sub-title spaced">Email: support@chefme.dk</p>
-                            
-    </div>
+                    <div class="chefme_kontakt">
+                            <p class="title"><strong>Kontakt</strong></p>
+                            <p class="sub-title">Tlf:
+                            <a href="tel:+45 1234 5678"></a><a href="tel:004593404010">93 40 40 10</a></p>
+                            <p class="sub-title spaced">Email: support@chefme.dk</p>    
+                    </div>
 
-    <div class="chefme_some">
-                    <p class="title"><strong>SoMe</strong></p>
-                    <br>
-                    <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
-                    <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
-
-    </div> 
-</div> 
-</footer>	
-
+                    <div class="chefme_some">
+                        <p><strong>SoMe</strong></p>
+                        <br>
+                        <a href="https://www.facebook.com/chefmedk" target="_blank"><img src="./assets/facebook.svg"></a>
+                        <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg"></a>
+                    </div> 
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
