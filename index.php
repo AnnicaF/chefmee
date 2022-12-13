@@ -94,7 +94,7 @@
                             </div>
                 </div>
             </header>
-            <footer>
+            <footer id="footer">
         
 
 <div class="footer_container">
