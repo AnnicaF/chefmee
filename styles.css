@@ -22,7 +22,7 @@
   --fs-h1:      34px;
   --fs-h2:      20px;
   --fs-nav:     16px;
-  --fs-footer:  12px;
+  --fs-footer:  10px;
 }
 
 
@@ -1139,6 +1139,9 @@ margin-top: 30%;
   #footer{
     margin-top: 35%;
     font-size: var(--fs-footer);
+  }
+  #footer img{
+  max-width: 15%;
   }
 }
 
