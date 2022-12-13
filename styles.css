@@ -442,6 +442,10 @@ nav ul li a{
     background-image: url(assets/bg_img.jpg);
     height: 500px;
 }
+.header_index2{
+  background-color: var(--clr--menu);
+  height: 80px;
+}
 
 .hero_caption, .hero_caption-2 {
     text-align: center;

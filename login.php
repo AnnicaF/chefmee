@@ -10,26 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="navbar.js" defer></script>
 </head>
 <body>
-<header class="header_index">
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="index.php"><img class="logo" src="assets/chefmelogo_white.png" alt="logo"></a>    
-        <ul>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">KOKKE</a></li>
-            <li><a href="#">OM OS</a></li>
+<header>
 
-            <li class="login-menu"><a href="#">LOGIND</a></li>
-            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
+        <nav class="nav_bar-box" id="burger_menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn2">
+                 <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
+    
+            <ul>
+                <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+                <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+                <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-        </ul>
-    </nav>
+                <li class="login-menu"><a href="../login.php">LOGIND</a></li>
+                <img class="login_icon"src="../assets/icons8-male-user-50.png" alt="logind icon">
+            </ul>
+        </nav>
+    </header>  
         <section id="form-login"> 
     <div class="container">
         <div class="row">
