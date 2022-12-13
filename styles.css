@@ -355,7 +355,7 @@ nav ul li a{
   padding-left: 10px;
   padding-right: 10px;
   }
-ul{
+#burger_menu ul{
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -365,12 +365,12 @@ ul{
       text-align: center;
       transition: all .5s;
   }
-  nav ul li {
+  #burger_menu nav ul li {
       display: block;
       margin: 50px 0;
       line-height: 30px;
   }
-  nav ul li a{
+  #burger_menu nav ul li a{
       font-size: 20px;
       color: black;
   }
