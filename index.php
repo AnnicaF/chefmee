@@ -12,13 +12,14 @@
     
     <body>
         <header class="header_index">
-    <nav>
+    <nav class="burger_menu">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <a href="index.php"><img class="logo" src="assets/chefmelogo_white.png" alt="logo"></a>    
-        <ul>
+        
+        <ul >
             <li><a href="#">MENU</a></li>
             <li><a href="#">KOKKE</a></li>
             <li><a href="#">OM OS</a></li>
