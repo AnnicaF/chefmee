@@ -112,7 +112,7 @@
                             
     </div>
 
-    <div class="chefme_some" style="display:flex;margin:0 10px;">
+    <div class="chefme_some">
                     <p class="title"><strong>SoMe</strong></p>
                     <br>
                     <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
