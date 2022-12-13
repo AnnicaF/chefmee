@@ -12,34 +12,32 @@
     
     <body>
         <header class="header_index">
-    <nav id="burger_menu">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="index.php"><img class="logo" src="assets/chefmelogo_white.png" alt="logo"></a>    
-        
-        <ul >
-            <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
-            <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-            <li><a href="https://chefme.dk/om-os">OM OS</a></li>
+            <nav id="burger_menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="index.php"><img class="logo" src="assets/chefmelogo_white.png" alt="logo"></a>    
+                
+                <ul >
+                    <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+                    <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+                    <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-            <li class="login-menu"><a href="login.php">LOGIND</a></li>
-            <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
+                    <li class="login-menu"><a href="login.php">LOGIND</a></li>
+                    <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
 
-        </ul>
-    </nav>
+                </ul>
+            </nav>
       
-           <h1 class="hero_caption">
-                BOOK EN PRIVATE KOK
-            </h1>
+           <h1 class="hero_caption">BOOK EN PRIVATE KOK</h1>
             
             <h3 class="hero_caption-2"><br>
                 Tillad tid til værtskab
-            <br>
-            <br>
-            <br>
-            <div class="nyhedsbrev_index-btn">
+                <br>
+                <br>
+                <br>
+                <div class="nyhedsbrev_index-btn">
             
                 <input class="nyhedsbrev_index-btn" value="Tilmed nyhedsbrev" type="submit" onClick="myFunction()"/>
                 <script>
@@ -47,25 +45,25 @@
                     window.location.href="./../chefmee/newsletter/index.php";
                     }
                 </script>
-            </div>
+                </div>
             </h3>
            
             
        
   
-        <div class="trustpilot_stjerner">
-            <article class="trustpilot">
-                <section>
-                    <div class="trustpilot_txt">
-                        <div class="one"> 
-                            <p>Vores kunder siger</p>
-                            <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk" style="color: #00b67a;">
-                               <strong>Fremragende</strong> </a>
+            <div class="trustpilot_stjerner">
+                <article class="trustpilot">
+                    <section>
+                        <div class="trustpilot_txt">
+                            <div class="one"> 
+                                <p>Vores kunder siger</p>
+                                <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk" style="color: #00b67a;">
+                                <strong>Fremragende</strong> </a>
+                            </div>
                         </div>
-                    </div>
 
                         <div class="trustpilot">
-                        <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk">
+                            <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk">
                             <div style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 18.326693227091635%;">
                         
                 
@@ -92,8 +90,11 @@
                                 </g>
                                 </svg>
                             </div>
-                </div>
-            </header>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </header>
            
             <video id="video" controls="">
 				<source src="" type="video/mp4">
