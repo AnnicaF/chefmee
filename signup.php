@@ -152,19 +152,13 @@
             
             
                     <div class="vilkar">
-                        <link rel=""  href="">
-                            <input type="checkbox" checked="checked">Vilkår
-                            <label class="container">
-                                <span class="checkmark"></span>
-                            </label>
+                    <input type="checkbox" checked="checked">
+                        <a href="https://chefme.dk/betingelser">Vilkår</a>
                     </div>
                     
                     <div class="nyhedsbrev">
                         <link rel=""  href="">
                         <input  type="checkbox" checked="checked">Nyhedsbrev
-                        <label class="container">
-                            <span class="checkmark"></span>
-                        </label>
                     </div>
 
                         
