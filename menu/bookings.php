@@ -21,9 +21,14 @@
             <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
             
             <ul >
-            <li><a href="./index.php">PROFIL</a></li>
-                <li><a href="./menu-demo.php">OPLYSNINGER</a></li>
+                <i class="fa-solid fa-user"></i>
+                <li><a href="./index.php">PROFIL</a></li>
+                
+                <i class="fa-solid fa-utensils"></i>
                 <li><a href="./bookings.php">BOOKINGER</a></li>
+
+                <i class="fa-solid fa-heart"></i>
+                <li><a href="./favoritter.php">FAVORITTER</a></li>
 
                 <li class="login-menu"><a href="../index.php">LOGUD</a></li>
                 <i class="fa-solid fa-right-from-bracket"></i>
@@ -31,51 +36,13 @@
         </nav>
     </header>  
 
-        <!-- <main>
-            <div class="sg">
-
-                <div class="sidebar">
-                    <div class="logo-details">
-                        <i class="fa-solid fa-bars"></i>
-                        <div class="logo_name">Profil</div>
-                        <i class='bx bx-menu' id="btn"></i>
-                    </div>
-
-                    <ul class="nav-list">
-                        <li>
-                            <a href="index.php">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="links_name">Oplysninger</span>
-                            </a>
-                            <span class="tooltip">Oplysninger</span>
-                        </li>
-        
-                        <li>
-                            <a href="bookings.php">
-                                <i class="fa-solid fa-utensils"></i>
-                                <span class="links_name">Bookinger</span>
-                            </a>
-                            <span class="tooltip">Bookinger</span>
-                        </li>
-
-                        <li>
-                            <a href="../index.php">
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                                <span class="links_name">Logud</span>
-                            </a>
-                            <span class="tooltip">Logud</span>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-         </main> -->
-
 
         
 <body>
 
 <div class="bookings_container">
     <div class="kommende_container">
+       
         <h3> <strong> Dine kommende begivenheder </strong></h3>
         <br>
 <p><strong>Dato:</strong> 03/01 - 2023 </p>

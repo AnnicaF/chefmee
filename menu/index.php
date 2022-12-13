@@ -43,7 +43,7 @@ session_start();
                 <li><a href="./bookings.php">BOOKINGER</a></li>
 
                 <i class="fa-solid fa-heart"></i>
-                <li><a href="./menu-demo.php">FAVORITTER</a></li>
+                <li><a href="./favoritter.php">FAVORITTER</a></li>
 
                 <li class="login-menu"><a href="../index.php">LOGUD</a></li>
                 <i class="fa-solid fa-right-from-bracket"></i>
