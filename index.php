@@ -57,7 +57,8 @@
             <article class="trustpilot">
                 <section>
                     <div class="trustpilot_txt">
-                        <div class="one"> Vores kunder siger 
+                        <div class="one"> 
+                            <p>Vores kunder siger</p>
                             <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk" style="color: #00b67a;">
                                <strong>Fremragende</strong> </a>
                         </div>
@@ -93,8 +94,8 @@
                             </div>
                 </div>
             </header>
-
-            <footer id="footer">
+            <footer>
+        
 
 <div class="footer_container">
     <div class="chefme_adresse">
@@ -118,7 +119,7 @@
                     <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
 
     </div> 
-</div>
+</div> 
 </footer>	
 
     </body>
