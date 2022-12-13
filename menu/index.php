@@ -52,8 +52,7 @@ session_start();
     <div class="profil_billede"><img src="../assets/profile-svgrepo-com.svg" alt="profilbillede"></div>
     <div class="profil_titel">VELKOMMEN</div>
 
-    <main>
-        <!-- <div class="profil_sidebar">
+    <main class="profil_sidebar"> 
             <div class="sg">
                 <div class="sidebar">
                     <div class="logo-details">
@@ -62,7 +61,7 @@ session_start();
                         <i class='bx bx-menu' id="btn"></i>
                     </div> -->
 
-                    <!-- <ul class="nav-list">
+                    <ul class="nav-list">
                         <li>
                             <a href="index.php">
                                 <i class="fa-solid fa-user"></i>
@@ -85,10 +84,9 @@ session_start();
                             </a>
                             <span class="tooltip">Logud</span>
                         </li>
-                    </ul> -->
-                <!-- </div>
+                    </ul> 
+                </div>
             </div>
-        </div>  -->
     </main>
 
     <body>
