@@ -876,6 +876,7 @@ margin-top: 30%;
     border-style: solid;
     border-color: #222;
     padding: 3px;
+    margin-left: 10px;
   }
   .profil_adresse{
     font-size: 18px;
@@ -894,8 +895,9 @@ margin-top: 30%;
     border-style: solid;
     border-color: #222;
     padding: 3px;
+    margin-left: 10px;
   }
-  
+
   .profil_email{
     font-size: 18px;
     border-width: 1px;
@@ -904,6 +906,8 @@ margin-top: 30%;
     border-style: solid;
     border-color: #222;
     padding: 3px;
+    margin-left: 10px;
+    
   }
   .profil_tlfnr{
     font-size: 18px;
