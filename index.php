@@ -12,7 +12,7 @@
     
     <body>
         <header class="header_index">
-    <nav class="burger_menu">
+    <nav id="burger_menu">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -20,11 +20,11 @@
         <a href="index.php"><img class="logo" src="assets/chefmelogo_white.png" alt="logo"></a>    
         
         <ul >
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">KOKKE</a></li>
-            <li><a href="#">OM OS</a></li>
+            <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+            <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+            <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-            <li class="login-menu"><a href="#">LOGIND</a></li>
+            <li class="login-menu"><a href="login.php">LOGIND</a></li>
             <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
 
         </ul>

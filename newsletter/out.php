@@ -8,22 +8,28 @@
         <title>Afmeld nyhedsbrev</title>
     </head>
 
-        <header>
-            <nav class="nav_bar-box">
-                <ul>
-                    <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
-                    <li><a href="https://chefme.dk/lej-en-kok">MENUER</a></li>
-                    <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-                    <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-                    <div class="btn">
-                        <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-        </header>   
+
+
+    <header>
+
+        <nav class="nav_bar-box" id="burger_menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.php"><img class="logo" src="../assets/chefmelogo.png" alt="logo"></a>                    
+
+            <ul>
+                <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+                <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+                <li><a href="https://chefme.dk/om-os">OM OS</a></li>
+
+                <li class="login-menu"><a href="../login.php">LOGIND</a></li>
+                <img class="login_icon"src="../assets/icon_user.svg" alt="logind icon">
+            </ul>
+        </nav>
+    </header>    
 
     <body class="out_body">
         <div class="nyhedsbrev_afmeld-out">
@@ -35,7 +41,7 @@
                 <button class="nyhedsbrev_btn-afmeld" for="submit" value="Frameld">Afmeld</button>
             </form>
         </div>  
-        
+
         <footer id="footer">
             <div class="footer_container">
                 <div class="chefme_adresse">
@@ -54,8 +60,8 @@
                 <div class="chefme_some" style="display:flex;margin:0 10px;">
                     <p class="title"><strong>SoMe</strong></p>
                     <br>
-                    <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="./assets/facebook.svg" style="width:24px;"></a>
-                    <a href="https://www.instagram.com/chefme/" target="_blank"><img src="./assets/instagram.svg" style="width:24px;"></a>
+                    <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="../assets/facebook.svg" style="width:24px;"></a>
+                    <a href="https://www.instagram.com/chefme/" target="_blank"><img src="../assets/instagram.svg" style="width:24px;"></a>
                 </div> 
             </div>
         </footer>	

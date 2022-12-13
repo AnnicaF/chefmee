@@ -10,24 +10,30 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     
+     
 
     <body>
-        <header>
-            <nav class="nav_bar-box">
-                <ul>
-                    <a href="index.php"><img class="logo" src="assets/chefmelogo.png" alt="logo"></a>                    
-                    <li><a href="https://chefme.dk/lej-en-kok">MENUER</a></li>
-                    <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-                    <li><a href="https://chefme.dk/om-os">OM OS</a></li>
+        
+     <header>
 
-                    <div class="btn">
-                    <div class="kontakt-call-to-action-2">
-                            <a href="login.php" class="buttonlogin">LOGIN</a>
-                            
-                    </div>
-                </ul>
-            </nav>
-        </header>    
+        <nav class="nav_bar-box" id="burger_menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.php"><img class="logo" src="assets/chefmelogo.png" alt="logo"></a>                    
+            
+            <ul >
+                <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+                <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+                <li><a href="https://chefme.dk/om-os">OM OS</a></li>
+
+                <li class="login-menu"><a href="login.php">LOGIND</a></li>
+                <img class="login_icon"src="assets/icon_user.svg" alt="logind icon">
+
+            </ul>
+        </nav>
+    </header>
 
         <form action="signup.php" method="post">
         <?php require_once 'controllers/authController.php'; ?>

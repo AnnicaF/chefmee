@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bestillinger</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
-    <script src="navbar.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bestillinger</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
+        <script src="navbar.js" defer></script>
 
-</head>
+    </head>
 
+    <header>
 
+        <nav class="nav_bar-box" id="burger_menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
+            
+            <ul >
+                <li><a href="https://chefme.dk/lej-en-kok">MENU</a></li>
+                <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
+                <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-
-<header>
-            <nav class="nav_bar-box">
-                <ul>
-                    <a href="../index.php"><img class="logo" src="./../assets/chefmelogo.png" alt="logo"></a>                    
-                    <li><a href="https://chefme.dk/lej-en-kok">MENUER</a></li>
-                    <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
-                    <li><a href="https://chefme.dk/om-os">OM OS</a></li>
-
-                    <div class="btn">
-                        <div class="kontakt-call-to-action-2">
-                            <button class="knap-gul" id="button" type="button" name="button">Login</button>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-        </header>  
+                <li class="login-menu"><a href="../index.php">LOGUD</a></li>
+                <img class="login_icon"src="../assets/icon_user.svg" alt="logind icon">
+            </ul>
+        </nav>
+    </header>  
 
         <main>
             <div class="sg">
