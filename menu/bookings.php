@@ -79,11 +79,11 @@
     <div class="kommende_container">
         <h3> <strong> Dine kommende begivenheder </strong></h3>
         <br>
-<p><strong>Dato:</strong>3. Januar 2023 </p>
+<p><strong>Dato:</strong> 03/01 - 2023 </p>
 <p><strong>Tidspunkt:</strong> Kl. 18:00 </p>
 <p><strong>Andledning:</strong> Fødselsdag</p>
-<p><strong>Antal kuverter: </strong>6pax </p>
-<p><strong>Tema: </strong>Japansk</p>
+<p><strong>Antal kuverter: </strong> 6pax </p>
+<p><strong>Tema: </strong> Japansk</p>
 <p><strong>Kok:</strong> Anders Jensen </p>
 <br>
 <p><strong>Total:</strong> 1.537,00kr</p>
@@ -97,16 +97,16 @@
 <div class="tidligere_container">
        <h3> <strong> Dine tidligere begivenheder </strong></h3>
        <br>
-        <p><strong>Dato:</strong> 9. December 2022</p>
+        <p><strong>Dato:</strong> 09/12 - 2022</p>
         <p><strong>Tidspunkt:</strong> Kl. 20:00 </p>
         <p><strong>Andledning:</strong> Julefrokost</p>
         <p><strong>Antal kuverter:</strong> 9pax </p>
-        <p><strong>Tema:</strong> Dansk</p>
+        <p><strong>Tema:</strong> Dansk Julemad</p>
         <p><strong>Kok:</strong> Jim Karlo </p>
         <br>
         <p><strong>Total:</strong> 6.375,00kr</p>
         <br>
-        <p><strong>Bemærkninger:</strong> Vi ønsker risalamande til dessert.</p>
+        <p><strong>Bemærkninger:</strong> Risalamande ønskes til dessert.</p>
     </div>
  </div>
  <footer id="footer">
