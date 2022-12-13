@@ -879,15 +879,16 @@ margin-top: 30%;
   /* SLUT PHP menubar*/
 
 
-  /*  START profil */
+  /*  START - PROFIL */
   .profil_navn{
     font-size: 18px;
     border-width: 1px;
     height: 24px;
     width: 200px;
     border-style: solid;
-    border-color: #222;
+    border-color: var(--clr--logo);
     padding: 3px;
+    color: var(--clr--txt);
   }
 
   .profil_efternavn{
@@ -896,9 +897,10 @@ margin-top: 30%;
     height: 24px;
     width: 200px;
     border-style: solid;
-    border-color: #222;
+    border-color: var(--clr--logo);
     padding: 3px;
     margin-left: 10px;
+    color: var(--clr--txt);
   }
   .profil_adresse{
     font-size: 18px;
@@ -906,8 +908,9 @@ margin-top: 30%;
     height: 24px;
     width: 200px;
     border-style: solid;
-    border-color: #222;
+    border-color: var(--clr--logo);
     padding: 3px;
+    color: var(--clr--txt);
   }
   .profil_postnummer{
     font-size: 18px;
@@ -915,9 +918,10 @@ margin-top: 30%;
     height: 24px;
     width: 200px;
     border-style: solid;
-    border-color: #222;
+    border-color: var(--clr--logo);
     padding: 3px;
     margin-left: 10px;
+    color: var(--clr--txt);
   }
 
   .profil_email{
@@ -926,10 +930,10 @@ margin-top: 30%;
     height: 24px;
     width: 200px;
     border-style: solid;
-    border-color: #222;
+    border-color: var(--clr--logo);
     padding: 3px;
     margin-left: 10px;
-    
+    color: var(--clr--txt);
   }
   .profil_tlfnr{
     font-size: 18px;
@@ -937,8 +941,9 @@ margin-top: 30%;
     height: 24px;
     width: 200px;
     border-style: solid;
-    border-color: #222;
+    border-color: var(--clr--logo);
     padding: 3px;
+    color: var(--clr--txt);
   }
   /* SLUT profil*/
 
