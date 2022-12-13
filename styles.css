@@ -111,9 +111,9 @@
 .har-profil { grid-area: har-profil; }
 
 .signup_container{
+  margin: 2% auto;
   max-width: 90%;
   max-height: 200%;
-  margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
@@ -191,9 +191,10 @@
 
 /* START - STYLING AF OPRET PROFIL */
 .signup_container{
+    margin-top: 2% auto;
     max-width: 90%;
     max-height: 80%;
-    margin: 0 auto;
+    
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
