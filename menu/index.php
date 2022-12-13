@@ -53,16 +53,16 @@ session_start();
     <div class="profil_titel">VELKOMMEN</div>
 
     <main>
-        <div class="profil_sidebar">
+        <!-- <div class="profil_sidebar">
             <div class="sg">
                 <div class="sidebar">
                     <div class="logo-details">
                         <i class="fa-solid fa-bars"></i>
                         <div class="logo_name">Profil</div>
                         <i class='bx bx-menu' id="btn"></i>
-                    </div>
+                    </div> -->
 
-                    <ul class="nav-list">
+                    <!-- <ul class="nav-list">
                         <li>
                             <a href="index.php">
                                 <i class="fa-solid fa-user"></i>
@@ -85,10 +85,10 @@ session_start();
                             </a>
                             <span class="tooltip">Logud</span>
                         </li>
-                    </ul>
-                </div>
+                    </ul> -->
+                <!-- </div>
             </div>
-        </div> 
+        </div>  -->
     </main>
 
     <body>
