@@ -582,6 +582,7 @@ nav ul li a{
   .checkbtn{
      display: block;
      z-index: 999;
+     padding-top: 25px;
   }
   .checkbtn2{
     display: block;
