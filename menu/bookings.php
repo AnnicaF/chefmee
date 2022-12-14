@@ -28,7 +28,7 @@
                 
                 <li><a href="./favoritter.php"><i class="fa-solid fa-heart"></i> FAVORITTER</a></li>
 
-                <li class="login-menu" id="logud"><a href="../index.php">LOGUD <i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <li class="login-menu" id="logud"><a href="../logout.php">LOGUD <i class="fa-solid fa-right-from-bracket"></i></a></li>
                 
             </ul>
         </nav>

@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/ffac4b7b02.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../styles.css">
         <title>Afmeld nyhedsbrev</title>
     </head>
@@ -24,8 +25,7 @@
                 <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
                 <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-                <li class="login-menu"><a href="../login.php">LOGIND</a></li>
-                <img class="login_icon"src="../assets/icons8-male-user-50.png" alt="logind icon">
+                <li class="login-menu"><a href="../login.php">LOGIND  <i class="fa-regular fa-user"></i></a></li>
             </ul>
         </nav>
     </header>    
