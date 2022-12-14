@@ -141,7 +141,7 @@ if(isset($_POST['login-btn'])){
                             //besked i nyt vindue
                             $_SESSION['message'] = "Du er logget ind!";
                             $_SESSION['alert-class'] = "alert-succes";
-                            header('location: profile.php');
+                            header('location:../chefmee/menu/index.php');
                             exit();
 
                         }else {
