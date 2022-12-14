@@ -34,30 +34,38 @@
         </nav>
     </header>  
     <body>
+           
+    <h1 class="favoriter_titel">Dine favoritter</h1>
         <div class="favoritter_container">
-        
-        
-            <div class="favoritter_titel">
-            <h1 class="favoriter_titel">Dine favoritter</h1>
-            </div>
-        
-        <div class="favorit1_container">
-            <div class="hjerte1"><i class="fa-solid fa-heart"></i></div>
-            <div class="favoritter_billede1"> <img src="./../assets/julemenu.png" alt="Billede af julemenu"> </div>
-            <div class="favoritter_txt1">
-                <P>JULE MENU</P>
-                <br>
-                <P>Pris PR KUVERT: 369kr</P>
-                <br>
-                <P>Kok: Jesper Jhonson</P>
+
+
+            <div class="favorit1_container">
+                <div class="favoritter_billede1"> 
+                    <div class="hjerte1"><i class="fa-solid fa-heart"></i></div>
+                    <img src="./../assets/julemenu.png" alt="jule mad">  
+                </div>
+
+                <div class="favoritter_txt1">
+                    <P><br><strong>JULE MENU</strong> </P>
+                    <br>
+                    <P>Pris pr kuvert: 369kr</P>
+                    <br>
+                    <P>Kok: Kim Jensen</P>
+                </div>
             </div>
 
             <div class="favorit2_container">  
-                <div class="favoritter_billede2"> <div class="hjerte2"><i class="fa-solid fa-heart"></i></div> <img src="./../assets/nytaar.png" alt="Billede af nytårs menu"> </div>
+
+                <div class="favoritter_billede2"> 
+                   
+                    <div class="hjerte2"><i class="fa-solid fa-heart"></i></div>  
+                    <img src="./../assets/nytaar.png" alt="nytars mad">
+                </div>
+                
                 <div class="favoritter_txt2">
-                    <P>NYTÅRS MENU</P>
+                    <P><br><strong>NYTÅRS MENU</strong> </P>
                     <br>
-                    <P>Pris PR KUVERT: 799kr</P>
+                    <P>Pris pr kuvert: 799kr</P>
                     <br>
                     <P>Kok: Sanne Hansen</P>
                 </div>
@@ -65,5 +73,30 @@
             
             <div class="profil_footer"></div>
         </div>
+
+        <footer  class="footer" id="footer">
+            <div class="footer_container">
+                <div class="chefme_adresse">
+                            <p class="title"><strong>Adresse</strong></p>
+                            <p>Vimmelskaftet 41A 3.sal<br> 1161 København K</p>
+                            <p class="sub-title">ChefMe®</p>
+                </div>
+
+                <div class="chefme_kontakt">
+                                <p class="title"><strong>Kontakt</strong></p>
+                                <p class="sub-title">Tlf:
+                                <a href="tel:+45 1234 5678"></a><a href="tel:004593404010">93 40 40 10</a></p>
+                                <p class="sub-title spaced">Email: support@chefme.dk</p>
+                                    
+                </div>
+
+                <div class="chefme_some" style="display:flex;margin:0 10px;">
+                            <p class="title"><strong>SoMe</strong></p>
+                            <br>
+                            <a href="https://www.facebook.com/chefmedk" target="_blank" style="margin-right:10px"><img src="../assets/facebook.svg" style="width:24px;"></a>
+                            <a href="https://www.instagram.com/chefme/" target="_blank"><img src="../assets/instagram.svg" style="width:24px;"></a>
+                </div> 
+            </div>
+        </footer>
     </body>
 </html>
