@@ -744,17 +744,15 @@ margin-top: 30%;
   grid-auto-flow: row;
   grid-template-areas:
     "profil_menu profil_menu profil_menu profil_menu"
-    "profil_sidebar profil_titel profil_titel ."
-    "profil_sidebar profil_billede profil_billede ."
-    "profil_sidebar profil_navn profil_efternavn ."
-    "profil_sidebar profil_adresse profil_postnummer ."
-    "profil_sidebar profil_tlfnr profil_email ."
-    "profil_sidebar opdater opdater ."
-    "profil_sidebar . . ."
+    ". profil_titel profil_titel ."
+    ". profil_billede profil_billede ."
+    ". profil_navn profil_efternavn ."
+    ". profil_adresse profil_postnummer ."
+    ". profil_tlfnr profil_email ."
+    ". opdater opdater ."
+    ". . . ."
     "profil_footer profil_footer profil_footer profil_footer";
 }
-
-.profil_sidebar { grid-area: profil_sidebar; }
 
 .profil_menu { grid-area: profil_menu; }
 
@@ -1002,3 +1000,62 @@ margin-top: 30%;
 
 
 /*SLUT LOGIN */
+
+
+/* START - FAVORITTER */
+
+.favoritter_container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0%;
+  grid-auto-flow: row;
+}
+
+.profil_menu { grid-area: 1 / 1 / 2 / 10; }
+
+.profil_footer { grid-area: 10 / 1 / 11 / 10; }
+
+.favoritter_titel { grid-area: 2 / 4 / 3 / 7; }
+
+.favorit1_container { grid-area: 4 / 2 / 8 / 5; }
+
+.favorit2_container { grid-area: 4 / 6 / 8 / 9; }
+
+.hjerte1 { grid-area: 4 / 2 / 5 / 3; }
+
+.favoritter_billede1 { grid-area: 4 / 2 / 7 / 5; }
+
+.favoritter_billede2 { grid-area: 4 / 6 / 7 / 9; }
+
+.hjerte2 { grid-area: 4 / 6 / 5 / 7; }
+
+.favoritter_txt1 { grid-area: 7 / 2 / 8 / 5; }
+
+.favoritter_text2 { grid-area: 7 / 6 / 8 / 9; }
+
+
+.favorit2_container {
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  
+}
+
+.favorit1_container{
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  
+}
+
+.favorit2_container img{
+  width: 100%;
+  height: 50%;
+}
+
+.favorit1_container img{
+  width: 100%;
+  height: 50%;
+}
