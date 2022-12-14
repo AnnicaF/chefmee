@@ -120,19 +120,19 @@
 @media screen and (min-width: 700px){
 .signup_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
-    "opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
-    "google facebook . . . . ."
-    "person-oplysninger person-oplysninger . logind-oplysninger logind-oplysninger . ."
-    "fornavn efternavn . brugernavn email email ."
-    "adresse adresse . kodeord gentagkode gentagkode ."
-    "postnummer by . nyhedsbrev nyhedsbrev . ."
-    "kon fodselsdag . vilkar vilkar . ."
-    "mobilnummer . . opret . . .";
+    ". opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
+    ". google facebook . . . . ."
+    ". person-oplysninger person-oplysninger . logind-oplysninger logind-oplysninger . ."
+    ". fornavn efternavn . brugernavn email email ."
+    ". adresse adresse . kodeord gentagkode gentagkode ."
+    ". postnummer by . nyhedsbrev nyhedsbrev . ."
+    ". kon fodselsdag . vilkar vilkar . ."
+    ". mobilnummer . . opret opret . .";
 }
 
 .google { grid-area: google; }
@@ -201,8 +201,8 @@
 }
 
 .opret {
-  background-color: var(--clr--c2a);
-  width: 100%;
+  background-color: var(--clr--btn);
+  width: 80%;
   text-align: center;
   border-radius: 50px;
   height: 30px;
@@ -271,6 +271,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: var(--clr--txt);
 }
 
 
@@ -779,6 +780,9 @@ margin-top: 30%;
   margin-top: 0px;
 }
 
+.opdater{
+  height: 57%;
+}
 
 .button_opdater{
    display: flex;
