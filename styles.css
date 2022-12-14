@@ -1199,6 +1199,7 @@ margin-top: 30%;
 
 
 .favorit2_container {
+  padding: 2%;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
@@ -1207,6 +1208,7 @@ margin-top: 30%;
 }
 
 .favorit1_container{
+  padding: 2%;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
@@ -1222,4 +1224,11 @@ margin-top: 30%;
 .favorit1_container img{
   width: 100%;
   height: 50%;
+}
+
+.favoritter_txt2{
+  padding: 2%;
+}
+.favoritter_txt1{
+  padding: 2%;
 }
