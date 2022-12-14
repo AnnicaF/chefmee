@@ -34,24 +34,19 @@
         </nav>
     </header>  
     <body>
+           
+    <h1 class="favoriter_titel">Dine favoritter</h1>
         <div class="favoritter_container">
-        
-        
-            <div class="favoritter_titel">
-            <h1 class="favoriter_titel">Dine favoritter</h1>
-            </div>
-        
-        
+
 
             <div class="favorit1_container">
-
-            <div class="favoritter_billede1"> 
+                <div class="favoritter_billede1"> 
                     <div class="hjerte1"><i class="fa-solid fa-heart"></i></div>
                     <img src="./../assets/julemenu.png" alt="jule mad">  
-            </div>
+                </div>
 
                 <div class="favoritter_txt1">
-                    <P> <strong>JULE MENU</strong> </P>
+                    <P><br><strong>JULE MENU</strong> </P>
                     <br>
                     <P>Pris pr kuvert: 369kr</P>
                     <br>
@@ -68,7 +63,7 @@
                 </div>
                 
                 <div class="favoritter_txt2">
-                    <P> <strong>NYTÅRS MENU</strong> </P>
+                    <P><br><strong>NYTÅRS MENU</strong> </P>
                     <br>
                     <P>Pris pr kuvert: 799kr</P>
                     <br>
