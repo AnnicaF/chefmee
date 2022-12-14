@@ -37,15 +37,18 @@
 
         
 <body>
+<h1 class="favoriter_titel">Dine bookinger</h1>
 
 <div class="bookings_container">
+
+
     <div class="kommende_container">
        
         <h3> <strong> Dine kommende begivenheder </strong></h3>
         <br>
 <p><strong>Dato:</strong> 03/01 - 2023 </p>
 <p><strong>Tidspunkt:</strong> Kl. 18:00 </p>
-<p><strong>Andledning:</strong> Fødselsdag</p>
+<p><strong>Anledning:</strong> Fødselsdag</p>
 <p><strong>Antal kuverter: </strong> 6pax </p>
 <p><strong>Tema: </strong> Japansk</p>
 <p><strong>Kok:</strong> Anders Jensen </p>
@@ -63,7 +66,7 @@
        <br>
         <p><strong>Dato:</strong> 09/12 - 2022</p>
         <p><strong>Tidspunkt:</strong> Kl. 20:00 </p>
-        <p><strong>Andledning:</strong> Julefrokost</p>
+        <p><strong>Anledning:</strong> Julefrokost</p>
         <p><strong>Antal kuverter:</strong> 9pax </p>
         <p><strong>Tema:</strong> Dansk Julemad</p>
         <p><strong>Kok:</strong> Jim Karlo </p>

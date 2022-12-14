@@ -1117,7 +1117,7 @@ margin-top: 30%;
   background-color: var(--clr--footer);
   margin-bottom: 0%;
   padding: 5%;
-  margin-top: 30%;
+  margin-top: 2%;
   text-decoration: none;
 }
 
@@ -1231,4 +1231,18 @@ margin-top: 30%;
 }
 .favoritter_txt1{
   padding: 2%;
+}
+
+.hjerte1{
+  color: var(--clr--c2a);
+}
+
+.hjerte2{
+  color: var(--clr--c2a);
+}
+
+.favoriter_titel{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
