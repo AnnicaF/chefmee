@@ -56,44 +56,7 @@ session_start();
     <div class="profil_titel">
     <h3>Velkommen <?php echo $_SESSION['firstName']; ?> </h3>
     </div>
-
-    <!-- <main class="profil_sidebar"> 
-            <div class="sg">
-                <div class="sidebar">
-                    <div class="logo-details">
-                        <i class="fa-solid fa-bars"></i>
-                        <div class="logo_name">Profil</div>
-                        <i class='bx bx-menu' id="btn"></i>
-                    </div> 
-
-                    <ul class="nav-list">
-                        <li>
-                            <a href="index.php">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="links_name">Oplysninger</span>
-                            </a>
-                            <span class="tooltip">Oplysninger</span>
-                        </li>
-                        <li>
-                            <a href="bookings.php">
-                                <i class="fa-solid fa-utensils"></i>
-                                <span class="links_name">Bookinger</span>
-                            </a>
-                            <span class="tooltip">Bookinger</span>
-                        </li>
-
-                        <li>
-                            <a href="../index.php">
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                                <span class="links_name">Logud</span>
-                            </a>
-                            <span class="tooltip">Logud</span>
-                        </li>
-                    </ul> 
-                </div>
-            </div>
-    </main> -->
-
+    
     <body>
         <div class="profil_navn">
             <?php   
@@ -103,7 +66,7 @@ session_start();
 
                     if($resultCheck > 0){
                         while($row = mysqli_fetch_assoc($result)){
-                            echo $row['username']. "<br>";
+                            echo $row['firstName']. "<br>";
                         }
                     }
             ?>
