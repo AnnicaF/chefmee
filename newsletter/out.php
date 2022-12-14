@@ -25,7 +25,7 @@
                 <li><a href="https://chefme.dk/private-dining">KOKKE</a></li>
                 <li><a href="https://chefme.dk/om-os">OM OS</a></li>
 
-                <li class="login-menu"><a href="../login.php">LOGIND <i class="fa-regular fa-user"></i></a></li>
+                <li class="login-menu"><a href="../login.php">LOGIND  <i class="fa-regular fa-user"></i></a></li>
             </ul>
         </nav>
     </header>    
