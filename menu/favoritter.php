@@ -41,11 +41,9 @@
             <h1 class="favoriter_titel">Dine favoritter</h1>
             </div>
         
-        
-
         <div class="favorit1_container">
             <div class="hjerte1"><i class="fa-solid fa-heart"></i></div>
-            <div class="favoritter_billede1"> <img src="./../assets/placeholder-chefme.png" alt=""> </div>
+            <div class="favoritter_billede1"> <img src="./../assets/julemenu.png" alt="Billede af julemenu"> </div>
             <div class="favoritter_txt1">
                 <P>JULE MENU</P>
                 <br>
@@ -55,9 +53,8 @@
             </div>
         </div>
 
-
             <div class="favorit2_container">  
-                <div class="favoritter_billede2"> <div class="hjerte2"><i class="fa-solid fa-heart"></i></div> <img src="./../assets/placeholder-chefme.png" alt=""> </div>
+                <div class="favoritter_billede2"> <div class="hjerte2"><i class="fa-solid fa-heart"></i></div> <img src="./../assets/nytaar.png" alt="Billede af nytårs menu"> </div>
                 <div class="favoritter_txt2">
                 <P>JULE MENU</P>
                 <br>
