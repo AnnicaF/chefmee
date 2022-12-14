@@ -447,13 +447,8 @@ nav ul li a{
 }
 
 .buttonlogin{
-<<<<<<< Updated upstream
   font-family: var(--ff-primary);
   font-style: var(--fs-nav);
-=======
-  font: var(--ff-primary);
-  font-weight: var(--fs-h3);
->>>>>>> Stashed changes
   text-decoration: none;
   text-align: center;
   color: var(--clr--background);
@@ -597,7 +592,7 @@ height: 30px;
   height: 30px;
   background-color: var(--clr--logo);
   color: var(--clr--background);
-  font-size: var(--fw-reg);
+  font-size: var(--fs-h2);
   font-weight: 300;
   text-align: center;
   border-radius: 8px;
@@ -792,7 +787,7 @@ margin-top: 30%;
   height: 30%;
   width: 30%;
   font-size: var(--fs-h3);
-  font-weight: var(--ff-primary);
+  font-weight: var(--fw-reg);
   border-radius: 8px;
   border-style: none;
   background-color:var(--clr--btn);
