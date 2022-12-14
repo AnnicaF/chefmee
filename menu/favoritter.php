@@ -41,7 +41,6 @@
             <h1 class="favoriter_titel">Dine favoritter</h1>
             </div>
         
-<<<<<<< Updated upstream
         <div class="favorit1_container">
             <div class="hjerte1"><i class="fa-solid fa-heart"></i></div>
             <div class="favoritter_billede1"> <img src="./../assets/julemenu.png" alt="Billede af julemenu"> </div>
@@ -51,38 +50,10 @@
                 <P>Pris PR KUVERT: 369kr</P>
                 <br>
                 <P>Kok: Jesper Jhonson</P>
-=======
-        
-
-            <div class="favorit1_container">
-
-            <div class="favoritter_billede1"> 
-                    <div class="hjerte1"><i class="fa-solid fa-heart"></i></div>
-                    <img src="./../assets/placeholder-chefme.png" alt="">  
-            </div>
-
-                <div class="favoritter_txt1">
-                    <P>JULE MENU</P>
-                    <br>
-                    <P>Pris PR KUVERT: 369kr</P>
-                    <br>
-                    <P>Kok: Kim Jensen</P>
-                </div>
->>>>>>> Stashed changes
             </div>
 
             <div class="favorit2_container">  
-<<<<<<< Updated upstream
                 <div class="favoritter_billede2"> <div class="hjerte2"><i class="fa-solid fa-heart"></i></div> <img src="./../assets/nytaar.png" alt="Billede af nytårs menu"> </div>
-=======
-
-                <div class="favoritter_billede2"> 
-                   
-                    <div class="hjerte2"><i class="fa-solid fa-heart"></i></div>  
-                    <img src="./../assets/placeholder-chefme.png" alt="">
-                </div>
-                
->>>>>>> Stashed changes
                 <div class="favoritter_txt2">
                     <P>NYTÅRS MENU</P>
                     <br>
