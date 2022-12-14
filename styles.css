@@ -940,7 +940,9 @@ margin-top: 30%;
 
 .profil_adresse { grid-area: profil_adresse; }
 
-
+.profil_titel{
+  padding: 2%;
+}
 .profil_container{
   text-align: center;
   height: 650px;
@@ -1250,4 +1252,5 @@ margin-top: 30%;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
+  padding: 2%;
 }
