@@ -507,8 +507,6 @@ margin-top: 5%;
   background-color:var(--clr--background);
 }
 
-
-
 .nyhedsbrev_index-btn input{
 color: var(--clr--background);
 background-color: var(--clr--logo);
@@ -612,6 +610,10 @@ height: 30px;
     font-size: 25px;
     padding-top: 30px;
     }
+}
+
+#bruger-logo{
+  color: var(--clr--txt);
 }
 
 /*START - TRUSTPILOT*/
