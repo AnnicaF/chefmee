@@ -21,7 +21,7 @@
 
   --fs-h1:      34px;
   --fs-h2:      20px;
-  --fs-nav:     16px;
+  --fs-h3:     16px;
   --fs-footer:  10px;
 }
 
@@ -447,8 +447,13 @@ nav ul li a{
 }
 
 .buttonlogin{
+<<<<<<< Updated upstream
   font-family: var(--ff-primary);
   font-style: var(--fs-nav);
+=======
+  font: var(--ff-primary);
+  font-weight: var(--fs-h3);
+>>>>>>> Stashed changes
   text-decoration: none;
   text-align: center;
   color: var(--clr--background);
@@ -671,7 +676,7 @@ height: 30px;
 /* START - HEADER SIGNUP */
 .nav_bar-box{
   background-color: var(--clr--menu);
-  font-size: var(--fs-nav);
+  font-size: var(--fs-h3);
 }
 
 .nav_bar-box a {
@@ -786,7 +791,7 @@ margin-top: 30%;
   display: block;
   height: 30%;
   width: 30%;
-  font-size: var(--fs-nav);
+  font-size: var(--fs-h3);
   font-weight: var(--ff-primary);
   border-radius: 8px;
   border-style: none;
