@@ -15,7 +15,10 @@ CREATE TABLE user_test (
 INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone')
 
 /* JOIN kobler to tabeller sammen*/
-SELECT user_test.postal, cities.cities, FROM user_test JOIN cities ON user_test.postal = cities.postal 
+SELECT user_test.postal, cities.cities FROM user_test JOIN cities ON user_test.postal = cities.postal 
+
+/* Hvis man vil se alle dem der bo i 7410 og deres navn samt by*/
+SELECT user_test.postal, cities.cities, user_test.firstName FROM user_test JOIN cities ON user_test.postal = cities.postal WHERE user_test.postal = 7410
 
 /* koble 1 tabel mere på*/
 SELECT user_test.postal, cities.cities, regions.region_id FROM user_test JOIN cities ON user_test.postal = cities.postal JOIN regions ON user_test.postal = regions.region_id

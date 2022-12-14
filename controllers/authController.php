@@ -5,13 +5,11 @@ session_start();
 require 'dbh.inc.php';
 
 $errors = array();
-$username = "";
 $email = "";
 
 //hvis der bliver klikket på opret knap
 if(isset($_POST['signup-btn'])){
    
-  $username = $_POST['username'];
   $email = $_POST['email'];
   $password = $_POST['password'];
   $passwordConf = $_POST['passwordConf']; 
@@ -20,14 +18,11 @@ if(isset($_POST['signup-btn'])){
   $address = $_POST['address'];
   $postal= $_POST['postal']; 
   $phone = $_POST['phone'];
-  $gender = $_POST['gender'];  
+  $gender = $_POST['gender'];
+  $dob = $_POST['dob'];  
 
 
              // validering 
-            if(empty($username)){
-                $errors['username'] = "Brugernavn påkræves";
-            }
-
             if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 $errors['email'] = "Email ikke godkendt";
             }
@@ -61,6 +56,9 @@ if(isset($_POST['signup-btn'])){
             if(empty($gender)){
                 $errors['gender'] = "Køn påkræves";
             }
+            if(empty($dob)){
+                $errors['dob'] = "Fødselsdag påkræves";
+            }
 
     // vi skal tjekke i databasen om der er to der har ens email        
     $emailQuery = "SELECT * FROM user_test where email='$email' LIMIT 1";
@@ -77,9 +75,8 @@ if(isset($_POST['signup-btn'])){
     if(count($errors) === 0){
     $password = password_hash($password, PASSWORD_DEFAULT);
     $token = bin2hex(random_bytes(50));
-    $verified = 0;
 
-    $sql = "INSERT INTO user_test (`username`, `email`, `verified`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`, `gender`) VALUES ('$username', '$email', '$verified', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone', '$gender')";
+    $sql = "INSERT INTO user_test (`email`, `token`, `password`, `firstName`, `lastName`, `address`, `postal`, `phone`, `gender`, `dob`) VALUES ('$email', '$token', '$password', '$firstName', '$lastName', '$address', '$postal', '$phone', '$gender', '$dob')";
     $conn->query($sql);
     $conn->error;
     
@@ -88,9 +85,8 @@ if(isset($_POST['signup-btn'])){
         // bruger login
         $user_id = $conn->insert_id;
         $_SESSION['id'] = $user_id;
-        $_SESSION['username'] = $username;
+        $_SESSION['firstName'] = $firstName;
         $_SESSION['email'] = $email;
-        $_SESSION['verified'] = $verified;
     
     
         //besked i nyt vindue
@@ -136,7 +132,6 @@ if(isset($_POST['login-btn'])){
                             // login success
                             $_SESSION['id'] = $user['id'];
                             $_SESSION['email'] = $user['email'];
-                            $_SESSION['verified'] = $user['verified'];
                         
                             //besked i nyt vindue
                             $_SESSION['message'] = "Du er logget ind!";
