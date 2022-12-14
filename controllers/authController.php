@@ -27,10 +27,6 @@ if(isset($_POST['signup-btn'])){
                 $errors['email'] = "Email ikke godkendt";
             }
 
-            if(empty($email)){
-                $errors['email'] = "Email påkræves";
-            }
-
             if(empty($password)){
                 $errors['password'] = "Kode påkræves";
             }

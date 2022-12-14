@@ -112,12 +112,6 @@
 
                     <div class="logind-oplysninger">Logind oplysninger</div>
                 
-                    <div class="brugernavn">
-                        <label class="input_brugernavn" for="username">
-                            <input type="text" name="username"  value="<?php echo $username; ?>" placeholder="Indtast brugernavn">
-                        </label>
-                    </div>
-               
 
                     <div class="email">
                         <label for="email">

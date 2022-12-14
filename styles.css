@@ -47,7 +47,7 @@
     ". postnummer mobilnummer ."
     ". kon fodselsdag ."
     ". logind-oplysninger . ."
-    ". brugernavn email ."
+    ". email email ."
     ". kodeord gentagkode ."
     ". vilkar . ."
     ". nyhedsbrev . ."
@@ -84,8 +84,6 @@
 .mobilnummer { grid-area: mobilnummer;}
 
 .logind-oplysninger { grid-area: logind-oplysninger;}
-
-.brugernavn { grid-area: brugernavn;}
 
 .email { grid-area: email;}
 
@@ -159,10 +157,10 @@
     ". . opretprofil . . . ."
     ". google facebook . . . ."
     ". person-oplysninger person-oplysninger . logind-oplysninger logind-oplysninger ."
-    ". fornavn efternavn . brugernavn . ."
-    ". adresse adresse . email . ."
-    ". postnummer by . kodeord . ."
-    ". kon fodselsdag . gentagkode . ."
+    ". fornavn efternavn . email . ."
+    ". adresse adresse . kodeord . ."
+    ". postnummer by . gentagkode . ."
+    ". kon fodselsdag . . . ."
     ". mobilnummer . . nyhedsbrev nyhedsbrev ."
     ". . .  vilkar vilkar . ."
     ". . opret opret opret . .";
@@ -214,8 +212,6 @@
 
 .person-oplysninger { grid-area: person-oplysninger; }
 
-.brugernavn { grid-area: brugernavn; }
-
 .vilkar { grid-area: vilkar; }
 
 .fodselsdag { grid-area: fodselsdag; }
@@ -261,9 +257,6 @@
 .input_email input{
   width: 200px;
 }
-.input_brugernavn input{
-  width: 200px;
-}
 
 .input_fornavn input{
   width: 200px;
@@ -280,11 +273,6 @@
 .input_kon input{
   width: 300px;
 }
-
-.input_brugernavn input{
-  height: 30px;
-  border: #222 solid 1px;
-} 
 
 .input_kode input{
   width: 200px;
@@ -317,7 +305,7 @@
     ". . . opretprofil opretprofil . . ."
     ". google facebook . . . . ."
     ". person-oplysninger person-oplysninger . logind-oplysninger logind-oplysninger . ."
-    ". fornavn efternavn . brugernavn email email ."
+    ". fornavn efternavn . email email email ."
     ". adresse adresse . kodeord gentagkode gentagkode ."
     ". postnummer by . nyhedsbrev nyhedsbrev . ."
     ". kon fodselsdag . vilkar vilkar . ."
@@ -372,7 +360,6 @@
 
 .person-oplysninger { grid-area: person-oplysninger; }
 
-.brugernavn { grid-area: brugernavn; }
 
 .vilkar { grid-area: vilkar; }
 
@@ -422,12 +409,6 @@
 .input_kon input{
   width: 200px;
 }
-
-.input_brugernavn input{
-  height: 30px;
-  border: #222 solid 1px;
-} 
-
 .input_kode input{
   width: 200px;
 }
