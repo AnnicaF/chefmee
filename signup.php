@@ -42,7 +42,7 @@
             </div> 
             <?php endif; ?>
 
-            <div class="signup_container">
+            <div class="signup_container" id="signup_input">
                 
                     <p class="opretprofil">Opret profil</p>
 

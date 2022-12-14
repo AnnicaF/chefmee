@@ -29,33 +29,32 @@
 /* START - LOGIND FUNKTION GRID*/
 
 /*Mobil grid*/
+@media (max-width:670px){
 .signup_container {
-      
   display: grid;
   justify-content: start;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2em;
   grid-auto-flow: row;
   grid-template-areas:
-    ". ."
-    "opretprofil ."
-    "google ."
-    "facebook ."
-    "person-oplysninger ."
-    "fornavn efternavn"
-    "adresse by"
-    "postnummer mobilnummer"
-    "kon fodselsdag"
-    "logind-oplysninger ."
-    "brugernavn email"
-    "kodeord gentagkode"
-    "vilkar ."
-    "nyhedsbrev ."
-    "opret ."
-    ".  . "
-    "har-profil ."
-    ". .";
+    ". . . ."
+    ". opretprofil opretprofil ."
+    ". google facebook ."
+    ". person-oplysninger . ."
+    ". fornavn efternavn ."
+    ". adresse by ."
+    ". postnummer mobilnummer ."
+    ". kon fodselsdag ."
+    ". logind-oplysninger . ."
+    ". brugernavn email ."
+    ". kodeord gentagkode ."
+    ". vilkar . ."
+    ". nyhedsbrev . ."
+    ". opret opret ."
+    ". . . ."
+    ". har-profil . ."
+    ". . . .";
 }
 
 .opretprofil { grid-area: opretprofil; }
@@ -66,31 +65,31 @@
 
 .person-oplysninger { grid-area: person-oplysninger; }
 
-.fornavn { grid-area: fornavn; }
+.fornavn { grid-area: fornavn;}
 
-.efternavn { grid-area: efternavn; }
+.efternavn { grid-area: efternavn;}
 
-.adresse  { grid-area: adresse;  }
+.adresse  { grid-area: adresse;}
 
-.postnummer { grid-area: postnummer; }
+.postnummer { grid-area: postnummer;}
 
-.by { grid-area: by; }
+.by { grid-area: by;}
 
 .kon { grid-area: kon;
   height: 30px;
+  width: 100px;
 }
+.fodselsdag { grid-area: fodselsdag;}
 
-.fodselsdag { grid-area: fodselsdag; }
+.mobilnummer { grid-area: mobilnummer;}
 
-.mobilnummer { grid-area: mobilnummer; }
+.logind-oplysninger { grid-area: logind-oplysninger;}
 
-.logind-oplysninger { grid-area: logind-oplysninger; }
+.brugernavn { grid-area: brugernavn;}
 
-.brugernavn { grid-area: brugernavn; }
+.email { grid-area: email;}
 
-.email { grid-area: email; }
-
-.kodeord { grid-area: kodeord; }
+.kodeord { grid-area: kodeord;}
 
 .gentagkode { grid-area: gentagkode; }
 
@@ -103,21 +102,201 @@
 .har-profil { grid-area: har-profil; }
 
 .signup_container{
-  margin: 2% auto;
-  max-width: 90%;
-  max-height: 200%;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  margin-top: 2%;
+  max-width: 100%;
+  height: 1000px;
+  margin-left:20px;
+  margin-right:20px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
   -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
 }
 
+
+.opret {
+  background-color: var(--clr--btn);
+  width: 80%;
+  text-align: center;
+  border-radius: 50px;
+  height: 30px;
+  border-style: none;
+  color: var(--clr--background);
+}
+
+.input{
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+
+}
+
+#signup_input input{
+  width: 120px;
+}
+
+.har-profil{
+  text-align: center;
+} 
+}
+
+/* IPAD Grid START*/
+@media (min-width:670px){
+.signup_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". opretprofil opretprofil opretprofil opretprofil opretprofil opretprofil"
+    ". google facebook . . . ."
+    ". person-oplysninger person-oplysninger . logind-oplysninger logind-oplysninger ."
+    ". fornavn efternavn . brugernavn . ."
+    ". adresse adresse . email . ."
+    ". postnummer by . kodeord . ."
+    ". kon fodselsdag . gentagkode . ."
+    ". mobilnummer . . nyhedsbrev nyhedsbrev ."
+    ". . .  vilkar vilkar . ."
+    ". . opret opret opret . .";
+}
+
+.google { grid-area: google; }
+
+.facebook { grid-area: facebook; }
+
+.fornavn { grid-area: fornavn; }
+
+.efternavn { grid-area: efternavn; }
+
+.adresse { grid-area: adresse;
+}
+.etage { grid-area: etage; }
+
+.postnummer { grid-area: postnummer; }
+
+.by { grid-area: by;
+  width: 200px;
+}
+
+.mobilnummer { grid-area: mobilnummer;
+  width: 200px; 
+}
+
+.logind-oplysninger { grid-area: logind-oplysninger; }
+
+.kodeord { grid-area: kodeord; }
+
+.gentagkode { grid-area: gentagkode; }
+
+.nyhedsbrev { grid-area: nyhedsbrev; }
+
+.opret { grid-area: opret; }
+
+.opretprofil { grid-area: opretprofil;
+  width: 200px;
+}
+
+.email { grid-area: email;
+}
+
+.kon { grid-area: kon;
+  width:200px;
+  height: 30px;
+}
+
+.person-oplysninger { grid-area: person-oplysninger; }
+
+.brugernavn { grid-area: brugernavn; }
+
+.vilkar { grid-area: vilkar; }
+
+.fodselsdag { grid-area: fodselsdag; }
+.opretprofil{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.signup_container{
+  margin-top: 2%;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+}
+
+.opret {
+  background-color: var(--clr--btn);
+  width: 80%;
+  text-align: center;
+  border-radius: 50px;
+  height: 30px;
+  border-style: none;
+  color: var(--clr--background);
+}
+
+.input{
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+
+}
+
+.input_efternavn input{
+  width: 200px;
+}
+.input_email input{
+  width: 200px;
+}
+.input_brugernavn input{
+  width: 200px;
+}
+
+.input_fornavn input{
+  width: 200px;
+  justify-content: flex-end;
+}
+.input_adresse input{
+  width: 400px;
+  justify-content: flex-end;
+}
+
+.input_mobilnummer input{
+  width: 200px;
+}
+.input_kon input{
+  width: 300px;
+}
+
+.input_brugernavn input{
+  height: 30px;
+  border: #222 solid 1px;
+} 
+
+.input_kode input{
+  width: 200px;
+}
+
+.input_gentagkode input{
+  width:200px;
+}
+
+.har-profil{
+  text-align: center;
+} 
+
+}
+/* IPAD Grid SLUT*/
 /* Mobil grid slut*/
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 1000px){
+
 .signup_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -133,6 +312,18 @@
     ". postnummer by . nyhedsbrev nyhedsbrev . ."
     ". kon fodselsdag . vilkar vilkar . ."
     ". mobilnummer . . opret opret . .";
+}
+
+.signup_container{
+  margin-top: 2%;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
 }
 
 .google { grid-area: google; }
@@ -177,22 +368,6 @@
 
 .fodselsdag { grid-area: fodselsdag; }
 
-/* SLUT - LOGIND FUNKTION GRID*/
-
-
-/* START - STYLING AF OPRET PROFIL */
-.signup_container{
-    margin-top: 2%;
-    max-width: 90%;
-    max-height: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(136,129,129,0.75);
-}
 .opretprofil{
   text-align: center;
   margin-top: 25px;
@@ -260,6 +435,73 @@
 }
 
 
+/* SLUT - LOGIND FUNKTION GRID*/
+
+
+/* START - STYLING AF OPRET PROFIL
+.opretprofil{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.opret {
+  background-color: var(--clr--btn);
+  width: 80%;
+  text-align: center;
+  border-radius: 50px;
+  height: 30px;
+  border-style: none;
+  color: var(--clr--background);
+}
+
+.input{
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+
+}
+
+.input_efternavn input{
+  width: 200px;
+}
+
+.input_fornavn input{
+  width: 198px;
+  justify-content: flex-end;
+}
+
+.input_adresse input{
+  width: 200px;
+}
+
+.input_mobilnummer input{
+  width: 200px;
+}
+.input_kon input{
+  width: 200px;
+}
+
+.input_brugernavn input{
+  height: 30px;
+  border: #222 solid 1px;
+} 
+
+.input_kode input{
+  width: 200px;
+}
+
+.input_gentagkode input{
+  width: 200px;
+}
+
+.har-profil{
+  text-align: center;
+} 
+
+
+ */
 
 /* SLUT - STYLING AF OPRET PROFIL */
 
@@ -340,6 +582,7 @@ nav ul li a{
   .checkbtn{
      display: block;
      z-index: 999;
+     padding-top: 25px;
   }
   .checkbtn2{
     display: block;
@@ -348,7 +591,7 @@ nav ul li a{
   .login-menu a{
     padding: 0;
   }
-  nav{
+nav{
     display: flex;
     flex-direction: row-reverse;
   justify-content: space-between;
@@ -356,14 +599,14 @@ nav ul li a{
   padding-right: 10px;
   }
 ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background-color: var(--clr--menu);
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clr--menu);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
   }
 nav ul li {
       display: block;
@@ -385,26 +628,8 @@ nav ul li {
     z-index: 500 !important;
     position: relative;
   }
-
-
 }
 /*SLUT MENU*/
-
-/* 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-nav ul li a{
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-    color: var(--clr--background);
-} */
 
 .logo{
     margin-top: 1%;
@@ -474,9 +699,9 @@ nav ul li a{
   background-color: #3B5998;
   color: white;
   border-radius: 50px;
-  width: 180px;
-  height: 33px;
-  font-size: 11px;
+  width: 130px;
+  height: 37px;
+  font-size: 10px;
   align-content: center;
 }
 #google{
@@ -484,15 +709,15 @@ nav ul li a{
   color: #222222;
   border: solid 1px rgb(97, 96, 96);
   border-radius: 50px;
-  width: 180px;
-  height: 33px;
-  font-size: 11px;
+  width: 130px;
+  height: 37px;
+  font-size: 10px;
   align-content: center;
 }
 
-input{
+/* input{
 width: 200px;
-}
+} */
 
 .hero_caption{
 margin-top: 5%;
@@ -576,9 +801,6 @@ height: 30px;
 
 }
 @media (max-width:612px){
-  input{
-    width:120px;
-  }
   .newsletter__title{
     font-size: 20px;
     padding-bottom: 18px;
