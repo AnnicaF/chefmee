@@ -1,6 +1,5 @@
 <?php require_once 'controllers/authController.php'; ?>
 
-<!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">

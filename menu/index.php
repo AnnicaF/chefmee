@@ -15,7 +15,6 @@ if($conn -> connect_error){
 session_start();
 ?>
 
-<!DOCTYPE html>
 <html lang="da" dir="ltr">
 
     <head>
