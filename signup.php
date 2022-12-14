@@ -154,7 +154,7 @@
                     <button class="opret" type="submit" name="signup-btn">Opret</button>     
                      
             </div>
-                    <p class="har-profil">Har du en profil? <a href="login.php">Log på her</a></p>
+                    <p class="har-profil">Har du en profil? <a href="login.php"> Log på her </a></p>
         </form>
         <footer id="footer">
 

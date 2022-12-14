@@ -208,6 +208,7 @@
   height: 30px;
   border-style: none;
   color: var(--clr--background);
+  margin-left: 30%;
 }
 
 .input{
@@ -253,6 +254,9 @@
 .har-profil{
   text-align: center;
 } 
+.har-profil a{
+  color: #ea5a4a;
+}
 }
 
 
