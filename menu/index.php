@@ -54,13 +54,13 @@ session_start();
     <div class="profil_container">
     <div class="profil_billede"><img src="../assets/profile-svgrepo-com.svg" alt="profilbillede"></div>
     <div class="profil_titel">
-    <h1>Velkommen <?php echo $_SESSION['firstName']; ?> </h1>
+    <h1>Velkommen</h1>
     </div>
     
     <body>
         <div class="profil_navn">
             <?php   
-                $sql = "SELECT * FROM user_test WHERE id = 57;";
+                $sql = "SELECT * FROM user_test WHERE id = 71;";
                 $result = mysqli_query($conn, $sql);
                 $resultCheck = mysqli_num_rows($result);
 
@@ -75,7 +75,7 @@ session_start();
         <div class="profil_efternavn">
             <?php
                     
-                    $sql = "SELECT * FROM user_test WHERE id = 57;";
+                    $sql = "SELECT * FROM user_test WHERE id = 71;";
                     $result = mysqli_query($conn, $sql);
                     $resultCheck = mysqli_num_rows($result);
 
@@ -91,7 +91,7 @@ session_start();
         <div class="profil_adresse">
                 <?php
 
-                    $sql = "SELECT * FROM user_test WHERE id = 57";
+                    $sql = "SELECT * FROM user_test WHERE id = 71";
                     $result = mysqli_query($conn, $sql);
                     $resultCheck = mysqli_num_rows($result);
 
@@ -106,7 +106,7 @@ session_start();
         <div class="profil_postnummer">
                 <?php
 
-                    $sql = "SELECT * FROM user_test WHERE id = 57";
+                    $sql = "SELECT * FROM user_test WHERE id = 71";
                     $result = mysqli_query($conn, $sql);
                     $resultCheck = mysqli_num_rows($result);
 
@@ -122,7 +122,7 @@ session_start();
         <div class="profil_tlfnr">
                 <?php
 
-                    $sql = "SELECT * FROM user_test WHERE id = 57;";
+                    $sql = "SELECT * FROM user_test WHERE id = 71;";
                     $result = mysqli_query($conn, $sql);
                     $resultCheck = mysqli_num_rows($result);
 
@@ -137,7 +137,7 @@ session_start();
         <div class="profil_email">
                 <?php
 
-                    $sql = "SELECT * FROM user_test WHERE id = 57";
+                    $sql = "SELECT * FROM user_test WHERE id = 71";
                     $result = mysqli_query($conn, $sql);
                     $resultCheck = mysqli_num_rows($result);
 
