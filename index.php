@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="trustpilot">
-                            <a target="_blank" href="https://dk.trustpilot.com/review/www.chefme.dk">
+                            <a href="https://dk.trustpilot.com/review/www.chefme.dk">
                             <div style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 18.326693227091635%;">
                         
                 
@@ -89,12 +89,17 @@
                                 <path class="tp-star__shape" d="M244.597022 19.711433l-26.3029 19.089218 3.837419-11.797827-10.047304-7.291391h12.418974l3.837418-11.798624 3.837418 11.798624h12.418975zm-16.255436 11.798642l7.183595-1.509576 2.862114 8.800152-10.045709-7.290576z" fill="#FFF"></path>
                                 </g>
                                 </svg>
+                                </a>
                             </div>
                         </div>
                     </section>
                 </article>
             </div>
         </header>
+        <br>
+        <br>
+        <br>
+        <br>
            
                 <div class="video_container">
             <video id="video" width="100%" height="60%" controls="">
