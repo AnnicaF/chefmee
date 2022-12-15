@@ -1153,7 +1153,7 @@ margin-top: 30%;
 
 .favoritter_container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: -1fr 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 0.1fr 0.5fr 1fr 1fr 1fr 1fr;
   gap: 0px 0%;
   grid-auto-flow: row;
 }
@@ -1243,8 +1243,8 @@ margin-top: 30%;
 @media (max-width:900px){
 
 .favoritter_container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: -1fr 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr 1fr 1fr 1fr 1fr;
   gap: 0px 0%;
   grid-auto-flow: row;
 }
