@@ -96,9 +96,10 @@
             </div>
         </header>
            
-            <video id="video" controls="">
-				<source src="" type="video/mp4">
-			</video>
+                <div class="video_container">
+            <video id="video" width="100%" height="60%" controls="">
+				<source src="assets/reklame.mp4" type="video/mp4">
+			</video> </div>
 
         <footer id="footer">
             <div class="profil_footer">
