@@ -769,7 +769,7 @@ height: 30px;
 .trustpilot_stjerner {
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 20%; 
 }
 
 .kontakt-call-to-action-2{
@@ -1331,3 +1331,9 @@ margin-top: 30%;
 }
 
 /* MOBIL - SLUT - FAVORITTER */
+
+
+/* VIDEO HERO */
+.video_container{
+margin-top: 10%;
+}

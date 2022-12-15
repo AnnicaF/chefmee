@@ -54,7 +54,7 @@ session_start();
     <div class="profil_container">
     <div class="profil_billede"><img src="../assets/profile-svgrepo-com.svg" alt="profilbillede"></div>
     <div class="profil_titel">
-    <h3>Velkommen <?php echo $_SESSION['firstName']; ?> </h3>
+    <h1>Velkommen <?php echo $_SESSION['firstName']; ?> </h1>
     </div>
     
     <body>
