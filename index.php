@@ -102,9 +102,8 @@
         <br>
            
                 <div class="video_container">
-            <video id="video" width="100%" height="60%" controls="">
-				<source src="assets/reklame.mp4" type="video/mp4">
-			</video> </div>
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/NH9MLd8D1c4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
         <footer id="footer">
             <div class="profil_footer">
